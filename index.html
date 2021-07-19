@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudolf Steiner Publications 0.1</title>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:650px)" href="/css/default.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:650px)" href="/css/mobile.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div id="modal" class="hidden">
+        <div id="close-modal-btn" title="close">x</div>
+        <div id="modal-inner">
+            
+        </div>
+    </div>
+    <div id="header">
+        <p>“Research Rudolf Steiner's works on-line ... buy the Book to study at home!”</p>
+        <p>– the e.Librarian</p>
+        <h1>Rudolf Steiner Publications</h1>
+        <h2>Anthroposophy in Practice</h2>
+        <p>Rudolf Steiner Publications is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
+    </div>
+    <div id="main">
+        <div id="arrow-left-container">
+            <div data-arrow id="arrow-left" tabindex="1"><</div>
+        </div>
+        <div  id="arrow-right-container">
+            <div data-arrow id="arrow-right" tabindex="2">></div>
+        </div>
+        <div id="carousel-outer">
+            <div id="carousel-inner">   
+           <!--javascript generated objects here-->     
+           
+            </div>
+            <div id="dots"></div> 
+        </div>
+        <div id="painting-title-author-div">
+            
+        </div>
+        <div id="painting-preview">    
+            <p id="painting-year"></p>    
+            <p id="painting-material"></p>
+        </div>
+        <div id="painting-bottom">
+            <p>Click on the image to see full painting in RSArchive's e.Gallery!</p>
+        </div>
+        <div id="background-div"></div>
+        <div id="books-grid-outer">
+            <div id="grid-selector">
+                <div id="selector-1">
+                    <div id="all-books" class="highlight" tabindex="3">All books</div>
+                    
+                    <div class="dropdown">
+                      <div class="dropbtn highlight" tabindex="4">by Author: &#8595;</div>
+                      <div class="dropdown-content" id="authors-div">     </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropbtn highlight" tabindex="6">by Category: &#8595;</div>
+                        <div class="dropdown-content" id="categories-div">    </div>
+                    </div>
+                </div>
+                <div id="selector-2">
+                    <div id="a-z" class="azzaBtn highlight" tabindex="8">A-Z</div>
+                    <div id="z-a" class="azzaBtn highlight" tabindex="9">Z-A</div>
+                </div>
+            </div>
+            
+            <div id="books-grid-inner">
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    
+    <template data-book-template>
+        <div class="book-rectangle" data-book-link title="Click to see full description">
+            <img data-book-img src="" class="book-cover">
+            <div class="text-div">
+                <h1 data-book-title class="book-title"></h1>
+                <h2 data-book-author class="book-author"></h2>
+                <div class="book-description-div">
+                    <p data-book-description class="book-description"></p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    
+
+    <template data-full-desc-template>
+        <div id="img-and-description">    
+            <img data-img class="modal-img" src="">
+            <h1 data-title></h1>
+            <p data-description></p>
+            <a data-buy-btn class="buy-button" href=""></a>
+        </div>
+        <div id="specs">
+            <div data-global-specs id="global">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+            <div data-paperback-specs id="paperback">
+                <div class="col-title">Paperback:</div>
+                <div class="col-1">
+                
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+            <div data-kindle-specs id="kindle">
+                <div class="col-title">Kindle</div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

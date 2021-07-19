@@ -1,0 +1,15 @@
+{
+  "name": "rspublications",
+  "version": "1.0.0",
+  "description": "",
+  "main": "books.js",
+  "scripts": {
+    "start": "rollup script.js --format iife --name RSPublications --file bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.53.2"
+  }
+}
