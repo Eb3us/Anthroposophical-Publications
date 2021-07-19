@@ -38,12 +38,10 @@
             <div id="dots"></div> 
         </div>
         <div id="painting-title-author-div">
-            
+            <div id="painting-title"></div>
+            <div id="painting-artist"></div>
         </div>
-        <div id="painting-preview">    
-            <p id="painting-year"></p>    
-            <p id="painting-material"></p>
-        </div>
+        <div id="painting-preview"></div>
         <div id="painting-bottom">
             <p>Click on the image to see full painting in RSArchive's e.Gallery!</p>
         </div>
@@ -74,7 +72,19 @@
             </div>
         </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+        <div id="footer-painting" class="footer-divs">
+            <p id="background-painting">Background painting:</p>
+            <div id="footer-painting-keys"></div>
+            <div id="footer-painting-values"></div>
+        </div>
+        <div class="footer-divs" id="contact-info">
+            <p>Contact:</p>
+            <a href="mailto:jds@elib.com">jds@elib.com</a>
+        </div>
+        <div class="footer-divs"></div>
+        <div class="footer-divs"></div>
+    </div>
     
     <template data-book-template>
         <div class="book-rectangle" data-book-link title="Click to see full description">
@@ -95,8 +105,13 @@
         <div id="img-and-description">    
             <img data-img class="modal-img" src="">
             <h1 data-title></h1>
+            <h3 data-sub-title></h3>
             <p data-description></p>
-            <a data-buy-btn class="buy-button" href=""></a>
+            <div class="buttons-div">
+                <a data-online-btn class="online-button hidden" href="">Online Version</a>
+                <a data-buy-btn class="buy-button" href=""></a>
+            </div>
+            
         </div>
         <div id="specs">
             <div data-global-specs id="global">

@@ -54,8 +54,13 @@ body div {
     float:left;
 }
 #modal-inner h1 {
-    text-align: center;
     margin-top: 0;
+}
+#modal-inner h1, #modal-inner h3 {
+    text-align: center;
+}
+.buttons-div {
+    display:flex
 }
 .buy-button {
     display: block;
@@ -75,7 +80,23 @@ body div {
 .buy-button:hover, .buy-button:focus {
     border: 3px inset black;
 }
-
+.online-button {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 0 auto;
+    border: 2.5px outset cyan;
+    align-items: center;
+    justify-content: center;
+    
+}
+.online-button:hover, .online-button:focus {
+    border: 3px inset cyan;
+    font-size: 98%;
+}
 #specs {
     clear: left;
     display: grid;
@@ -95,9 +116,8 @@ body div {
 .col-1 {
     font-weight:bold;
     text-align: right;
-    white-space: nowrap;
 }
-.col-2 {
+.col-1, .col-2 {
     white-space: nowrap;
 }
 .col-title {
@@ -152,7 +172,7 @@ body div {
 #main {
     grid-area: 2 / 1 / span 1 / 1;
     display: grid;
-    grid-template: 50px 125px 125px 50px 150px 1fr / 50px repeat(10, 1fr) 50px ;
+    grid-template: 50px 125px 125px 50px 80px 1fr / 50px repeat(10, 1fr) 50px ;
     gap: 0.5em;
     
     
@@ -390,12 +410,40 @@ body div {
     object-fit:fill;
 }
 #footer {
+padding: 1em;
+
 grid-area: -1 / 1 / -2 / -1;
 margin-bottom:0;
 background-size: cover;
 background-position-y: bottom;
 background-attachment: fixed;
-
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-divs {
+    background-color: rgba(255,254, 219, 0.4);
+    border-radius: 50px;
+}
+#footer-painting {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50px 1fr;
+}
+#footer-painting-keys {
+    text-align: right;
+    font-weight:bold;
+}
+#footer-painting-values, #footer-painting-keys {
+    grid-row: 2 / 3;
+}
+#background-painting {
+    text-align: center;
+    grid-column: span 2;
+}
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hidden {
     display: none;

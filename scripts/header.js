@@ -5,21 +5,33 @@ export function rotateHeaderImages() {
   const header = document.querySelector("#header")
   const footer = document.querySelector("#footer")
   const middle = document.querySelector("#background-div")
-  const text = document.querySelector("#painting-preview")
+  const preview = document.querySelector("#painting-preview")
   const title = document.querySelector("#painting-title")
   const artist = document.querySelector("#painting-artist")
-  const year = document.querySelector("#painting-year")
-  const material = document.querySelector("#painting-material")
+  const footerKeys = document.querySelector("#footer-painting-keys")
+  const footerValues = document.querySelector("#footer-painting-values")
+  const keys = Object.keys(paintings[randomPainting])
+  const filteredKeys = keys.filter(
+    string => string !== "id" && string !== "url" && string !== "rsarchive"
+  )
   header.style.backgroundImage = `url(${paintings[randomPainting].url})`
   footer.style.backgroundImage = `url(${paintings[randomPainting].url})`
   middle.style.backgroundImage = `url(${paintings[randomPainting].url})`
-  text.style.backgroundImage = `url(${paintings[randomPainting].url})`
+  preview.style.backgroundImage = `url(${paintings[randomPainting].url})`
   title.innerText = paintings[randomPainting].title
   artist.innerText = `by ${paintings[randomPainting].artist}`
-  if (paintings[randomPainting].year) {
-    year.innerText = paintings[randomPainting].year
-  }
-  if (paintings[randomPainting].material) {
-    material.innerText = paintings[randomPainting].material
-  }
+
+  filteredKeys.forEach(key => {
+    if (!paintings[randomPainting][key]) return
+    const keyParagraph = document.createElement("p")
+    const valueParagraph = document.createElement("p")
+    const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1)
+    keyParagraph.innerText = `${capitalizedKey}:`
+    valueParagraph.innerText = paintings[randomPainting][key]
+    footerKeys.appendChild(keyParagraph)
+    footerValues.appendChild(valueParagraph)
+    preview.addEventListener("click", () => {
+      parent.open(paintings[randomPainting]["rsarchive"])
+    })
+  })
 }

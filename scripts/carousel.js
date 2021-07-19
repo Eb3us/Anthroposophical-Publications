@@ -39,7 +39,9 @@ export const carouselFunction = () => {
     const selectedDot = document.querySelector(".selected-dot")
     initialValue += pixels
     if (initialValue >= innerCarousel.scrollWidth) {
-      selectedDot.classList.remove("selected-dot")
+      if (selectedDot) {
+        selectedDot.classList.remove("selected-dot")
+      }
       dotsDiv.querySelector("span:nth-child(1)").classList.add("selected-dot")
       innerCarousel.scroll({
         left: 0,

@@ -13,12 +13,25 @@ export const openFullDescription = () => {
     const template = document.querySelector("[data-full-desc-template]")
     const newTemplate = template.content.cloneNode(true)
     modalInner.appendChild(newTemplate)
+    fillModalTemplate(parent)
+  })
+
+  function fillModalTemplate(eventTargetParent) {
     books.forEach(book => {
-      if (parent.dataset.id == book.id) {
+      if (eventTargetParent.dataset.id == book.id) {
         const img = modalInner.querySelector("[data-img]")
         img.src = `/img/${book.img}`
         const title = modalInner.querySelector("[data-title]")
         title.innerText = book.title
+        if (book["sub-title"]) {
+          const subTitle = modalInner.querySelector("[data-sub-title]")
+          subTitle.innerText = book["sub-title"]
+        }
+        if (book.online !== "no") {
+          const onlineButton = modalInner.querySelector("[data-online-btn]")
+          onlineButton.classList.remove("hidden")
+          onlineButton.href = book.online
+        }
         const description = modalInner.querySelector("[data-description]")
         description.innerHTML = descriptions[book.id - 1].long
         const btn = modalInner.querySelector("[data-buy-btn]")
@@ -44,6 +57,7 @@ export const openFullDescription = () => {
         let globalArr
         let paperbackArr
         let kindleArr
+
         const asignArrays = () => {
           if (book.kindle) kindleArr = Object.keys(book.kindle)
           if (book.paperback) paperbackArr = Object.keys(book.paperback)
@@ -62,7 +76,7 @@ export const openFullDescription = () => {
         documentBody.classList.add("no-overflow")
       }
     })
-  })
+  }
 
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.add("hidden")
