@@ -59,9 +59,19 @@ export const openFullDescription = () => {
         let kindleArr
 
         const asignArrays = () => {
-          if (book.kindle) kindleArr = Object.keys(book.kindle)
-          if (book.paperback) paperbackArr = Object.keys(book.paperback)
+          if (book.kindle) {
+            kindleArr = Object.keys(book.kindle)
+            kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
+            kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
+          }
+          if (book.paperback) {
+            paperbackArr = Object.keys(book.paperback)
+            paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`
+            paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`
+          }
           globalArr = Object.keys(book.global)
+          globalColOne.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`
+          globalColTwo.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`
         }
         asignArrays()
 
@@ -96,6 +106,7 @@ export const openFullDescription = () => {
     array.forEach(item => {
       const paragraph = document.createElement("p")
       paragraph.innerText = item + ":"
+      paragraph.style.gridRow = "span 1"
       div.appendChild(paragraph)
     })
   }
@@ -104,6 +115,7 @@ export const openFullDescription = () => {
     array.forEach(item => {
       const paragraph = document.createElement("p")
       paragraph.innerText = object[item]
+      paragraph.style.gridRow = "span 1"
       div.appendChild(paragraph)
     })
   }

@@ -30,40 +30,48 @@ export const carouselFunction = () => {
       }
     })
   }
+  createBookDivs()
 
   let intervalBooks = []
   let isSet = false
   let initialValue = 0
+  let visibleDiv = 0
+  const dots = Array.from(dotsDiv.children)
 
-  function scrollOneBook(pixels) {
-    const selectedDot = document.querySelector(".selected-dot")
-    initialValue += pixels
-    if (initialValue >= innerCarousel.scrollWidth) {
-      if (selectedDot) {
-        selectedDot.classList.remove("selected-dot")
-      }
-      dotsDiv.querySelector("span:nth-child(1)").classList.add("selected-dot")
-      innerCarousel.scroll({
-        left: 0,
-        behavior: "smooth",
-      })
+  dots[visibleDiv].classList.add("selected-dot")
+
+  function scrollOneBook(direction) {
+    if (direction === "right") {
+      initialValue +=
+        innerCarousel.querySelector("div:nth-child(1)").clientWidth
+      visibleDiv++
+    } else {
+      initialValue -=
+        innerCarousel.querySelector("div:nth-child(1)").clientWidth
+      visibleDiv--
+    }
+    if (visibleDiv > books.length - 1) {
       initialValue = 0
+      visibleDiv = 0
+    }
+    if (visibleDiv < 0) {
+      initialValue = innerCarousel.scrollWidth - 900
+      visibleDiv = books.length - 1
     }
 
     innerCarousel.scroll({
       left: initialValue,
       behavior: "smooth",
     })
-
-    selectedDot.classList.remove("selected-dot")
-    if (selectedDot.nextSibling) {
-      selectedDot.nextSibling.classList.add("selected-dot")
+    if (document.querySelector(".selected-dot")) {
+      document.querySelector(".selected-dot").classList.remove("selected-dot")
     }
+    dots[visibleDiv].classList.add("selected-dot")
   }
 
-  const scrollBooks = pixels => {
+  const scrollBooks = direction => {
     isSet = true
-    intervalBooks = setInterval(scrollOneBook, 10000, pixels)
+    intervalBooks = setInterval(scrollOneBook, 10000, direction)
     innerCarousel.dataset.interval = intervalBooks
   }
   const stopScroll = () => {
@@ -71,16 +79,10 @@ export const carouselFunction = () => {
     clearInterval(innerCarousel.dataset.interval)
   }
 
-  createBookDivs()
+  scrollBooks("right")
 
-  const dots = document.querySelectorAll(".dots")
-  dotsDiv.querySelector("span:nth-child(1)").classList.add("selected-dot")
-
-  scrollBooks(innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10)
   //arrows event-listener
-
   document.addEventListener("click", e => {
-    const selectedDot = document.querySelector(".selected-dot")
     if (!e.target.matches("[data-arrow]")) return
     if (isSet == true) {
       stopScroll()
@@ -88,27 +90,9 @@ export const carouselFunction = () => {
       clearTimeout(leftArrow.dataset.interval)
     }
     if (e.target.matches("#arrow-left")) {
-      if (selectedDot.previousSibling) {
-        selectedDot.classList.remove("selected-dot")
-        selectedDot.previousSibling.classList.add("selected-dot")
-      }
-      if (initialValue > 0) {
-        initialValue -=
-          innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10
-      }
+      scrollOneBook("left")
     } else {
-      if (selectedDot.nextSibling) {
-        selectedDot.classList.remove("selected-dot")
-        selectedDot.nextSibling.classList.add("selected-dot")
-      }
-      if (
-        initialValue <
-        innerCarousel.scrollWidth -
-          innerCarousel.querySelector("div:nth-child(1)").offsetWidth
-      ) {
-        initialValue +=
-          innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10
-      }
+      scrollOneBook("right")
     }
 
     innerCarousel.scroll({
@@ -119,7 +103,7 @@ export const carouselFunction = () => {
     let timerArrows = setTimeout(
       scrollBooks,
       25000,
-      innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10
+      innerCarousel.querySelector("div:nth-child(1)").clientWidth
     )
     leftArrow.dataset.interval = timerArrows
   })

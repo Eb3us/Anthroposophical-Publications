@@ -19,9 +19,9 @@
     <div id="header">
         <p>“Research Rudolf Steiner's works on-line ... buy the Book to study at home!”</p>
         <p>– the e.Librarian</p>
-        <h1>Rudolf Steiner Publications</h1>
+        <h1>Spirit Working</h1>
         <h2>Anthroposophy in Practice</h2>
-        <p>Rudolf Steiner Publications is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
+        <p>Spirit Working is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
     </div>
     <div id="main">
         <div id="arrow-left-container">
@@ -37,34 +37,34 @@
             </div>
             <div id="dots"></div> 
         </div>
-        <div id="painting-title-author-div">
+        <div id="painting-title-author-div" class="hidden-tablet">
             <div id="painting-title"></div>
             <div id="painting-artist"></div>
         </div>
-        <div id="painting-preview"></div>
+        <div id="painting-preview" class="hidden-tablet"></div>
         <div id="painting-bottom">
             <p>Click on the image to see full painting in RSArchive's e.Gallery!</p>
         </div>
-        <div id="background-div"></div>
+        <div id="background-div" class="hidden-tablet"  ></div>
         <div id="books-grid-outer">
             <div id="grid-selector">
-                <div id="selector-1">
-                    <div id="all-books" class="highlight" tabindex="3">All books</div>
-                    
-                    <div class="dropdown">
-                      <div class="dropbtn highlight" tabindex="4">by Author: &#8595;</div>
-                      <div class="dropdown-content" id="authors-div">     </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <div class="dropbtn highlight" tabindex="6">by Category: &#8595;</div>
-                        <div class="dropdown-content" id="categories-div">    </div>
-                    </div>
+                
+                <div id="all-books" class="highlight" tabindex="3">All books</div>
+                
+                <div id="author-menu" class="dropdown">
+                  <div class="dropbtn highlight" tabindex="4">by Author: &#8595;</div>
+                  <ul class="dropdown-content" id="authors-div">     </ul>
                 </div>
-                <div id="selector-2">
+                <div id="category-menu" class="dropdown">
+                    <div class="dropbtn highlight" tabindex="6">by Category: &#8595;</div>
+                    <ul class="dropdown-content" id="categories-div">    </ul>
+                </div>
+            
+                <div id="aZzA">
                     <div id="a-z" class="azzaBtn highlight" tabindex="8">A-Z</div>
                     <div id="z-a" class="azzaBtn highlight" tabindex="9">Z-A</div>
                 </div>
+                
             </div>
             
             <div id="books-grid-inner">
@@ -82,7 +82,9 @@
             <p>Contact:</p>
             <a href="mailto:jds@elib.com">jds@elib.com</a>
         </div>
-        <div class="footer-divs"></div>
+        <div class="footer-divs">
+            <p style="text-align:center">Other info</p>
+        </div>
         <div class="footer-divs"></div>
     </div>
     
@@ -94,6 +96,7 @@
                 <h2 data-book-author class="book-author"></h2>
                 <div class="book-description-div">
                     <p data-book-description class="book-description"></p>
+                    <p class="click-alert">Click for more info on this book!</p>
                 </div>
             </div>
         </div>
@@ -115,28 +118,26 @@
         </div>
         <div id="specs">
             <div data-global-specs id="global">
-                <div class="col-1">
-                </div>
-                <div class="col-2">
-                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+                
             </div>
             <div data-paperback-specs id="paperback">
                 <div class="col-title">Paperback:</div>
-                <div class="col-1">
-                
-                </div>
-                <div class="col-2">
 
-                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
             </div>
             <div data-kindle-specs id="kindle">
                 <div class="col-title">Kindle</div>
-                <div class="col-1">
+                
+                <div class="col-1"></div>
 
-                </div>
-                <div class="col-2">
+                <div class="col-2"></div>
 
-                </div>
             </div>
         </div>
     </template>

@@ -11,10 +11,12 @@
 }
 body {
     display: grid;
-    grid-template: 52vh auto 200px / auto;
+    grid-template: auto auto auto / auto;
     gap: 0.5em;
     background-color: #FFFEDB;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 body div {
     padding: 0.5em;
@@ -30,7 +32,6 @@ body div {
     background-color: rgba(0,0,0,0.6);
     z-index: 1;
     overflow: auto;
-
 }
 
 #modal-inner {
@@ -46,17 +47,22 @@ body div {
 }
 .modal-img {
     width: 250px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
-    float:left;
+    display: block;
 }
 #modal-inner h1 {
     text-align: center;
     margin-top: 0;
 }
+.buttons-div {
+    display: flex;
+    flex-direction: column;
+}
 .buy-button {
     display: block;
-    background-image: url("/img/amazon-logo.jpg");
+    background-image: url("/img/buy-btn-logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,17 +72,34 @@ body div {
     background-color: black;
     overflow: hidden;
     border-radius: 3px;
-    margin: 0 auto;
+    margin: 1em auto;
     border: 2.5px outset black;
 }
 .buy-button:hover {
     border: 3px inset black;
 }
+.online-button {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 0 auto;
+    border: 2.5px outset cyan;
+    align-items: center;
+    justify-content: center;
+    
+}
+.online-button:hover, .online-button:focus {
+    border: 3px inset cyan;
+    font-size: 98%;
+}
 
 #specs {
     clear: left;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:auto auto auto;
 }
 #paperback, #kindle {
     display: grid;
@@ -84,18 +107,18 @@ body div {
 }
 #global {
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 40% 1fr;
 }
 #specs div p {
-    line-height: 0.5;
+    white-space:pre-wrap
 }
 .col-1 {
     font-weight:bold;
     text-align: right;
-    white-space: nowrap;
 }
-.col-2 {
-    white-space: nowrap;
+.col-1, .col-2 {
+    display: grid;
+    align-items:flex-end;
 }
 .col-title {
     grid-column: 1 / 3;
@@ -122,7 +145,11 @@ body div {
 #header {
     grid-area: 1 / 1 / 2 / 1;
     text-align: center;
-    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center ;
+    text-shadow: 0px 0px 8px #ffb, 0px 0px 2px #ffe;
+    margin-bottom: 0;
 }
 #header p:nth-child(2) {
     margin-top: 0;
@@ -130,7 +157,7 @@ body div {
 }
 #header h1 {
     font-family: baar-anthro-bold;
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -141,212 +168,186 @@ body div {
 }
 
 #main {
-    grid-area: 2 / 1 / span 1 / 1;
+    grid-area: 2 / 1 / span 1 / span 1;
     display: grid;
-    grid-template: 125px 125px  1fr / 20px repeat(10, 1fr) 20px;
+    grid-template: 1fr / repeat(10, 1fr) ;
     gap: 0.5em;
     width:100%;
     
-}
-#carousel-outer {
-    /* border: 1px solid black; */
-    grid-area: 4 / 2 / 6 / span 11 ;
-    overflow: hidden;
-    padding: 0;
-    background-color: #FFFEDB;
-    position: relative;
-    background-color: blue;
-    display: none;
-    
-}
-#carousel-inner {
-    /*grid-template: js generated*/
-    height: 110%;
-    width: 100%;
-    overflow-x: scroll;
-    display: grid;
-    gap: 0.5em;
-    position: relative;
     
 }
 
-#carousel-inner .book-rectangle{
-    grid-row: 1 / 2;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-#carousel-inner .book-rectangle:hover .book-cover {
-    filter: brightness(1.07);
-}
-#carousel-inner .book-rectangle:hover {
-    color: #333;
-    
-}
-.text-div {
-    width: 65%;
-    height: 100%;
-    padding: 0;
-    overflow: hidden;
-}
-.book-cover {
-    height: 96%;
-}
-.book-title {
-    font-family: baar-sophia;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.book-author {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: baar-sophia;
-    text-align: center;
-    font-style: italic;
-}
-.book-description-div {
-    height: 190px;
-    width: 400px;
-    overflow: hidden;
-    margin: 0;
-    text-align: justify;
-    margin-left:0.5em;
-}
-#dots {
-    position:absolute;
-    font-size: 5rem;
-    text-shadow: 0px 0px 5px #999;
-    color:rgba(255,254, 219, 1);
-    padding: 0;
-    bottom: -25px;
-    width: 300px;
-    margin-left: -150px;
-    left: 55%;
-    text-align: center;
-}
-.selected-dot {
-    text-shadow: 0px 0px 5px black;
-    color:white;
-}
-#arrow-left-container {
-    grid-area: 2 / 1 / span 2 / 1;
-    position: relative;
-}
-#arrow-right-container {
-    grid-area: 2 / 8 / span 2 / 9;
-    position: relative;
-}
-#arrow-left, #arrow-right {
-    position:absolute;
-    font-size: 5em;
-    font-weight: bold;
-    color:#FFFEDB;
-    text-shadow: 0px 0px 20px black;
-    cursor: pointer;
-    top: 30px;
-    left: -40px;
-    display: none;
-}
-#arrow-left:hover, #arrow-right:hover {
-    text-shadow: 0px 0px 15px black;
-    color:white;
-}
-
-#intro-text {
-    grid-area: 1 / 2 / 3 / -2;
-    border: 2px solid rgba(100,0,0,0.3);
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    padding: 0em 2em 0em 1em;
-    border-radius: 20px;
-    text-shadow: 0px 1px 4px white;
-    
-}
 #books-grid-outer {
-    grid-area: -1 / 2 / span 1 / 12;
-    
+    grid-area: 1 / 1 / span 1 / span 10;
       
 }
 #grid-selector {
     grid-area: 1 / 1 / 2 / 6;
+    margin:0;
+    display: grid;
+    grid-template: 30px 30px / repeat(4, 1fr)  ;
+    padding-top: 0;
+    gap:5px;
+}
+
+#grid-selector div {
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
-#grid-selector div {
-    cursor: pointer;
+#all-books {
+    grid-area: 1 / 1 / 2 / 3;
+    align-items: center;
+    text-align: center;
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
 }
-.dropdown {
+#author-menu {
+    grid-area: 2 / 1 / 3 / 3;
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
+}
+#category-menu {
+    grid-area: 2 / 3 / 3 / 5;
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
+}
+#aZzA {
+    grid-area: 1 / 3 / 2 / 5;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    cursor: pointer;
-    width: 200px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0%;
 }
+#a-z, #z-a {
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px ;
+}
+
+.dropdown {
+    position: relative;
+    
+}
+
 .dropbtn {
     display: inline-block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     flex-direction: column;
     margin-top: 1em;
-    background-color: rgba(255,254, 219, 0.8);
-    top: 15px;
-    right: 0px;
+    background-color: rgba(255,254, 219, 0.95);
+    top: 20px;
+    left: -10px;
     padding-bottom: 0;
-    width: 100%;
+    padding-top: 1.5em;
+    width: 210%; 
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 3px #eb6;
 }
-.dropdown-content div {
-    margin-top: 1em;
+#categories-div {
+    left: -108%
 }
-.dropdown:hover .dropdown-content {
+.dropdown-content li {
+    margin-bottom: 1em;
+    width:max-content;
+    border-bottom: 1px solid burlywood;
+}
+
+.submenu-active + .dropdown-content {
     display: block;
 }
 
 #books-grid-inner {
-    grid-area: -1 / 1 / span 1 / span 6;
+    grid-area: 1 / 1 / span 1 / span 6;
     display: grid;
-    grid-template-columns:repeat(6, 1fr);
+    grid-template-columns:1fr;
     gap: 1rem; 
+    
 }
 .book-img-div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
+    height: 120px;
+    width: 100%;
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
+    grid-column: span 2;
+    
 }
 .book-img-div:hover {
     box-shadow: 0px 0px 10px 3px burlywood;
 }
 .book-img {
-    width:100%;
     height: 100%;
     object-fit: cover;
 }
-
-.book-img-div:nth-child(5) {
-    grid-column: span 2;
-    grid-row: span 2;
-    
+.grid-book-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.book-img-div:nth-child(5) img {
-    width: 80%;
-    height: 80%;
-    object-fit:fill;
+.grid-book-text h5 {
+    font-family: baar-anthro-bold;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
 }
 #footer {
 grid-area: -1 / 1 / -2 / -1;
-border: 1px solid black;
+background-size: cover;
+background-position: top center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+
+}
+.footer-divs {
+    background-color: rgba(255,254, 219, 0.6);
+    border-radius: 50px;
+    margin-bottom: 1em;
+    min-height: 100px;
+}
+#footer-painting {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50px 1fr;
+}
+#footer-painting-keys {
+    text-align: right;
+    font-weight:bold;
+}
+#footer-painting-values, #footer-painting-keys {
+    grid-row: 2 / 3;
+}
+#background-painting {
+    text-align: center;
+    grid-column: span 2;
+}
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hidden {
     display: none;
 }
 .no-overflow {
     overflow: hidden;
+}
+#arrow-left-container, #arrow-right-container, #carousel-outer, #painting-title-author-div, #painting-preview, #painting-bottom,#background-div {
+    display: none;
+}
+.highlight:hover, .highlight:focus {
+    text-shadow: 2px 2px 7px burlywood, -2px -2px 7px white;
 }

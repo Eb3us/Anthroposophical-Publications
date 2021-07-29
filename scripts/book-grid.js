@@ -29,7 +29,7 @@ export function gridFunction() {
     let tabIndexIteratorAuthor = 5
     let tabIndexIteratorCategory = 7
     array.forEach(element => {
-      const link = document.createElement("div")
+      const link = document.createElement("li")
       link.innerText = element
       link.id = element
       link.classList.add("highlight")
@@ -51,17 +51,47 @@ export function gridFunction() {
 
   //event listeners
   document.addEventListener("click", e => {
+    const btn = e.target
+    if (!btn.matches(".dropbtn")) return
+
+    if (btn.classList.contains("submenu-active")) {
+      btn.classList.remove("submenu-active")
+    } else {
+      if (document.querySelector(".submenu-active")) {
+        document
+          .querySelector(".submenu-active")
+          .classList.remove("submenu-active")
+      }
+      btn.classList.add("submenu-active")
+    }
+  })
+  document.addEventListener("click", e => {
     if (!e.target.matches(".authors-link")) return
     bookGrid.textContent = ""
     displayByAuthor(e.target.id, selectedPaterns.right)
+    if (document.querySelector(".submenu-active")) {
+      document
+        .querySelector(".submenu-active")
+        .classList.remove("submenu-active")
+    }
   })
   document.addEventListener("click", e => {
     if (!e.target.matches(".categories-link")) return
     bookGrid.textContent = ""
     displayByCategories(e.target.id, selectedPaterns.right)
+    if (document.querySelector(".submenu-active")) {
+      document
+        .querySelector(".submenu-active")
+        .classList.remove("submenu-active")
+    }
   })
   allBooksLink.addEventListener("click", () => {
     displayAllBooks(selectedPaterns.right)
+    if (document.querySelector(".submenu-active")) {
+      document
+        .querySelector(".submenu-active")
+        .classList.remove("submenu-active")
+    }
   })
 
   //order alphabetically or inverse alphabetically
@@ -147,6 +177,7 @@ export function gridFunction() {
         }
       })
     })
+    selectedPaterns.left = ["categories", id]
   }
 
   function randomFeaturedBook(array) {
@@ -170,6 +201,16 @@ export function gridFunction() {
     bookImgDiv.dataset.id = element.id
     bookImgDiv.dataset.bookLink = ""
     bookImgDiv.tabIndex = "0"
+    const textDiv = document.createElement("div")
+    textDiv.classList.add("hidden-desktop")
+    textDiv.classList.add("grid-book-text")
+    const title = document.createElement("h5")
+    const author = document.createElement("p")
+    title.innerText = element.title
+    author.innerText = element["global"]["Author"]
+    textDiv.appendChild(title)
+    textDiv.appendChild(author)
+    bookImgDiv.appendChild(textDiv)
     bookGrid.appendChild(bookImgDiv)
   }
 
