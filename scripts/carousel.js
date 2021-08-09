@@ -21,7 +21,7 @@ export const carouselFunction = () => {
       const description = bookDiv.querySelector("[data-book-description]")
       bookDiv.querySelector(".book-rectangle").dataset.id = book.id
       dotsDiv.innerHTML = dotsDiv.innerHTML + '<span class="dots">.</span>'
-      img.src = `/img/${book.img}`
+      img.src = `./img/${book.img}`
       title.innerText = book.title
       author.innerText = book.global.Author
       innerCarousel.appendChild(bookDiv)

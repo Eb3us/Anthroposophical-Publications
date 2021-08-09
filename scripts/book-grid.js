@@ -26,21 +26,21 @@ export function gridFunction() {
   addAuthorToArray()
 
   function addToDropdownMenu(array) {
-    let tabIndexIteratorAuthor = 5
-    let tabIndexIteratorCategory = 7
     array.forEach(element => {
       const link = document.createElement("li")
       link.innerText = element
       link.id = element
       link.classList.add("highlight")
+      link.classList.add(
+        `${element
+          .replace(/[^a-zA-Z ]/g, "")
+          .replace(/\s/g, "-")
+          .toLowerCase()}-category`
+      )
       if (array == authorsArray) {
-        link.tabIndex = tabIndexIteratorAuthor
-        tabIndexIteratorAuthor++
         link.classList.add("authors-link")
         authorsDiv.appendChild(link)
       } else {
-        link.tabIndex = tabIndexIteratorCategory
-        tabIndexIteratorCategory++
         link.classList.add("categories-link")
         categoriesDiv.appendChild(link)
       }
@@ -195,21 +195,36 @@ export function gridFunction() {
     const bookImgDiv = document.createElement("div")
     bookImgDiv.classList.add("book-img-div")
     const bookImg = document.createElement("img")
-    bookImg.src = `/img/${element.img}`
+    bookImg.src = `./img/${element.img}`
     bookImg.classList.add("book-img")
     bookImgDiv.appendChild(bookImg)
     bookImgDiv.dataset.id = element.id
     bookImgDiv.dataset.bookLink = ""
     bookImgDiv.tabIndex = "0"
     const textDiv = document.createElement("div")
-    textDiv.classList.add("hidden-desktop")
     textDiv.classList.add("grid-book-text")
     const title = document.createElement("h5")
     const author = document.createElement("p")
+    title.classList.add("hidden-desktop")
+    author.classList.add("hidden-desktop")
+    const categoriesDiv = document.createElement("div")
+    element["categories"].forEach(category => {
+      const paragraph = document.createElement("p")
+      paragraph.innerText = category
+      paragraph.classList.add("book-img-div-category")
+      //in category name remove special characters, swap white spaces for dashes and convert to lower case
+      const className = category
+        .replace(/[^a-zA-Z ]/g, "")
+        .replace(/\s/g, "-")
+        .toLowerCase()
+      paragraph.classList.add(`${className}-category`)
+      categoriesDiv.appendChild(paragraph)
+    })
     title.innerText = element.title
     author.innerText = element["global"]["Author"]
     textDiv.appendChild(title)
     textDiv.appendChild(author)
+    textDiv.appendChild(categoriesDiv)
     bookImgDiv.appendChild(textDiv)
     bookGrid.appendChild(bookImgDiv)
   }

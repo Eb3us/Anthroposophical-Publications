@@ -34,12 +34,13 @@
       },
       "categories": ["Social Science", "Modern Translations"],
       "url": "https://amzn.to/2P4pMnx",
-      "online-url": "",
       "img": "towthreesociety_covs.jpg",
+      "online": "no"
     },
     {
       "id": "2",
-      "title": "The Worldview of Herman Grimm, in Relation to Spiritual Science",
+      "title": "The Worldview of Herman Grimm",
+      "sub-title": "in Relation to Spiritual Science",
       "global": {
         "Author": "Rudolf Steiner",
         "Editor": "James D. Stewart",
@@ -47,9 +48,6 @@
         "Translator": "Peter Stebbing",
         "publisher": "Rudolf Steiner Publications",
       },
-      "url": "https://amzn.to/36rj94r",
-      "img": "hermangrimm01_covs.jpg",
-      "categories": ["Modern Translations"],
       "paperback": {
         "pages": "52",
         "publication date": "November 13, 2019",
@@ -69,6 +67,10 @@
         "ISBN-10": "1-948302-13-6",
         "ISBN-13": "978-1-948302-13-5",
       },
+      "url": "https://amzn.to/36rj94r",
+      "img": "hermangrimm01_covs.jpg",
+      "categories": ["Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html"
     },
     {
       "id": "3",
@@ -104,11 +106,13 @@
       "url": "https://amzn.to/2Qcs1ba",
       "img": "AnthroFantasies_covs.jpg",
       "categories": ["Fiction"],
+      "online": "no"
     },
     {
       "id": "4",
       "title":
-        "Fairy Tales in the Light of Spiritual Investigation and A Mongolian Legend:",
+        "Fairy Tales",
+      "sub-title": "in the Light of Spiritual Investigation and A Mongolian Legend:",
       "global": {
         "Author": "Rudolf Steiner",
         "Editor": "James D. Stewart",
@@ -137,11 +141,13 @@
       "url": "https://amzn.to/3lHrKZ2",
       "img": "FairyTales1_covs.jpg",
       "categories": ["Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html"
     },
     {
       "id": "5",
       "title":
-        "Leonardo's Spiritual Stature: at the Turning Point of Modern Times",
+        "Leonardo's Spiritual Stature",
+      "sub-title": "at the Turning Point of Modern Times",
       "global": {
         "Author": "Rudolf Steiner",
         "Editor": "James D. Stewart",
@@ -171,6 +177,7 @@
       "url": "https://amzn.to/2Odm4rV",
       "img": "leonardostature_covs.jpg",
       "categories": ["Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html"
     },
     {
       "id": "6",
@@ -190,10 +197,12 @@
       "url": "https://amzn.to/2U5g30b",
       "img": "impulse4renewal_covs.jpg",
       "categories": ["Social Science", "Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html"
     },
     {
       "id": "7",
-      "title": "Raphael's Mission in the Light of the Science of the Spirit",
+      "title": "Raphael's Mission",
+      "sub-title": "in the Light of the Science of the Spirit",
       "global": {
         "Author": "Rudolf Steiner",
         "Editor": "James D. Stewart",
@@ -209,6 +218,7 @@
       "url": "https://amzn.to/2tAYXvO",
       "img": "raphaelsmission_covs.jpg",
       "categories": ["Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2018/RapMis_index.html"
     },
     {
       "id": "8",
@@ -242,6 +252,7 @@
       "url": "https://amzn.to/2XkGvFp",
       "img": "thesocialquestion2_covs.jpg",
       "categories": ["Social Science", "Modern Translations"],
+      "online": "https://wn.rsarchive.org/Lectures/GA328/English/eLib2017/SoQues_index.html"
     },
     {
       "id": "9",
@@ -276,6 +287,7 @@
       "url": "",
       "img": "favelachildren_covs.png",
       "categories": ["Social Science"],
+      "online": "no"
     },
     {
       "id": "10",
@@ -308,6 +320,7 @@
       "url": "",
       "img": "magicmound_covs.png",
       "categories": ["Fiction", "Children's Books"],
+      "online": "no"
     },
   ];
 
@@ -375,7 +388,13 @@
       "short":
         "Ute Craemer is an educator and social worker who has dedicated over fifty years of her life to teaching and nurturing the poor children of the favelas (slums) in Brazil. As an experienced Waldorf teacher, she has been able to understand the needs of the children and their families and provide them with the spiritual nourishment they cry out for. Favela Children is a moving and informative account of Ute's Craemer's social work in the favelas and of her personal development...",
     },
-    { id: 10, "long": "", "short": "" },
+    {
+      id: 10,
+      "long":
+        "Sergio and his younger brother, Divino are poor children who live in a favela (slum) in Sao Paulo, Brazil. They go on vacation with their revered teacher, dona Ute (pronounced oo-teh), to the country house of one of Ute’s friends. Once there, they leave the house together to fetch kindling wood. They cross a stream and discover a strange round mound surrounded by white stones. Divino impetuously climbs the mound and convinces his brother to follow. Due to the mound’s magic forces, they fall asleep. They wake up in the land of Maxa. A girl, Mara, leads them through the jungle to her village where the meet the queen, Mamara. She tells them the history of the marvelous juice of immortality, vitaluz. They never grow old or die by drinking vitaluz, but never have children either. Queen Mamara and Princess Mara ask the boys to rescue Mireya, a young girl also from Brazil, who had been kidnapped by King Alaram. The boys agree to try, assisted by Platero, a white donkey as charming as he is stubborn, and a mysterious little man named Tamoshot. The search for Mireya is a dangerous adventure, but also the means of learning many important things about life. ",
+      "short":
+        "Sergio and his younger brother, Divino are poor children who live in a favela (slum) in Sao Paulo, Brazil. They go on vacation with their revered teacher, dona Ute (pronounced oo-teh), to the country house of one of Ute’s friends. Once there, they leave the house together to fetch kindling wood. They cross a stream and discover a strange round mound surrounded by white stones...",
+    },
   ];
 
   const carouselFunction = () => {
@@ -398,7 +417,7 @@
         const description = bookDiv.querySelector("[data-book-description]");
         bookDiv.querySelector(".book-rectangle").dataset.id = book.id;
         dotsDiv.innerHTML = dotsDiv.innerHTML + '<span class="dots">.</span>';
-        img.src = `/img/${book.img}`;
+        img.src = `./img/${book.img}`;
         title.innerText = book.title;
         author.innerText = book.global.Author;
         innerCarousel.appendChild(bookDiv);
@@ -407,38 +426,48 @@
         }
       });
     }
+    createBookDivs();
 
     let intervalBooks = [];
     let isSet = false;
     let initialValue = 0;
+    let visibleDiv = 0;
+    const dots = Array.from(dotsDiv.children);
 
-    function scrollOneBook(pixels) {
-      const selectedDot = document.querySelector(".selected-dot");
-      initialValue += pixels;
-      if (initialValue >= innerCarousel.scrollWidth) {
-        selectedDot.classList.remove("selected-dot");
-        dotsDiv.querySelector("span:nth-child(1)").classList.add("selected-dot");
-        innerCarousel.scroll({
-          left: 0,
-          behavior: "smooth",
-        });
+    dots[visibleDiv].classList.add("selected-dot");
+
+    function scrollOneBook(direction) {
+      if (direction === "right") {
+        initialValue +=
+          innerCarousel.querySelector("div:nth-child(1)").clientWidth;
+        visibleDiv++;
+      } else {
+        initialValue -=
+          innerCarousel.querySelector("div:nth-child(1)").clientWidth;
+        visibleDiv--;
+      }
+      if (visibleDiv > books.length - 1) {
         initialValue = 0;
+        visibleDiv = 0;
+      }
+      if (visibleDiv < 0) {
+        initialValue = innerCarousel.scrollWidth - 900;
+        visibleDiv = books.length - 1;
       }
 
       innerCarousel.scroll({
         left: initialValue,
         behavior: "smooth",
       });
-
-      selectedDot.classList.remove("selected-dot");
-      if (selectedDot.nextSibling) {
-        selectedDot.nextSibling.classList.add("selected-dot");
+      if (document.querySelector(".selected-dot")) {
+        document.querySelector(".selected-dot").classList.remove("selected-dot");
       }
+      dots[visibleDiv].classList.add("selected-dot");
     }
 
-    const scrollBooks = pixels => {
+    const scrollBooks = direction => {
       isSet = true;
-      intervalBooks = setInterval(scrollOneBook, 10000, pixels);
+      intervalBooks = setInterval(scrollOneBook, 10000, direction);
       innerCarousel.dataset.interval = intervalBooks;
     };
     const stopScroll = () => {
@@ -446,16 +475,10 @@
       clearInterval(innerCarousel.dataset.interval);
     };
 
-    createBookDivs();
+    scrollBooks("right");
 
-    document.querySelectorAll(".dots");
-    dotsDiv.querySelector("span:nth-child(1)").classList.add("selected-dot");
-
-    scrollBooks(innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10);
     //arrows event-listener
-
     document.addEventListener("click", e => {
-      const selectedDot = document.querySelector(".selected-dot");
       if (!e.target.matches("[data-arrow]")) return
       if (isSet == true) {
         stopScroll();
@@ -463,27 +486,9 @@
         clearTimeout(leftArrow.dataset.interval);
       }
       if (e.target.matches("#arrow-left")) {
-        if (selectedDot.previousSibling) {
-          selectedDot.classList.remove("selected-dot");
-          selectedDot.previousSibling.classList.add("selected-dot");
-        }
-        if (initialValue > 0) {
-          initialValue -=
-            innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10;
-        }
+        scrollOneBook("left");
       } else {
-        if (selectedDot.nextSibling) {
-          selectedDot.classList.remove("selected-dot");
-          selectedDot.nextSibling.classList.add("selected-dot");
-        }
-        if (
-          initialValue <
-          innerCarousel.scrollWidth -
-            innerCarousel.querySelector("div:nth-child(1)").offsetWidth
-        ) {
-          initialValue +=
-            innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10;
-        }
+        scrollOneBook("right");
       }
 
       innerCarousel.scroll({
@@ -494,7 +499,7 @@
       let timerArrows = setTimeout(
         scrollBooks,
         25000,
-        innerCarousel.querySelector("div:nth-child(1)").offsetWidth + 10
+        innerCarousel.querySelector("div:nth-child(1)").clientWidth
       );
       leftArrow.dataset.interval = timerArrows;
     });
@@ -526,21 +531,21 @@
     addAuthorToArray();
 
     function addToDropdownMenu(array) {
-      let tabIndexIteratorAuthor = 5;
-      let tabIndexIteratorCategory = 7;
       array.forEach(element => {
-        const link = document.createElement("div");
+        const link = document.createElement("li");
         link.innerText = element;
         link.id = element;
         link.classList.add("highlight");
+        link.classList.add(
+          `${element
+          .replace(/[^a-zA-Z ]/g, "")
+          .replace(/\s/g, "-")
+          .toLowerCase()}-category`
+        );
         if (array == authorsArray) {
-          link.tabIndex = tabIndexIteratorAuthor;
-          tabIndexIteratorAuthor++;
           link.classList.add("authors-link");
           authorsDiv.appendChild(link);
         } else {
-          link.tabIndex = tabIndexIteratorCategory;
-          tabIndexIteratorCategory++;
           link.classList.add("categories-link");
           categoriesDiv.appendChild(link);
         }
@@ -551,17 +556,47 @@
 
     //event listeners
     document.addEventListener("click", e => {
+      const btn = e.target;
+      if (!btn.matches(".dropbtn")) return
+
+      if (btn.classList.contains("submenu-active")) {
+        btn.classList.remove("submenu-active");
+      } else {
+        if (document.querySelector(".submenu-active")) {
+          document
+            .querySelector(".submenu-active")
+            .classList.remove("submenu-active");
+        }
+        btn.classList.add("submenu-active");
+      }
+    });
+    document.addEventListener("click", e => {
       if (!e.target.matches(".authors-link")) return
       bookGrid.textContent = "";
       displayByAuthor(e.target.id, selectedPaterns.right);
+      if (document.querySelector(".submenu-active")) {
+        document
+          .querySelector(".submenu-active")
+          .classList.remove("submenu-active");
+      }
     });
     document.addEventListener("click", e => {
       if (!e.target.matches(".categories-link")) return
       bookGrid.textContent = "";
       displayByCategories(e.target.id, selectedPaterns.right);
+      if (document.querySelector(".submenu-active")) {
+        document
+          .querySelector(".submenu-active")
+          .classList.remove("submenu-active");
+      }
     });
     allBooksLink.addEventListener("click", () => {
       displayAllBooks(selectedPaterns.right);
+      if (document.querySelector(".submenu-active")) {
+        document
+          .querySelector(".submenu-active")
+          .classList.remove("submenu-active");
+      }
     });
 
     //order alphabetically or inverse alphabetically
@@ -647,6 +682,7 @@
           }
         });
       });
+      selectedPaterns.left = ["categories", id];
     }
 
     function randomFeaturedBook(array) {
@@ -664,12 +700,37 @@
       const bookImgDiv = document.createElement("div");
       bookImgDiv.classList.add("book-img-div");
       const bookImg = document.createElement("img");
-      bookImg.src = `/img/${element.img}`;
+      bookImg.src = `./img/${element.img}`;
       bookImg.classList.add("book-img");
       bookImgDiv.appendChild(bookImg);
       bookImgDiv.dataset.id = element.id;
       bookImgDiv.dataset.bookLink = "";
       bookImgDiv.tabIndex = "0";
+      const textDiv = document.createElement("div");
+      textDiv.classList.add("grid-book-text");
+      const title = document.createElement("h5");
+      const author = document.createElement("p");
+      title.classList.add("hidden-desktop");
+      author.classList.add("hidden-desktop");
+      const categoriesDiv = document.createElement("div");
+      element["categories"].forEach(category => {
+        const paragraph = document.createElement("p");
+        paragraph.innerText = category;
+        paragraph.classList.add("book-img-div-category");
+        //in category name remove special characters, swap white spaces for dashes and convert to lower case
+        const className = category
+          .replace(/[^a-zA-Z ]/g, "")
+          .replace(/\s/g, "-")
+          .toLowerCase();
+        paragraph.classList.add(`${className}-category`);
+        categoriesDiv.appendChild(paragraph);
+      });
+      title.innerText = element.title;
+      author.innerText = element["global"]["Author"];
+      textDiv.appendChild(title);
+      textDiv.appendChild(author);
+      textDiv.appendChild(categoriesDiv);
+      bookImgDiv.appendChild(textDiv);
       bookGrid.appendChild(bookImgDiv);
     }
 
@@ -688,12 +749,25 @@
       const template = document.querySelector("[data-full-desc-template]");
       const newTemplate = template.content.cloneNode(true);
       modalInner.appendChild(newTemplate);
+      fillModalTemplate(parent);
+    });
+
+    function fillModalTemplate(eventTargetParent) {
       books.forEach(book => {
-        if (parent.dataset.id == book.id) {
+        if (eventTargetParent.dataset.id == book.id) {
           const img = modalInner.querySelector("[data-img]");
-          img.src = `/img/${book.img}`;
+          img.src = `./img/${book.img}`;
           const title = modalInner.querySelector("[data-title]");
           title.innerText = book.title;
+          if (book["sub-title"]) {
+            const subTitle = modalInner.querySelector("[data-sub-title]");
+            subTitle.innerText = book["sub-title"];
+          }
+          if (book.online !== "no") {
+            const onlineButton = modalInner.querySelector("[data-online-btn]");
+            onlineButton.classList.remove("hidden");
+            onlineButton.href = book.online;
+          }
           const description = modalInner.querySelector("[data-description]");
           description.innerHTML = descriptions[book.id - 1].long;
           const btn = modalInner.querySelector("[data-buy-btn]");
@@ -719,10 +793,21 @@
           let globalArr;
           let paperbackArr;
           let kindleArr;
+
           const asignArrays = () => {
-            if (book.kindle) kindleArr = Object.keys(book.kindle);
-            if (book.paperback) paperbackArr = Object.keys(book.paperback);
+            if (book.kindle) {
+              kindleArr = Object.keys(book.kindle);
+              kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`;
+              kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`;
+            }
+            if (book.paperback) {
+              paperbackArr = Object.keys(book.paperback);
+              paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`;
+              paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`;
+            }
             globalArr = Object.keys(book.global);
+            globalColOne.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`;
+            globalColTwo.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`;
           };
           asignArrays();
 
@@ -737,7 +822,7 @@
           documentBody.classList.add("no-overflow");
         }
       });
-    });
+    }
 
     modalCloseBtn.addEventListener("click", () => {
       modal.classList.add("hidden");
@@ -757,6 +842,7 @@
       array.forEach(item => {
         const paragraph = document.createElement("p");
         paragraph.innerText = item + ":";
+        paragraph.style.gridRow = "span 1";
         div.appendChild(paragraph);
       });
     };
@@ -765,6 +851,7 @@
       array.forEach(item => {
         const paragraph = document.createElement("p");
         paragraph.innerText = object[item];
+        paragraph.style.gridRow = "span 1";
         div.appendChild(paragraph);
       });
     };
@@ -778,7 +865,10 @@
       "year": "2011",
       "material": "Oil on canvasboard",
       "dimensions": "50x70 cm",
-      "url": "/img/header/maltitz-community-life.jpg",
+      "url": "./img/header/maltitz-community-life.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von&name=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von%2FCommunityLife960.jpg&srow=1",
+      "tone": "dark",
     },
     {
       "id": "2",
@@ -787,50 +877,171 @@
       "year": "2013",
       "material": "Oil on canvas",
       "dimensions": "50x70 cm",
-      "url": "/img/header/maltitz-trial-by-fire.jpg",
+      "url": "./img/header/maltitz-trial-by-fire.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von&name=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von%2FTrialByFire960.jpg&srow=1",
+      "tone": "dark",
     },
     {
       "id": "3",
       "title": "Fairy Tale",
       "artist": "Gold, Monica",
-      "url": "/img/header/gold-fairy-tale.jpg",
+      "url": "./img/header/gold-fairy-tale.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FGold_Monica&name=Site_index%2FAnthroposophical%2FGold_Monica%2Ffairy_tale_ec.jpg&srow=1",
+      "tone": "light",
     },
     {
       "id": "4",
       "title": "Ephesus II",
       "artist": "Gold, Monica",
       "material": "Watercolor",
-      "url": "/img/header/gold-ephesus-ii.jpg",
+      "url": "./img/header/gold-ephesus-ii.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FGold_Monica&name=Site_index%2FAnthroposophical%2FGold_Monica%2FTREE.jpg&srow=1",
+      "tone": "light",
     },
     {
       "id": "5",
       "title": "Listening",
       "artist": "Sturmheit, Igor",
       "year": "2012",
-      "url": "/img/header/sturmheit-listening.jpg",
+      "url": "./img/header/sturmheit-listening.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FSturmheit_Igor&name=Site_index%2FAnthroposophical%2FSturmheit_Igor%2FIMG_0777s.jpg&srow=1",
+      "tone": "dark",
     },
     {
       "id": "6",
       "title": "First Goetheanum",
       "artist": "Linde, Hermann",
       "material": "Watercolor",
-      "url": "/img/header/linde-first-goetheanum.jpg",
+      "url": "./img/header/linde-first-goetheanum.jpg",
+      "rsarchive":
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FLinde_Hermann&name=Site_index%2FAnthroposophical%2FLinde_Hermann%2FGoetheanum-Aquarell_von_Hermann_Linde.jpg&srow=1",
+      "tone": "light",
     },
   ];
 
   function rotateHeaderImages() {
     const randomPainting = Math.floor(Math.random() * paintings.length);
     const header = document.querySelector("#header");
+    const headerTitle = header.querySelector("h1");
+    const headerSubtitle = header.querySelector("h2");
     const footer = document.querySelector("#footer");
     const middle = document.querySelector("#background-div");
+    const preview = document.querySelector("#painting-preview");
+    const title = document.querySelector("#painting-title");
+    const artist = document.querySelector("#painting-artist");
+    const footerKeys = document.querySelector("#footer-painting-keys");
+    const footerValues = document.querySelector("#footer-painting-values");
+    const keys = Object.keys(paintings[randomPainting]);
+    //filter keys not to print from paintings.js in footer
+    const filteredKeys = keys.filter(
+      string =>
+        string !== "id" &&
+        string !== "url" &&
+        string !== "rsarchive" &&
+        string !== "tone"
+    );
     header.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     footer.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     middle.style.backgroundImage = `url(${paintings[randomPainting].url})`;
+    preview.style.backgroundImage = `url(${paintings[randomPainting].url})`;
+    title.innerText = paintings[randomPainting].title;
+    artist.innerText = `by ${paintings[randomPainting].artist}`;
+    if (paintings[randomPainting].tone === "light") {
+      headerTitle.classList.add("dark-header-text");
+      headerSubtitle.classList.add("dark-header-text");
+    }
+    if (paintings[randomPainting].tone === "dark") {
+      headerTitle.classList.add("light-header-text");
+      headerSubtitle.classList.add("light-header-text");
+    }
+
+    filteredKeys.forEach(key => {
+      if (!paintings[randomPainting][key]) return
+      const keyParagraph = document.createElement("p");
+      const valueParagraph = document.createElement("p");
+      const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1);
+      keyParagraph.innerText = `${capitalizedKey}:`;
+      valueParagraph.innerText = paintings[randomPainting][key];
+      footerKeys.appendChild(keyParagraph);
+      footerValues.appendChild(valueParagraph);
+      preview.addEventListener("click", () => {
+        parent.open(paintings[randomPainting]["rsarchive"]);
+      });
+    });
+  }
+
+  function scrollFunction() {
+    const headerArrow = document.querySelector("#header-arrow");
+    const midPageArrow = document.querySelector("#mid-page-arrow");
+    const arrowTop = headerArrow.offsetTop;
+    const bookGridTop = document.querySelector("#books-grid-outer").offsetTop;
+    const pointOfInversionHeaderArrow = document.querySelector(
+      "#header-description-div"
+    ).offsetTop;
+    const pointOfInversionMidPageArrow =
+      document.querySelector("#background-div").offsetTop;
+    const floatingArrow = document.querySelector("#floating-btn-top");
+
+    headerArrow.addEventListener("click", () => {
+      arrowScroll(headerArrow, arrowTop + 40, 0);
+    });
+
+    midPageArrow.addEventListener("click", () => {
+      arrowScroll(midPageArrow, bookGridTop, 0);
+    });
+
+    floatingArrow.addEventListener("click", () => {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= pointOfInversionHeaderArrow) {
+        headerArrow.classList.remove("rotate-arrow-down");
+        headerArrow.classList.add("rotate-arrow-up");
+        headerArrow.dataset.position = "up";
+      } else {
+        headerArrow.classList.remove("rotate-arrow-up");
+        headerArrow.classList.add("rotate-arrow-down");
+        headerArrow.dataset.position = "down";
+      }
+    });
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= pointOfInversionMidPageArrow) {
+        floatingArrow.classList.remove("hidden");
+        floatingArrow.classList.add("floating-btn-display-class");
+      } else {
+        floatingArrow.classList.add("hidden");
+        floatingArrow.classList.remove("floating-btn-display-class");
+      }
+    });
+
+    function arrowScroll(arrow, downPos, upPos) {
+      if (arrow.dataset.position === "down") {
+        window.scroll({
+          top: downPos,
+          behavior: "smooth",
+        });
+      } else {
+        window.scroll({
+          top: upPos,
+          behavior: "smooth",
+        });
+      }
+    }
+    console.log(midPageArrow.offsetTop);
   }
 
   carouselFunction();
   gridFunction();
   openFullDescription();
   rotateHeaderImages();
+  scrollFunction();
 
 }());

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rudolf Steiner Publications 0.1</title>
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:650px)" href="/css/default.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:650px)" href="/css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:650px)" href="./css/default.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:650px)" href="./css/mobile.css">
     <script src="script.js" type="module"></script>
+    <!-- <script src="bundle.js" defer></script> -->
 </head>
 <body>
     <div id="modal" class="hidden">
@@ -16,12 +17,18 @@
             
         </div>
     </div>
+    <div id="floating-btn-top" title="Back to the top" class="hidden hidden-mobile">&#8679;</div>   
     <div id="header">
-        <p>“Research Rudolf Steiner's works on-line ... buy the Book to study at home!”</p>
-        <p>– the e.Librarian</p>
-        <h1>Spirit Working</h1>
-        <h2>Anthroposophy in Practice</h2>
-        <p>Spirit Working is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
+        <div id="first-text-div">
+            <p>“Research Rudolf Steiner's works on-line ... buy the Book to study at home!”</p>
+            <p>– the e.Librarian</p>
+        </div>
+        <div id="titles-div">
+            <h1>Anthroposophical Publications</h1>
+            <h2>Spirit Working in the World</h2>
+        </div>
+        <p id="header-description-div">Spirit Working is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
+        <div id="header-arrow" class="rotate-arrow-down arrow hidden-mobile" data-position="down"><<</div>
     </div>
     <div id="main">
         <div id="arrow-left-container">
@@ -45,7 +52,9 @@
         <div id="painting-bottom">
             <p>Click on the image to see full painting in RSArchive's e.Gallery!</p>
         </div>
-        <div id="background-div" class="hidden-tablet"  ></div>
+        <div id="background-div" class="hidden-tablet">
+            <div id="mid-page-arrow" class="rotate-arrow-down arrow" data-position="down"><<</div>
+                </div>
         <div id="books-grid-outer">
             <div id="grid-selector">
                 
@@ -77,6 +86,7 @@
             <p id="background-painting">Background painting:</p>
             <div id="footer-painting-keys"></div>
             <div id="footer-painting-values"></div>
+            <a id="footer-painting-link" href="">See full painting in RSArchive's e.Gallery!</a>
         </div>
         <div class="footer-divs" id="contact-info">
             <p>Contact:</p>
@@ -85,7 +95,9 @@
         <div class="footer-divs">
             <p style="text-align:center">Other info</p>
         </div>
-        <div class="footer-divs"></div>
+        <div class="footer-divs">
+            <p style="text-align:center">Other info</p>
+        </div>
     </div>
     
     <template data-book-template>

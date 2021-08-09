@@ -20,7 +20,7 @@ export const openFullDescription = () => {
     books.forEach(book => {
       if (eventTargetParent.dataset.id == book.id) {
         const img = modalInner.querySelector("[data-img]")
-        img.src = `/img/${book.img}`
+        img.src = `./img/${book.img}`
         const title = modalInner.querySelector("[data-title]")
         title.innerText = book.title
         if (book["sub-title"]) {

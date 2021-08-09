@@ -62,5 +62,11 @@ export const descriptions = [
     "short":
       "Ute Craemer is an educator and social worker who has dedicated over fifty years of her life to teaching and nurturing the poor children of the favelas (slums) in Brazil. As an experienced Waldorf teacher, she has been able to understand the needs of the children and their families and provide them with the spiritual nourishment they cry out for. Favela Children is a moving and informative account of Ute's Craemer's social work in the favelas and of her personal development...",
   },
-  { id: 10, "long": "", "short": "" },
+  {
+    id: 10,
+    "long":
+      "Sergio and his younger brother, Divino are poor children who live in a favela (slum) in Sao Paulo, Brazil. They go on vacation with their revered teacher, dona Ute (pronounced oo-teh), to the country house of one of Ute’s friends. Once there, they leave the house together to fetch kindling wood. They cross a stream and discover a strange round mound surrounded by white stones. Divino impetuously climbs the mound and convinces his brother to follow. Due to the mound’s magic forces, they fall asleep. They wake up in the land of Maxa. A girl, Mara, leads them through the jungle to her village where the meet the queen, Mamara. She tells them the history of the marvelous juice of immortality, vitaluz. They never grow old or die by drinking vitaluz, but never have children either. Queen Mamara and Princess Mara ask the boys to rescue Mireya, a young girl also from Brazil, who had been kidnapped by King Alaram. The boys agree to try, assisted by Platero, a white donkey as charming as he is stubborn, and a mysterious little man named Tamoshot. The search for Mireya is a dangerous adventure, but also the means of learning many important things about life. ",
+    "short":
+      "Sergio and his younger brother, Divino are poor children who live in a favela (slum) in Sao Paulo, Brazil. They go on vacation with their revered teacher, dona Ute (pronounced oo-teh), to the country house of one of Ute’s friends. Once there, they leave the house together to fetch kindling wood. They cross a stream and discover a strange round mound surrounded by white stones...",
+  },
 ]
