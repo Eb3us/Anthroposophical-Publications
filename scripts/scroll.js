@@ -3,9 +3,8 @@ export function scrollFunction() {
   const midPageArrow = document.querySelector("#mid-page-arrow")
   const arrowTop = headerArrow.offsetTop
   const bookGridTop = document.querySelector("#books-grid-outer").offsetTop
-  const pointOfInversionHeaderArrow = document.querySelector(
-    "#header-description-div"
-  ).offsetTop
+  const pointOfInversionHeaderArrow =
+    document.querySelector("#header-description-div").offsetTop + 80
   const pointOfInversionMidPageArrow =
     document.querySelector("#background-div").offsetTop
   const floatingArrow = document.querySelector("#floating-btn-top")
