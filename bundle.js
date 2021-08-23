@@ -356,7 +356,7 @@
     {
       id: 5,
       "long":
-        "“The three great masters of the Renaissance [Leonardo, Michelangelo, Raphael] strove to work in the spirit of that age. And the one who already had a kind of seed, I would say, that grew into everything that has come and is still to come since that time was Leonardo.” - Rudolf Steiner, Dornach, November 1, 1916. A single lecture given by Rudolf Steiner at Berlin on February 13th 1913, translated by Peter Stebbing, and edited by James D. Stewart, the e.Librarian at the Rudolf Steiner Archive & e.Lib. It is the eleventh of fourteen lectures in the volume entitled, Results of Spiritual Investigation, published in German as, Ergebnisse der Geistesforschung.<br><br>This lecture is the second in a series of four lectures from GA 62, that are newly translated by Peter Stebbing. Edited by James Stewart. Visit the on-line version of this book by clicking here. Or, click on the cover image to buy this book at Amazon.com, to read or study at home. ",
+        "“The three great masters of the Renaissance [Leonardo, Michelangelo, Raphael] strove to work in the spirit of that age. And the one who already had a kind of seed, I would say, that grew into everything that has come and is still to come since that time was Leonardo.” - Rudolf Steiner, Dornach, November 1, 1916. A single lecture given by Rudolf Steiner at Berlin on February 13th 1913, translated by Peter Stebbing, and edited by James D. Stewart, the e.Librarian at the The e.Lib, Inc. It is the eleventh of fourteen lectures in the volume entitled, Results of Spiritual Investigation, published in German as, Ergebnisse der Geistesforschung.<br><br>This lecture is the second in a series of four lectures from GA 62, that are newly translated by Peter Stebbing. Edited by James Stewart. Visit the on-line version of this book by clicking here. Or, click on the cover image to buy this book at Amazon.com, to read or study at home. ",
       "short":
         "“The three great masters of the Renaissance [Leonardo, Michelangelo, Raphael] strove to work in the spirit of that age. And the one who already had a kind of seed, I would say, that grew into everything that has come and is still to come since that time was Leonardo.” - Rudolf Steiner, Dornach, November 1, 1916.",
     },
@@ -377,7 +377,7 @@
     {
       id: 8,
       "long":
-        "This book is a First Edition, never before translated into English, series of six lectures. Rudolf Steiner gave these lectures early in the year of 1919 at Zurich, Switzerland. Here Steiner proffers ideas to solve the social problems and necessities required by life, by studying the life sciences and social life, and the living conditions of the present-day humans. He expresses how the social will should be the basis of a new scientific order, and what the role of the modern worker should be.These six lectures are a translation from the German edition 'Die soziale Frage,' (Bn/GA/CW Number 328 in the Bibliographical Survey, 1961), published by the Rudolf Steiner-Nachlassverwaltung, Dornach, Switzerland, 1977. They are published as transcripts unrevised by the lecturer. This First English edition was translated by Hanna von Maltitz, and was edited by James D. Stewart, e.Librarian at the 'Rudolf Steiner Archive & e.Lib.' Illustrations and artwork were created by Hanna von Maltitz. Thanks to the Basil Gibaud Memorial Trust, this translation has been made available for everyone. The text of both the printed and eBook editions has numerous links to on-line web content that will enhance the reader/researcher in their understanding of the text: search all lectures, read/research the original German texts, compare the English translation to the original German paragraph by paragraph, and explore other related material. You can research Rudolf Steiner's works on-line ... buy the book to read and study at home.<br><br>Visit the on-line version of this book by clicking here. Or, click on the cover image to buy this book at Amazon.com, to read or study at home. ",
+        "This book is a First Edition, never before translated into English, series of six lectures. Rudolf Steiner gave these lectures early in the year of 1919 at Zurich, Switzerland. Here Steiner proffers ideas to solve the social problems and necessities required by life, by studying the life sciences and social life, and the living conditions of the present-day humans. He expresses how the social will should be the basis of a new scientific order, and what the role of the modern worker should be.These six lectures are a translation from the German edition 'Die soziale Frage,' (Bn/GA/CW Number 328 in the Bibliographical Survey, 1961), published by the Rudolf Steiner-Nachlassverwaltung, Dornach, Switzerland, 1977. They are published as transcripts unrevised by the lecturer. This First English edition was translated by Hanna von Maltitz, and was edited by James D. Stewart, e.Librarian at the 'The e.Lib, Inc.' Illustrations and artwork were created by Hanna von Maltitz. Thanks to the Basil Gibaud Memorial Trust, this translation has been made available for everyone. The text of both the printed and eBook editions has numerous links to on-line web content that will enhance the reader/researcher in their understanding of the text: search all lectures, read/research the original German texts, compare the English translation to the original German paragraph by paragraph, and explore other related material. You can research Rudolf Steiner's works on-line ... buy the book to read and study at home.<br><br>Visit the on-line version of this book by clicking here. Or, click on the cover image to buy this book at Amazon.com, to read or study at home. ",
       "short":
         "This book is a First Edition, never before translated into English, series of six lectures. Rudolf Steiner gave these lectures early in the year of 1919 at Zurich, Switzerland. Here Steiner proffers ideas to solve the social problems and necessities required by life, by studying the life sciences and social life, and the living conditions of the present-day humans.",
     },
@@ -880,26 +880,31 @@
       "url": "./img/header/maltitz-trial-by-fire.jpg",
       "rsarchive":
         "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von&name=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von%2FTrialByFire960.jpg&srow=1",
-      "tone": "dark",
+      "tone": "light",
     },
     {
       "id": "3",
-      "title": "Fairy Tale",
-      "artist": "Gold, Monica",
-      "url": "./img/header/gold-fairy-tale.jpg",
+      "title": "Tree Song",
+      "artist": "Maltitz, Hanna von",
+      "year": "2013",
+      "material": "Oil on canvasboard",
+      "dimensions": "50x70 cm",
+      "url": "./img/header/TreeSong960.jpg",
       "rsarchive":
-        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FGold_Monica&name=Site_index%2FAnthroposophical%2FGold_Monica%2Ffairy_tale_ec.jpg&srow=1",
-      "tone": "light",
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von&name=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von%2FTreeSong960.jpg&srow=1",
+      "tone": "dark",
     },
     {
       "id": "4",
-      "title": "Ephesus II",
-      "artist": "Gold, Monica",
-      "material": "Watercolor",
-      "url": "./img/header/gold-ephesus-ii.jpg",
+      "title": "Heaven's Gate",
+      "artist": "Maltitz, Hanna von",
+      "year": "2013",
+      "material": "Oil on canvasboard",
+      "dimensions": "30x40 cm",
+      "url": "./img/header/HeavensGate960.jpg",
       "rsarchive":
-        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FGold_Monica&name=Site_index%2FAnthroposophical%2FGold_Monica%2FTREE.jpg&srow=1",
-      "tone": "light",
+        "https://fineart.elib.com/fineart.php?showpic=1&prev=Collection%2FAnthroposophical&dir=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von&name=Site_index%2FAnthroposophical%2FMaltitz_Hanna_von%2FHeavensGate960.jpg&srow=1",
+      "tone": "dark",
     },
     {
       "id": "5",

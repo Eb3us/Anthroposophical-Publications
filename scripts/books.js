@@ -11,7 +11,7 @@ export const books = [
     },
     "paperback": {
       "pages": "176",
-      "publication date": "december 10, 2019",
+      "publication date": "December 10, 2019",
       "dimensions": "5.5 x 0.4 x 8.5 inches",
       "shipping weight": "11.6 ounces",
       "ISBN-10": "1-948302-16-6",
@@ -19,7 +19,7 @@ export const books = [
     },
     "kindle": {
       "size": "999kb",
-      "publication date": "december 11, 2019",
+      "publication date": "December 11, 2019",
       "text-to-speech": "enabled",
       "x-ray": "not enabled",
       "word wise": "enabled",
@@ -77,7 +77,6 @@ export const books = [
       "Alter Ego": "Roberto Fox",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "Translator": "Peter Stebbing",
       "Ilustrator": "Celina MacKern",
     },
     "paperback": {
