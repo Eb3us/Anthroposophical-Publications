@@ -163,6 +163,7 @@ body div {
 		width: 100%;
 	}
 }
+
 #first-text-div {
 	position: absolute;
 	left:0;
@@ -181,6 +182,7 @@ body div {
 	flex-direction: column;
 	top: 13%;
 }
+
 #header-description-div {
 	position: absolute;
 	left: 0;
@@ -308,6 +310,11 @@ body div {
 	0% {bottom: -20px;}
 	100% {bottom: -20px}
 }
+@keyframes point-inverse {
+    0% {bottom: -20px;}
+    100% {bottom: -20px}
+}
+
 .rotate-arrow-down {
 	transform: rotate(90deg);
 }
@@ -316,6 +323,7 @@ body div {
 	left: 47%;
 	animation: point-inverse 5s ease-in-out infinite;
 }
+
 #main {
 	grid-area: 2 / 1 / span 1 / 1;
 	display: grid;
@@ -326,6 +334,10 @@ body div {
 @media only screen and (min-width: 700px) {
 	#main {grid-template: 50px 120px 120px 50px 120px 1fr / 50px repeat(10, 1fr) 50px ;}
 }
+@media only screen and (min-width: 700px) {
+    #main {grid-template: 50px 120px 120px 50px 120px 1fr / 50px repeat(10, 1fr) 50px ;}
+}
+
 #carousel-outer {
 	grid-area: 1 / 2 / 5 / span 10;
 	overflow: hidden;
@@ -519,6 +531,11 @@ body div {
 	#books-grid-outer {
 		grid-area: -1 / 2 / span 1 / 12;
 	}
+}
+@media only screen and (min-width: 700px) {
+    #books-grid-outer {
+        grid-area: -1 / 2 / span 1 / 12;
+    }
 }
 #grid-selector {
 	grid-area: 1 / 1 / 2 / 6;
