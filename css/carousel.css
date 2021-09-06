@@ -1,0 +1,195 @@
+#carousel-outer {
+    grid-area: 1 / 2 / 5 / span 10;
+    overflow: hidden;
+    padding: 0;
+    background-color: #FFFEDB;
+    position: relative;
+}
+
+#carousel-inner {
+    /*grid-template: js generated*/
+    height: 110%;
+    width: 100%;
+    overflow-x: scroll;
+    display: grid;
+    gap: 0.5em;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    touch-action:pan-y;
+}
+
+#carousel-inner .book-rectangle{
+    grid-row: 1 / 2;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    scroll-snap-align: center;
+}
+
+#carousel-inner .book-rectangle:hover .book-cover {
+    filter: brightness(1.07);
+}
+
+#carousel-inner .book-rectangle:hover {
+    color: #333;  
+}
+
+.text-div {
+    width: 100%;
+    height: 100%;
+    padding: 0.2em;
+    overflow: hidden;
+}
+
+.book-cover {
+    height: 96%;
+}
+
+.book-title {
+    font-family: novam;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: novam;
+    text-align: center;
+    font-style: italic;
+}
+
+.book-description-div {
+    height: 190px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    text-align: justify;
+    margin-left:auto;
+    margin-right: auto;
+}
+.click-alert {
+    position: absolute;
+    bottom: 50px;
+    width: max-content;
+    text-shadow: 0px 0px 5px orange;
+    background-color: #FFFEDB;
+    
+}
+#dots {
+    position:absolute;
+    font-size: 5rem;
+    text-shadow: 0px 0px 5px #999;
+    color:rgba(255,254, 219, 1);
+    padding: 0;
+    bottom: -15px;
+    width: 300px;
+    margin-left: -150px;
+    left: 55%;
+    text-align: center;
+}
+.selected-dot {
+    text-shadow: 0px 0px 5px black;
+    color:white;
+}
+#arrow-left-container, #arrow-right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arrow-left-container {
+    grid-area: 2 / 1 / span 2 / 1;
+    
+    
+    
+}
+#arrow-right-container {
+    grid-area: 2 / -2 / span 2 / span 1;
+    
+}
+#arrow-left {
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
+}
+#arrow-left, #arrow-right {
+    position:absolute;
+    font-size: 5em;
+    font-weight: bold;
+    color:#FFFEDB;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    font-family: monospace;
+    
+}
+#arrow-left:hover, #arrow-right:hover {
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    color:#FFFEEB;
+}
+
+#painting-preview, #painting-title-author-div, #painting-bottom {
+    display: none;
+}
+
+#painting-preview p {
+    margin: 0;
+    color: #FFFEDB;
+    text-shadow: 0px 0px 5px black, 2px 2px 2px black, -2px -2px 2px black, -2px 2px 2px black,2px -2px 2px black;
+    font-size: 110%;
+    
+}
+#painting-preview:hover {
+    background-size:auto 120%;
+    box-shadow: 0px 0px 25px inset #FFFEDB;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Max size: min-width: 800px     +++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width:800px) {
+    #arrow-right-container {
+        grid-area: 2 / 8 / span 2 / 9;
+    }
+    
+    #carousel-outer {
+        grid-area: 1 / 2 / 5 / span 6 ;    
+        
+    }
+    .text-div {
+        margin-left: 1rem;
+    }
+    #painting-preview {
+        grid-area: 2 / 9 / 4 / 12;
+        color: black;
+        font-size: 1em;
+        padding: 0;
+        border-radius: 20px;
+        text-shadow: 0px 0px 5px white;
+        background-position: center;
+        background-size:auto 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #painting-title-author-div {
+        grid-area: 1 / 9 / 2 / 12;
+        
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display:block;
+    }
+    #painting-bottom {
+        grid-area: 4 / 9 / 5 / 12;
+        padding: 0;
+        text-align: center;
+        display:block;
+    }
+}
+

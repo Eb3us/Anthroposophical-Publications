@@ -10,7 +10,7 @@ export function scrollFunction() {
   const floatingArrow = document.querySelector("#floating-btn-top")
 
   headerArrow.addEventListener("click", () => {
-    arrowScroll(headerArrow, arrowTop + 40, 0)
+    arrowScroll(headerArrow, arrowTop - 15, 0)
   })
 
   midPageArrow.addEventListener("click", () => {

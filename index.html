@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudolf Steiner Publications 0.1</title>
-    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    <title>Anthroposophical Publications</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/booksmenu.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    
+    
     
     <script src="script.js" type="module"></script>
     <!-- <script src="bundle.js" defer></script> -->
@@ -17,20 +25,30 @@
             
         </div>
     </div>
+
     <div id="floating-btn-top" title="Back to the top" class="hidden">&#10145;</div>   
+
+    
     <div id="header">
         <div id="first-text-div">
-            <p>“Research Rudolf Steiner's works on-line ... buy the Book to study at home!”</p>
-            <p>– the e.Librarian</p>
+            <p class="no-break-lines">&#8220;Research Rudolf Steiner's works on-line ... buy the Book to study at home!&#8221;<br>&#8211; the e.Librarian</p>
         </div>
         <div id="titles-div">
             <h1>Anthroposophical Publications</h1>
-            <h2>Spirit Working in the World</h2>
+            <h2>Spirit Working<span id="sub-title-line-break"><br></span> in the World</h2>
         </div>
-        <p id="header-description-div">Spirit Working is an imprint of The Rudolf Steiner Archive. Our books are offered at reasonable prices made possible by print-on-demand technology.  </p>
-        <div id="header-arrow" class="rotate-arrow-down arrow header-arrow-animation" data-position="down">&#10151;</div>
+        <div id="header-description-div">
+            <p>Anthroposophical Publications and Rudolf Steiner Publications are imprints of The e.Lib, Inc. Our books are offered at reasonable prices made possible by print-on-demand technology.</p>
+        </div>
+        <div id="arrow-wrapper">
+            <div id="header-arrow" class="rotate-arrow-down arrow header-arrow-animation" data-position="down">&#10144;</div>
+        </div>  
     </div>
+
+
     <div id="main">
+
+
         <div id="arrow-left-container" class="hidden-mobile">
             <div data-arrow id="arrow-left" tabindex="1">&#10151;</div>
         </div>
@@ -44,17 +62,22 @@
             </div>
             <div id="dots"></div> 
         </div>
+
         <div id="painting-title-author-div" class="hidden-tablet">
             <div id="painting-title"></div>
             <div id="painting-artist"></div>
         </div>
         <div id="painting-preview" class="hidden-tablet"></div>
         <div id="painting-bottom">
-            <p>Click on the image to see full painting in RSArchive's e.Gallery!</p>
+            <p>Click on the image to see full painting in Fine Art Presentation's e.Gallery!</p>
         </div>
+
+
         <div id="background-div" class="hidden-tablet hidden-mobile">
-            <div id="mid-page-arrow" class="rotate-arrow-down arrow" data-position="down">&#10151;</div>
+            <div id="mid-page-arrow" class="rotate-arrow-down arrow" data-position="down">&#10144;</div>
                 </div>
+
+
         <div id="books-grid-outer">
             <div id="grid-selector">
                 
@@ -86,7 +109,7 @@
             <p id="background-painting">Background painting:</p>
             <div id="footer-painting-keys"></div>
             <div id="footer-painting-values"></div>
-            <a id="footer-painting-link" href="">See full painting in RSArchive's e.Gallery!</a>
+            <a id="footer-painting-link" href="">Click on the image to see full painting in Fine Art Presentation's e.Gallery!</a>
         </div>
         <div class="footer-divs" id="contact-info">
             <p>Contact:</p>

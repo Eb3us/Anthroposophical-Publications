@@ -1,0 +1,242 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Default values: mobile and shared     +++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#header {
+    grid-area: 1 / 1 / 2 / 1;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    max-height: 100%;
+    padding: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#first-text-div {
+        max-width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+}
+
+#titles-div {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+    #header h1 {
+        font-family: novabr;
+        margin: 0;
+        font-size: 2.4em;
+        margin-bottom: 0.9rem;
+    
+    }
+    
+    #header h2 {
+        font-family: novabr;
+        font-size: 1.6em;
+        margin:0;
+        
+    }
+
+#header-description-div {
+    max-width: 80%;
+    margin-top: 0;
+    
+    
+}
+
+.light-header-text {
+    color:#FFFEDB;
+    text-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+.dark-header-text {
+    color: #200306;
+    text-shadow: 0px 0px 8px #FFFEDB, 0px 0px 2px #FFFEDB;
+}
+
+
+#header p {
+    font-size: 105%;
+    font-weight: 400;
+    color: black;
+    background-color: rgba(255,254,219,0.7);
+    text-shadow: 0px 0px 0px transparent;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0.3em;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 99%;
+}
+#arrow-wrapper {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+    height: 25%;
+
+}
+#header-arrow {
+    font-family: monospace;
+    font-weight: bold;
+    padding: 0;
+    font-size: 7vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transform-origin: 50% 0%;
+    line-height: 0.5;
+    
+}
+.header-arrow-animation {
+    animation: point 4s ease-in infinite;
+    animation-direction: alternate;
+}
+.rotate-arrow-down {
+    transform: rotate(90deg);
+    
+}
+.rotate-arrow-up {  
+    transform: rotate(270deg);
+    animation: point-inverse 1s linear infinite;
+}
+
+
+
+@keyframes point {
+    0%{transform: rotate(90deg) translateX(20px)}
+    50% {transform: rotate(90deg) translateX(35px)}
+    75% {transform: rotate(90deg) translateX(20px);color:#FFFA86}
+    100% {transform: rotate(90deg) translateX(20px) ;}
+   
+}
+@keyframes point-inverse {
+    0% {transform: rotate(270deg) translateX(5px) ;}
+    100% {transform: rotate(270deg) translateX(5px) ;}
+}
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Second size: min-width: 650px     +++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width:500px) and (orientation: portrait) {
+    #header {padding:0} 
+    #first-text-div, #titles-div{margin:0; padding: 0; max-width: 80%;}
+    #first-text-div p {margin: 0; font-size: 80%}
+    
+    #header h1 {
+        font-size: 5em;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    #header h2 {
+        font-size: 2.8em;
+        margin-bottom: 0;
+    }
+    #header-description-div{
+        max-width: 60%;
+    }
+    #header p {
+        font-size: 1.3em;
+    }
+    #header-arrow {
+        font-size: 14vw;
+    }
+    
+}
+
+@media only screen and (max-width:800px) and (orientation: landscape) {
+    #header-description-div{
+        display: none;
+    }
+   #arrow-wrapper {
+    display: none
+   }
+   
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Max size: min-width: 1024px     +++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width:1024px) {
+    #header {
+        width: 100%;
+    }
+    #first-text-div {
+        margin-top: 0.5rem;
+    }
+    #titles-div{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #header-description-div {
+        top: 55%;
+        max-width: 40%;
+        display: block;
+        
+    }
+    #header h1 {
+        font-size: 4.5em ;
+    }
+    #header h2 {
+        font-size: 2.5em ;
+    }
+    #header p {
+        font-size: 125%;
+        padding: 0.5em;
+    }
+    
+    #sub-title-line-break {
+        display: none;
+    }
+    #arrow-wrapper {
+        align-items: center;
+    }
+    #header-arrow{
+        font-size: 7vw;
+        
+    }
+  
+    @keyframes point {
+        0%{transform: rotate(90deg) translateX(20px)}
+        50% {transform: rotate(90deg) translateX(20px)}
+        75% {transform: rotate(90deg) translateX(35px);color:#FFFEA6}
+        100% {transform: rotate(90deg) translateX(20px) ;}
+       
+    }
+    @keyframes point-inverse {
+        0% {transform: rotate(270deg) translateX(-40px) ;}
+        100% {transform: rotate(270deg) translateX(-40px) ;}
+    }
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Size: 650px to 1024px LANDSCAPE    +++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-width:650px) and (max-width:1024) and (orientation: landscape) {
+    #header {justify-content: flex-start;}
+    /* #titles-div {margin-top:0} */
+}
+

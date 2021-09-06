@@ -21,21 +21,27 @@ export const openFullDescription = () => {
       if (eventTargetParent.dataset.id == book.id) {
         const img = modalInner.querySelector("[data-img]")
         img.src = `./img/${book.img}`
+
         const title = modalInner.querySelector("[data-title]")
         title.innerText = book.title
+
         if (book["sub-title"]) {
           const subTitle = modalInner.querySelector("[data-sub-title]")
           subTitle.innerText = book["sub-title"]
         }
+
         if (book.online !== "no") {
           const onlineButton = modalInner.querySelector("[data-online-btn]")
           onlineButton.classList.remove("hidden")
           onlineButton.href = book.online
         }
+
         const description = modalInner.querySelector("[data-description]")
         description.innerHTML = descriptions[book.id - 1].long
+
         const btn = modalInner.querySelector("[data-buy-btn]")
         btn.href = book.url
+
         const globalColOne = modalInner.querySelector(
           "[data-global-specs] .col-1"
         )
@@ -63,6 +69,7 @@ export const openFullDescription = () => {
             kindleArr = Object.keys(book.kindle)
             kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
             kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
+            console.log(kindleArr.length)
           }
           if (book.paperback) {
             paperbackArr = Object.keys(book.paperback)

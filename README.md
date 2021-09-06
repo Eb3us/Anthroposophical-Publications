@@ -5,5 +5,6 @@ clone git https://github.com/Eb3us/RSP/
 npm install dependencies
 ### once changes are made the file is compiled with
 npm start
-### bundle.js is created. All thats left is pointing the html to the new file
+### bundle.js is created. All thats left is pointing the html to the new file! 
+don't forget to remove the type="module" from the script tag and add the defer attribute.
  
