@@ -14,7 +14,7 @@
       },
       "paperback": {
         "pages": "176",
-        "publication date": "december 10, 2019",
+        "publication date": "December 10, 2019",
         "dimensions": "5.5 x 0.4 x 8.5 inches",
         "shipping weight": "11.6 ounces",
         "ISBN-10": "1-948302-16-6",
@@ -22,7 +22,7 @@
       },
       "kindle": {
         "size": "999kb",
-        "publication date": "december 11, 2019",
+        "publication date": "December 11, 2019",
         "text-to-speech": "enabled",
         "x-ray": "not enabled",
         "word wise": "enabled",
@@ -80,7 +80,6 @@
         "Alter Ego": "Roberto Fox",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "Translator": "Peter Stebbing",
         "Ilustrator": "Celina MacKern",
       },
       "paperback": {
@@ -757,21 +756,27 @@
         if (eventTargetParent.dataset.id == book.id) {
           const img = modalInner.querySelector("[data-img]");
           img.src = `./img/${book.img}`;
+
           const title = modalInner.querySelector("[data-title]");
           title.innerText = book.title;
+
           if (book["sub-title"]) {
             const subTitle = modalInner.querySelector("[data-sub-title]");
             subTitle.innerText = book["sub-title"];
           }
+
           if (book.online !== "no") {
             const onlineButton = modalInner.querySelector("[data-online-btn]");
             onlineButton.classList.remove("hidden");
             onlineButton.href = book.online;
           }
+
           const description = modalInner.querySelector("[data-description]");
           description.innerHTML = descriptions[book.id - 1].long;
+
           const btn = modalInner.querySelector("[data-buy-btn]");
           btn.href = book.url;
+
           const globalColOne = modalInner.querySelector(
             "[data-global-specs] .col-1"
           );
@@ -799,6 +804,7 @@
               kindleArr = Object.keys(book.kindle);
               kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`;
               kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`;
+              console.log(kindleArr.length);
             }
             if (book.paperback) {
               paperbackArr = Object.keys(book.paperback);
@@ -984,15 +990,14 @@
     const midPageArrow = document.querySelector("#mid-page-arrow");
     const arrowTop = headerArrow.offsetTop;
     const bookGridTop = document.querySelector("#books-grid-outer").offsetTop;
-    const pointOfInversionHeaderArrow = document.querySelector(
-      "#header-description-div"
-    ).offsetTop;
+    const pointOfInversionHeaderArrow =
+      document.querySelector("#header-description-div").offsetTop + 80;
     const pointOfInversionMidPageArrow =
       document.querySelector("#background-div").offsetTop;
     const floatingArrow = document.querySelector("#floating-btn-top");
 
     headerArrow.addEventListener("click", () => {
-      arrowScroll(headerArrow, arrowTop + 40, 0);
+      arrowScroll(headerArrow, arrowTop - 15, 0);
     });
 
     midPageArrow.addEventListener("click", () => {
@@ -1043,10 +1048,30 @@
     console.log(midPageArrow.offsetTop);
   }
 
+  function adaptToDevices() {
+    function resetHeight() {
+      let isMobile = window.matchMedia("(max-width:650px)").matches;
+      let isMobilePortrait = window.matchMedia(
+        "(max-width:800px) and (orientation:landscape)"
+      ).matches;
+      if (isMobile) {
+        document.body.style.gridTemplateRows = `92vh auto auto`;
+      } else if (isMobilePortrait) {
+        document.body.style.gridTemplateRows = `84vh auto auto`;
+      } else {
+        document.body.style.gridTemplateRows = `100vh auto auto`;
+      }
+    }
+
+    window.addEventListener("resize", resetHeight);
+    resetHeight();
+  }
+
   carouselFunction();
   gridFunction();
   openFullDescription();
   rotateHeaderImages();
+  adaptToDevices();
   scrollFunction();
 
 }());
