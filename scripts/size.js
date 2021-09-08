@@ -1,3 +1,4 @@
+import { scrollFunction } from "./scroll.js"
 export function adaptToDevices() {
   function resetHeight() {
     let isMobile = window.matchMedia("(max-width:650px)").matches
@@ -13,6 +14,9 @@ export function adaptToDevices() {
     }
   }
 
-  window.addEventListener("resize", resetHeight)
+  window.addEventListener("resize", () => {
+    resetHeight()
+    scrollFunction()
+  })
   resetHeight()
 }
