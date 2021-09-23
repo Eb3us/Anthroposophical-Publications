@@ -67,18 +67,18 @@ export const openFullDescription = () => {
         const asignArrays = () => {
           if (book.kindle) {
             kindleArr = Object.keys(book.kindle)
-            kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
-            kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 50px)`
+            kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`
+            kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`
             console.log(kindleArr.length)
           }
           if (book.paperback) {
             paperbackArr = Object.keys(book.paperback)
-            paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`
-            paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 50px)`
+            paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
+            paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
           }
           globalArr = Object.keys(book.global)
-          globalColOne.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`
-          globalColTwo.style.gridTemplateRows = `repeat(${globalArr.length}, 50px)`
+          globalColOne.style.gridTemplateRows = `repeat(${globalArr.length}, 40px)`
+          globalColTwo.style.gridTemplateRows = `repeat(${globalArr.length}, 40px)`
         }
         asignArrays()
 

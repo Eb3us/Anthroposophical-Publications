@@ -78,7 +78,7 @@ body {
     font-family: monospace;
     font-weight: bold;
     width: min-content;
-    display: flex;
+    display: none;
     align-items:center;
     justify-content: center;
     transform-origin: 50% 0%;
@@ -133,6 +133,9 @@ body {
 
 @media only screen and (min-width: 650px) {
     #main {grid-template: 50px 120px 120px 50px 120px 1fr / 50px repeat(10, 1fr) 50px ;}
+    #mid-page-arrow {
+        display: flex;
+    }
 }
 
 
