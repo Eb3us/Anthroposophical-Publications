@@ -99,10 +99,10 @@
     display: none;
     align-items: center;
     justify-content: center;
+    width: 50px;
 }
 #arrow-left-container {
     grid-area: 2 / 1 / span 2 / 1;
-    
     
     
 }
@@ -111,8 +111,7 @@
     
 }
 #arrow-left {
-    transform-origin: 50% 50%;
-    transform: rotate(180deg);
+    transform: scaleX(-1) 
 }
 #arrow-left, #arrow-right {
     position:absolute;

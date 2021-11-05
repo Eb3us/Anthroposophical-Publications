@@ -32,7 +32,7 @@ export const books = [
     "categories": ["Social Science", "Modern Translations"],
     "url": "https://amzn.to/2P4pMnx",
     "img": "towthreesociety_covs.jpg",
-    "online": "no"
+    "online": "no",
   },
   {
     "id": "2",
@@ -67,7 +67,8 @@ export const books = [
     "url": "https://amzn.to/36rj94r",
     "img": "hermangrimm01_covs.jpg",
     "categories": ["Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html",
   },
   {
     "id": "3",
@@ -102,13 +103,13 @@ export const books = [
     "url": "https://amzn.to/2Qcs1ba",
     "img": "AnthroFantasies_covs.jpg",
     "categories": ["Fiction"],
-    "online": "no"
+    "online": "no",
   },
   {
     "id": "4",
-    "title":
-      "Fairy Tales",
-    "sub-title": "in the Light of Spiritual Investigation and A Mongolian Legend:",
+    "title": "Fairy Tales",
+    "sub-title":
+      "in the Light of Spiritual Investigation and A Mongolian Legend:",
     "global": {
       "Author": "Rudolf Steiner",
       "Editor": "James D. Stewart",
@@ -137,12 +138,12 @@ export const books = [
     "url": "https://amzn.to/3lHrKZ2",
     "img": "FairyTales1_covs.jpg",
     "categories": ["Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html",
   },
   {
     "id": "5",
-    "title":
-      "Leonardo's Spiritual Stature",
+    "title": "Leonardo's Spiritual Stature",
     "sub-title": "at the Turning Point of Modern Times",
     "global": {
       "Author": "Rudolf Steiner",
@@ -173,7 +174,8 @@ export const books = [
     "url": "https://amzn.to/2Odm4rV",
     "img": "leonardostature_covs.jpg",
     "categories": ["Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html",
   },
   {
     "id": "6",
@@ -193,7 +195,8 @@ export const books = [
     "url": "https://amzn.to/2U5g30b",
     "img": "impulse4renewal_covs.jpg",
     "categories": ["Social Science", "Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
   },
   {
     "id": "7",
@@ -214,7 +217,8 @@ export const books = [
     "url": "https://amzn.to/2tAYXvO",
     "img": "raphaelsmission_covs.jpg",
     "categories": ["Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2018/RapMis_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2018/RapMis_index.html",
   },
   {
     "id": "8",
@@ -248,7 +252,8 @@ export const books = [
     "url": "https://amzn.to/2XkGvFp",
     "img": "thesocialquestion2_covs.jpg",
     "categories": ["Social Science", "Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA328/English/eLib2017/SoQues_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA328/English/eLib2017/SoQues_index.html",
   },
   {
     "id": "9",
@@ -283,7 +288,7 @@ export const books = [
     "url": "",
     "img": "favelachildren_covs.png",
     "categories": ["Social Science"],
-    "online": "no"
+    "online": "no",
   },
   {
     "id": "10",
@@ -316,6 +321,6 @@ export const books = [
     "url": "",
     "img": "magicmound_covs.png",
     "categories": ["Fiction", "Children's Books"],
-    "online": "no"
+    "online": "no",
   },
 ]
