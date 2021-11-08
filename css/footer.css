@@ -6,28 +6,31 @@
     background-position-y: bottom;
     background-attachment: fixed;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    align-items: center;
+    grid-template: 100%;
+    align-items: flex-start;
     gap: 1em;
     overflow: hidden;
-    
+    min-height: 300px
     }
     
     
     
     .footer-divs {
         background-color: rgba(255,254, 219, 0.75);
-        border-radius: 50px;
-        min-height: 100%;
+        border-radius: 20px 20px 80px 20px;
+        min-height: min-content;
         border-top: 1px solid burlywood;
         border-bottom: 1px solid #eb6; 
+        padding: 1em;
+        box-shadow: 2px 2px 10px #433;
     }
-   
+    .footer-divs h2 {
+        font-family: novam;
+    }
     #footer-painting {
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 50px 1fr 50px;
-        
     }
     #footer-painting-keys {
         text-align: right;
@@ -52,12 +55,14 @@
         flex-direction: column;
         align-items: center;
     }
-
+    .sticky-footer {
+        position: sticky;
+    }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++       Min size: min-width: 800px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-    @media only screen and (min-width:1200px) {
+    @media only screen and (min-width:800px) {
         #footer {
             grid-template: 1fr / 1fr 1fr 50%;
             gap: 1.5em;

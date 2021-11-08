@@ -14,10 +14,20 @@
     gap:5px;
 }
 
+#grid-selector > div {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
 #all-books {
     grid-area: 1 / 1 / 2 / 3;
-    align-items: center;
-    text-align: center;
     border: 0.5px solid  #fa7;
     border-radius: 10px;
 }
@@ -48,16 +58,7 @@
     border-radius: 10px;
     margin-left:0.5em;
 }
-#grid-selector > div {
-    cursor: pointer;
-    display: flex;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    border-radius: 10px;
-    
-}
+
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -67,7 +68,7 @@
 }
 .dropbtn {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 .dropdown-content {
@@ -109,6 +110,7 @@
     cursor: pointer;
     align-items: center;
     
+    
 }
 
 .book-img-div:hover, .book-img-div:focus {
@@ -134,17 +136,19 @@
     font-family: novabr;
     text-align: center;
     font-size: 0.9em;
-    margin: 0;
+    margin:0;
+    
 }
 .grid-book-text div {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.grid-book-text div p{
-    margin: 0;
+
+.grid-book-text > p{
+    margin: 4px 0;
     padding: 0;
-    font-size: smaller;
+    font-style: italic;
 }
 
 
@@ -193,7 +197,7 @@
         justify-content: right;
     }
     .dropdown-content {
-        margin-top: 1.5em;
+        margin-top: 1.2em;
         width: 50vw;
         top: 10px;
         left: 0px;
@@ -241,6 +245,9 @@
     #books-grid-inner {
         grid-template-columns:repeat(5, 1fr);
     }
+}
+.dropbtn {
+    text-align: left;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++        size: min-width: 1024px     +++++++++++++++*/

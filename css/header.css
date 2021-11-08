@@ -127,9 +127,9 @@
     100% {transform: rotate(90deg) translateX(20px) ;}
    
 }
-@keyframes point-inverse {
-    0% {transform: rotate(270deg) translateX(5px) ;}
-    100% {transform: rotate(270deg) translateX(5px) ;}
+@keyframes point-inverse { 
+    0% {transform: rotate(270deg) translate(5px, -150%)  ;}
+    100% {transform: rotate(270deg) translate(5px, -150%);}
 }
 
 
@@ -166,12 +166,20 @@
 }
 
 @media only screen and (max-width:800px) and (orientation: landscape) {
+    #header {
+        justify-content: center;
+        align-items: center;
+    }
+    #first-text-div{
+        display: none;
+    }
     #header-description-div{
         display: none;
     }
-   #arrow-wrapper {
-    display: none
-   }
+    #header-arrow {
+        font-size: 10vh;
+        transform-origin: 80% -30%;
+    }
    
 }
 

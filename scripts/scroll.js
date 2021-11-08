@@ -6,12 +6,17 @@ export function scrollFunction() {
   const pointOfInversionHeaderArrow =
     document.querySelector("#header-description-div").offsetTop + 80
   const pointOfInversionMidPageArrow =
-    document.querySelector("#background-div").offsetTop
+    document.querySelector("#carousel-outer").offsetTop
   const floatingArrow = document.querySelector("#floating-btn-top")
+  const main = document.querySelector("#main")
+  const mainTop = main.offsetTop
+  const footer = document.querySelector("#footer")
 
   headerArrow.addEventListener("click", () => {
-    if (screen.width > 560) {
+    if (screen.width > 860) {
       arrowScroll(headerArrow, arrowTop - 15, 0)
+    } else if (screen.width > 560 && screen.width < 800) {
+      arrowScroll(headerArrow, mainTop - 15, 0)
     } else {
       arrowScroll(headerArrow, bookGridTop, 0)
     }
@@ -29,6 +34,8 @@ export function scrollFunction() {
   })
 
   window.addEventListener("scroll", () => {
+    console.log(footer.getBoundingClientRect().bottom)
+    console.log(window.innerHeight + footer.offsetHeight)
     if (window.scrollY >= pointOfInversionHeaderArrow) {
       headerArrow.classList.remove("rotate-arrow-down")
       headerArrow.classList.add("rotate-arrow-up")
@@ -62,5 +69,4 @@ export function scrollFunction() {
       })
     }
   }
-  console.log(midPageArrow.offsetTop)
 }

@@ -145,25 +145,51 @@
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*++++++++++       Max size: min-width: 800px     +++++++++++++++*/
+/*++++++++++       Max size: min-width: 600px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:600px) {
+    
+    
     #arrow-left-container, #arrow-right-container {
         display: flex;
+        
     }
-
-    #arrow-right-container {
-        grid-area: 2 / 8 / span 2 / 9;
+    .book-title {
+     font-size: 1.3em;
     }
     
+    
+    .text-div {
+        margin-left: 1rem;
+        font-size: smaller;
+    }
+   
+    
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++       Max size: min-width: 1024px     +++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width:1024px) {
     #carousel-outer {
         grid-area: 1 / 2 / 5 / span 6 ;    
         
     }
-    .text-div {
-        margin-left: 1rem;
+    #carousel-inner {
+        height: 110%;
     }
+    .book-title {
+        font-size: 2.3em;
+    }
+    .text-div {
+        font-size: 1em;
+    }
+    #arrow-right-container {
+        grid-area: 2 / 8 / span 2 / 9;
+    }
+
     #painting-preview {
         grid-area: 2 / 9 / 4 / 12;
         color: black;
@@ -182,7 +208,7 @@
     }
     #painting-title-author-div {
         grid-area: 1 / 9 / 2 / 12;
-        
+
         text-align: center;
         padding: 0;
         margin: 0;
@@ -195,4 +221,3 @@
         display:block;
     }
 }
-
