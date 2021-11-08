@@ -93,16 +93,19 @@
     white-space:pre-wrap;
     
 }
-.col-1 {
+.col-1, .col-3 {
     font-weight:bold;
     text-align: right;
-    
 }
-.col-1, .col-2 {
+.col-2, .col-4  {
+    margin-left: 0.2em;
+}
+.col-1, .col-2, .col-3, .col-4 {
     white-space: nowrap;
     align-items:flex-end;
     display: grid;
 }
+
 .col-title {
     grid-column: 1 / 3;
     text-align: center;
@@ -154,12 +157,18 @@
     
     }
     #global {
-        grid-template: 1fr / 1fr 1fr;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+    }
+    #global div {
+        width: 100%
     }
     #specs div p {
         white-space:nowrap;
     }
-    .col-1, .col-2 {
+    .col-1, .col-2, .col-3, .col-4  {
         display: block;
     }
+    
 }

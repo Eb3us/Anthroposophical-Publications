@@ -45,12 +45,13 @@ export const openFullDescription = () => {
         const btn = modalInner.querySelector("[data-buy-btn]")
         btn.href = book.url
 
-        const globalColOne = modalInner.querySelector(
-          "[data-global-specs] .col-1"
-        )
-        const globalColTwo = modalInner.querySelector(
-          "[data-global-specs] .col-2"
-        )
+        const globalDiv = document.querySelector("[data-global-specs]")
+
+        let globalColOne
+        let globalColTwo
+        let globalColThree
+        let globalColFour
+
         const paperbackColOne = modalInner.querySelector(
           "[data-paperback-specs] .col-1"
         )
@@ -64,10 +65,11 @@ export const openFullDescription = () => {
           "[data-kindle-specs] .col-2"
         )
         let globalArr
+        let globalArr2 = 0
         let paperbackArr
         let kindleArr
 
-        const asignArrays = () => {
+        const asignArraysAndCreateColumns = () => {
           if (book.kindle) {
             kindleArr = Object.keys(book.kindle)
             kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`
@@ -80,10 +82,32 @@ export const openFullDescription = () => {
             paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
           }
           globalArr = Object.keys(book.global)
+          if (globalArr.length > 4) {
+            globalArr2 = globalArr.splice(3)
+          }
+          globalColOne = document.createElement("div")
+          globalColOne.classList.add("col-1")
+          globalColTwo = document.createElement("div")
+          globalColTwo.classList.add("col-2")
           globalColOne.style.gridTemplateRows = `repeat(${globalArr.length}, 40px)`
           globalColTwo.style.gridTemplateRows = `repeat(${globalArr.length}, 40px)`
+          globalDiv.appendChild(globalColOne)
+          globalDiv.appendChild(globalColTwo)
+          if (globalArr2.length > 0) {
+            globalColThree = document.createElement("div")
+            globalColThree.classList.add("col-3")
+            globalColFour = document.createElement("div")
+            globalColFour.classList.add("col-4")
+            globalColThree.style.gridTemplateRows = `repeat(${globalArr2.length}, 40px)`
+            globalColFour.style.gridTemplateRows = `repeat(${globalArr2.length}, 40px)`
+            globalDiv.appendChild(globalColThree)
+            globalDiv.appendChild(globalColFour)
+            globalDiv.style.gridTemplate = "1fr / 1fr 1fr 1fr 1fr;"
+          } else {
+            globalDiv.style.gridTemplate = "1fr / 1fr 1fr;"
+          }
         }
-        asignArrays()
+        asignArraysAndCreateColumns()
 
         addToColOne(globalArr, globalColOne)
         addToColOne(paperbackArr, paperbackColOne)
@@ -91,6 +115,10 @@ export const openFullDescription = () => {
         addToColTwo(globalArr, globalColTwo, book.global)
         addToColTwo(paperbackArr, paperbackColTwo, book.paperback)
         addToColTwo(kindleArr, kindleColTwo, book.kindle)
+        if (globalArr2.length > 0) {
+          addToColOne(globalArr2, globalColThree)
+          addToColTwo(globalArr2, globalColFour, book.global)
+        }
 
         modal.classList.remove("hidden")
         documentBody.classList.add("no-overflow")
