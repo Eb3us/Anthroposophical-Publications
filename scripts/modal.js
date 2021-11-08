@@ -6,6 +6,7 @@ export const openFullDescription = () => {
   const modal = document.querySelector("#modal")
   const modalInner = document.querySelector("#modal-inner")
   const modalCloseBtn = document.querySelector("#close-modal-btn")
+  const floatingArrow = document.querySelector("#floating-btn-top")
 
   document.addEventListener("click", e => {
     if (!e.target.closest("[data-book-link]")) return
@@ -14,6 +15,8 @@ export const openFullDescription = () => {
     const newTemplate = template.content.cloneNode(true)
     modalInner.appendChild(newTemplate)
     fillModalTemplate(parent)
+    floatingArrow.classList.add("hidden")
+    floatingArrow.classList.remove("floating-btn-display-class")
   })
 
   function fillModalTemplate(eventTargetParent) {

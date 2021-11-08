@@ -12,12 +12,13 @@
 }
 
 #modal-inner {
-    width: 85%;
+    width: 87%;
     background-color: #FFFEDB;
     overflow-y:auto;
     overflow-x: hidden;
     margin: 5% auto;
     box-shadow: 0px 0px 30px 0px #221;
+    padding: 1em;
 }
 #img-and-description {
     margin: 5%;
@@ -134,6 +135,9 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media only screen and (min-width: 1200px) {
+    #modal-inner {
+        width: 92%;
+    }
     .modal-img {
         margin-right: 20px;
         float: left;
