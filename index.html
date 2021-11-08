@@ -17,6 +17,7 @@
     
     <script src="script.js" type="module"></script>
     <!-- <script src="bundle.js" defer></script> -->
+    <?php include("flipcause.inc");?>
 </head>
 <body>
     <div id="modal" class="hidden">
@@ -30,8 +31,9 @@
 
     
     <div id="header">
+		<a align="right" href ="https://www.flipcause.com/secure/cause_pdetails/MTMxNDAw" target="_blank" style="background:#105485; border-radius:5px 5px 5px 5px;font-weight:normal; font-family:null;border:none;box-shadow:0 0 8px rgba(0, 0, 0, 0.5);float:right;clear: both;display: block; width:145px;height:45px; line-height:2.8; position:relative; font-size:16px;text-align:center; cursor:pointer;color:#fff;text-decoration: none; z-index:1">Donations</a>
         <div id="first-text-div">
-            <p class="no-break-lines">&#8220;Research Rudolf Steiner's works on-line ... buy the Book to study at home!&#8221;<br>&#8211; the e.Librarian</p>
+            <p class="no-break-lines">&#8220;Research Rudolf Steiner's works on-line ... buy the Book to study at home!&#8221;<br>&#8211; the Emeritus e.Librarian</p>
         </div>
         <div id="titles-div">
             <h1>Anthroposophical Publications</h1>
@@ -113,11 +115,19 @@
         </div>
         <div class="footer-divs" id="contact-info">
             <h2>Contact:</h2>
-            <a href="mailto:jds@elib.com">jds@elib.com</a>
+            <a href="mailto:eelibrarian@elib.com?subject=From%20the%20Anthroposophical%20Publications%20site:">The Emeritus e.Librarian</a><br>
+            <a href="mailto:info@elib.com/?subject=AP%20Information%20Please">Information</a><br>
+            <a href="mailto:jds@elib.com/?subject=AP%20A%20message%20for%20James%20Stewart">James Stewart</a>
         </div>
         <div class="footer-divs" id="steiner-quote">
             <h2 style="text-align:center">Steiner Quote</h2>
+			<?php include("randquot.inc");?>
         </div>
+		<!--
+        <div class="footer-divs" id="contact-info">
+            <p class="footer-hdr">More Info</p>
+        </div>
+		-->
         
     </div>
     
@@ -157,7 +167,7 @@
                 
             </div>
             <div data-paperback-specs id="paperback">
-                <div class="col-title">Paperback:</div>
+                <div class="col-title">Print Book:</div>
 
                 <div class="col-1"></div>
 
@@ -165,7 +175,7 @@
 
             </div>
             <div data-kindle-specs id="kindle">
-                <div class="col-title">Kindle</div>
+                <div class="col-title">e.Book</div>
                 
                 <div class="col-1"></div>
 
@@ -174,5 +184,6 @@
             </div>
         </div>
     </template>
+	<div class="floating_button" style="background:#0f5385; border-radius:10px 10px 0px 0px; font-weight:normal; font-family:Helvetica; bottom:-2px; right: 150px; padding:4px 10px 4px 10px; font-size:18px; color:#fffff8;text-align:center; cursor:pointer;border:2px solid #fffff8;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999" onclick="open_window('MTMxNDAw','www.flipcause.com')">Please Donate</div>
 </body>
 </html>

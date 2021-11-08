@@ -12,7 +12,7 @@
     overflow: hidden;
     min-height: 300px
     }
-    
+
     
     
     .footer-divs {
@@ -26,7 +26,11 @@
     }
     .footer-divs h2 {
         font-family: novam;
+        font-size: 16pt;
+        font-weight: bold;
+        text-align: center;
     }
+
     #footer-painting {
         display: grid;
         grid-template-columns: 45% 55%;
@@ -41,6 +45,9 @@
     }
     
     #background-painting {
+        font-family: novam;
+        font-size: 16pt;
+        font-weight: bold;
         text-align: center;
         grid-column: span 2;
     }

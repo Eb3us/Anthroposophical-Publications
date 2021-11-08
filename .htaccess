@@ -1,0 +1,7 @@
+AddCharset UTF-8 .htm
+AddCharset UTF-8 .html
+AddType application/x-httpd-php html
+php_value include_path ./:/home/RSP/include:/home/elib/include:/home/include:/home/include/php:/home/include/schemes:/usr/local/lib/php:/usr/local/lib/php/pear
+php_flag display_errors	On
+php_flag log_errors	On
+php_value error_log /home/RSP/logs/php_error.log

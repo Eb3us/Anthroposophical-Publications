@@ -1,0 +1,5 @@
+mkdir ../RSP.sav/css
+mkdir ../RSP.sav/scripts
+mv css/footer.css ../RSP.sav/css
+mv index.html ../RSP.sav
+mv scripts/books.js ../RSP.sav/scripts

@@ -98,11 +98,11 @@ export function gridFunction() {
   const sortAZZA = (array, AZZA) => {
     const tempArray = [...array]
     tempArray.sort((a, b) => {
-      if (a.title > b.title) {
+      if (a.tsort > b.tsort) {
         if (AZZA === "a-z") return 1
         if (AZZA === "z-a") return -1
       }
-      if (a.title < b.title) {
+      if (a.tsort < b.tsort) {
         if (AZZA === "a-z") return -1
         if (AZZA === "z-a") return 1
       }

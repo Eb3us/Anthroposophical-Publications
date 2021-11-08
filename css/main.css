@@ -97,17 +97,45 @@ body {
 .arrow:hover {
     text-shadow: 0px 0px 4px black, 0px 0px 10px #FFFEDB;
 }
+.spiritual-science-category {
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #00CCCC;
+}
 .social-science-category {
-    color: magenta;
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #666600;
 }
 .modern-translations-category {
-    color: blue;
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #000066;
+}
+.fantasy-category {
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #CC00CC;
 }
 .fiction-category {
-    color: red;
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #660000;
 }
 .childrens-books-category {
-    color:green;
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #006600;
+}
+.coming-soon-category {
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #006666;
+}
+.philosophy-category {
+    font-weight: bold;
+    font-family: verdana,arial;
+    color: #660066;
 }
 
 .hidden {
