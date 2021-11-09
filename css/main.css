@@ -70,9 +70,11 @@ body {
     background-attachment: fixed;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items:flex-end;
-    
+    align-items:space-between;
+    position: relative;
 }
 #mid-page-arrow {
     font-family: monospace;
@@ -85,6 +87,18 @@ body {
     line-height: 0.5;
     margin-bottom: 15px;
 }
+.mid-arrow-animation {
+    animation: point2 4s ease-in-out infinite;
+    animation-direction: alternate;
+}
+@keyframes point2 {
+    0%{transform: rotate(90deg) translateX(30px)}
+    50% {transform: rotate(90deg) translateX(30px)}
+    80% {transform: rotate(90deg) translateX(45px);color:#FFFA86}
+    100% {transform: rotate(90deg) translateX(30px) ;}
+   
+}
+
 .arrow {
     color:#FFFEDB;
     font-family: novabr;
@@ -97,6 +111,19 @@ body {
 .arrow:hover {
     text-shadow: 0px 0px 4px black, 0px 0px 10px #FFFEDB;
 }
+.mid-page-text {
+    color:#FFFEDB;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 5px black, 1px 1px 2px black, -1px -1px 2px black;
+    
+}
+#mid-page-text-1 {
+    position: absolute;
+    left: 30px;
+    bottom: 25%;
+    width: 35%;
+}
+
 .spiritual-science-category {
     font-weight: bold;
     font-family: verdana,arial;
@@ -160,7 +187,7 @@ body {
 }
 
 @media only screen and (min-width: 650px) {
-    #main {grid-template: 50px 120px 120px 50px 120px 1fr / 50px repeat(10, 1fr) 50px ;}
+    #main {grid-template: 50px 120px 120px 50px 38vh 1fr / 50px repeat(10, 1fr) 50px ;}
     #mid-page-arrow {
         display: flex;
     }
