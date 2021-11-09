@@ -2,23 +2,21 @@ export function scrollFunction() {
   const headerArrow = document.querySelector("#header-arrow")
   const midPageArrow = document.querySelector("#mid-page-arrow")
   const arrowTop = headerArrow.offsetTop
-  const bookGridTop = document.querySelector("#books-grid-outer").offsetTop
-  const pointOfInversionHeaderArrow =
-    document.querySelector("#header-description-div").offsetTop + 80
+  const bookGridTop = document.querySelector("#books-grid-outer").offsetTop - 20
   const pointOfInversionMidPageArrow =
-    document.querySelector("#carousel-outer").offsetTop
+    document.querySelector("#carousel-outer").offsetTop - 40
   const floatingArrow = document.querySelector("#floating-btn-top")
   const main = document.querySelector("#main")
   const mainTop = main.offsetTop
-  const footer = document.querySelector("#footer")
+  const carouselTop = document.querySelector("#carousel-outer").offsetTop
 
   headerArrow.addEventListener("click", () => {
     if (screen.width > 860) {
-      arrowScroll(headerArrow, arrowTop - 15, 0)
+      arrowScroll(headerArrow, carouselTop - 15)
     } else if (screen.width > 560 && screen.width < 800) {
-      arrowScroll(headerArrow, mainTop - 15, 0)
+      arrowScroll(headerArrow, mainTop - 15)
     } else {
-      arrowScroll(headerArrow, bookGridTop, 0)
+      arrowScroll(headerArrow, bookGridTop)
     }
   })
 
@@ -34,19 +32,6 @@ export function scrollFunction() {
   })
 
   window.addEventListener("scroll", () => {
-    console.log(footer.getBoundingClientRect().bottom)
-    console.log(window.innerHeight + footer.offsetHeight)
-    if (window.scrollY >= pointOfInversionHeaderArrow) {
-      headerArrow.classList.remove("rotate-arrow-down")
-      headerArrow.classList.add("rotate-arrow-up")
-      headerArrow.dataset.position = "up"
-    } else {
-      headerArrow.classList.remove("rotate-arrow-up")
-      headerArrow.classList.add("rotate-arrow-down")
-      headerArrow.dataset.position = "down"
-    }
-  })
-  window.addEventListener("scroll", () => {
     if (window.scrollY >= pointOfInversionMidPageArrow) {
       floatingArrow.classList.remove("hidden")
       floatingArrow.classList.add("floating-btn-display-class")
@@ -56,17 +41,10 @@ export function scrollFunction() {
     }
   })
 
-  function arrowScroll(arrow, downPos, upPos) {
-    if (arrow.dataset.position === "down") {
-      window.scroll({
-        top: downPos,
-        behavior: "smooth",
-      })
-    } else {
-      window.scroll({
-        top: upPos,
-        behavior: "smooth",
-      })
-    }
+  function arrowScroll(arrow, downPos) {
+    window.scroll({
+      top: downPos,
+      behavior: "smooth",
+    })
   }
 }
