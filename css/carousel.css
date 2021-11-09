@@ -214,6 +214,11 @@
         margin: 0;
         display:block;
     }
+    #painting-div-title {
+        margin: 0;
+        color: #541;
+        font-weight:bold;
+    }
     #painting-bottom {
         grid-area: 4 / 9 / 5 / 12;
         padding: 0;

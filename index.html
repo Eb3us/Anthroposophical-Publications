@@ -31,7 +31,7 @@
 
     
     <div id="header">
-		<a href ="https://www.flipcause.com/secure/cause_pdetails/MTMxNDAw" target="_blank" style="background:#105485; border-radius:5px 5px 5px 5px;font-weight:normal; font-family:null;border:none;box-shadow:0 0 8px rgba(0, 0, 0, 0.5);float:right;clear: both;display: block; width:145px;height:45px; line-height:2.8; position:relative; font-size:16px;text-align:center; cursor:pointer;color:#fff;text-decoration: none; z-index:1">Donations</a>
+        <a href="https://www.flipcause.com/secure/cause_pdetails/MTMxNDAw" target="_blank" style="background:#105485; border-radius:5px 5px 5px 5px;font-weight:normal; font-family:null;border:none;box-shadow:0 0 8px rgba(0, 0, 0, 0.5);float:right;clear: both;display: block; width:145px;height:45px; line-height:2.8; position:relative; font-size:16px;text-align:center; cursor:pointer;color:#fff;text-decoration: none; z-index:1">Donations</a>
         <div id="first-text-div">
             <p class="no-break-lines">&#8220;Research Rudolf Steiner's works on-line ... buy the Book to study at home!&#8221;<br>&#8211; the Emeritus e.Librarian</p>
         </div>
@@ -66,6 +66,7 @@
         </div>
 
         <div id="painting-title-author-div" class="hidden-tablet">
+            <p id="painting-div-title" class="hidden-tablet">Background Image</p>
             <div id="painting-title"></div>
             <div id="painting-artist"></div>
         </div>
@@ -107,27 +108,53 @@
         </div>
     </div>
     <div id="footer">
-        <div id="footer-painting" class="footer-divs">
-            <h2 id="background-painting">Background painting:</h2>
-            <div id="footer-painting-keys"></div>
-            <div id="footer-painting-values"></div>
-            <a id="footer-painting-link" href="">See full painting in Fine Art Presentation's e.Gallery!</a>
+        <div id="footer-painting" class="footer-divsl">
+          <h2 id="background-painting">Background painting:</h2>
+          <div id="footer-painting-keys"></div>
+          <div id="footer-painting-values"></div>
+          <a id="footer-painting-link" href="">See full painting in Fine Art Presentation's e.Gallery!</a>
         </div>
-        <div class="footer-divs" id="contact-info">
-            <h2>Contact:</h2>
-            <a href="mailto:eelibrarian@elib.com?subject=From%20the%20Anthroposophical%20Publications%20site:">The Emeritus e.Librarian</a><br>
-            <a href="mailto:info@elib.com/?subject=AP%20Information%20Please">Information</a><br>
-            <a href="mailto:jds@elib.com/?subject=AP%20A%20message%20for%20James%20Stewart">James Stewart</a>
+        <div class="footer-divsc" id="contact-info">
+          <h2>Contact:</h2>
+          <ul>
+          <li><a href="mailto:eelibrarian@elib.com?subject=From%20the%20Anthroposophical%20Publications%20site:">The Emeritus e.Librarian</a><br></li>
+          <li><a href="mailto:info@elib.com/?subject=AP%20Information%20Please">Information</a><br></li>
+          <li><a href="mailto:jds@elib.com/?subject=AP%20A%20message%20for%20James%20Stewart">James Stewart</a></li>
+          </ul>
+		  <br>&#160;
+		  <br>&#160;
+		  <br>&#160;
+		  <br>&#160;
         </div>
-        <div class="footer-divs" id="steiner-quote">
-            <h2 style="text-align:center">Steiner Quote</h2>
-			<?php include("randquot.inc");?>
+        <div class="footer-divsc" id="links-info">
+          <h2 style="text-align:center">e.Lib Family</h2>
+          <h4 style="text-align:center; margin-top:-16px">of Anthroposophical Information Sites</h4>
+          <table border="0" align="center" cellspacing="0" cellpadding="0" style="margin-top:-8px">
+            <tr valign="top">
+              <td align="right"><b>Book publishing:&#160;</b></td>
+              <td align="left"><a href="https://anthroposophicalpublications.org/" target="_blank">Anthroposophical Publications</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Research Sharing:&#160;</b></td>
+              <td align="left"><a href="https://studygroups.online/" target="_blank">Study Groups On-line</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Fine Art Gallery:&#160;</b></td>
+              <td align="left"><a href="https://fineart.elib.com/" target="_blank">Fine Art Presentations</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Anthro News Wire:&#160;</b></td>
+              <td align="left"><a href="https://knownews.net/" target="_blank">KnowNews dot Net</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Book Reviews:&#160;</b></td>
+              <td align="left"><a href="https://reviews.rsarchive.net/" target="_blank">Now I See ...</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Parent Initiative:&#160;</b></td>
+              <td align="left"><a href="https://www,elib.com/" target="_blank">The e.Lib, Inc.</a></td>
+            </tr>
+          </table>
         </div>
-		<!--
-        <div class="footer-divs" id="contact-info">
-            <p class="footer-hdr">More Info</p>
+        <div class="footer-divsr" id="steiner-quote">
+          <h2 style="text-align:center">Steiner Quote</h2>
+          <?php include("randquot.inc");?>
         </div>
-		-->
         
     </div>
     
@@ -189,6 +216,6 @@
             </div>
         </div>
     </template>
-	<div class="floating_button" style="background:#0f5385; border-radius:10px 10px 0px 0px; font-weight:normal; font-family:Helvetica; bottom:-2px; right: 150px; padding:4px 10px 4px 10px; font-size:18px; color:#fffff8;text-align:center; cursor:pointer;border:2px solid #fffff8;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999" onclick="open_window('MTMxNDAw','www.flipcause.com')">Please Donate</div>
+    <div class="floating_button" style="background:#0f5385; border-radius:10px 10px 0px 0px; font-weight:normal; font-family:Helvetica; bottom:-2px; right: 150px; padding:4px 10px 4px 10px; font-size:18px; color:#fffff8;text-align:center; cursor:pointer;border:2px solid #fffff8;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999" onclick="open_window('MTMxNDAw','www.flipcause.com')">Please Donate</div>
 </body>
 </html>

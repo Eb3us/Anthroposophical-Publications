@@ -8,7 +8,7 @@
 <!-- Desc: Steiner Quotes Page Document                     The e.Lib, Inc. -->
 <!-- ...................................................................... -->
  <p align="justify" style="margin: 32px 32px 32px 16px">
-  <em><font size="+1">$quot</font></em><br><div style="align: right">&#8212; <b>$auth</b> [$frm]</div>
+  <em><font size="+1">$quot</font></em><br><font size="-1">&#8212; <b>$auth</b> [$frm]</font>
  </p>
 
 EOF;

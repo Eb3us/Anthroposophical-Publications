@@ -43,6 +43,7 @@ export function rotateHeaderImages() {
     const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1)
     keyParagraph.innerText = `${capitalizedKey}:`
     valueParagraph.innerText = paintings[randomPainting][key]
+    // footer.footer-painting-link = paintings[randomPainting][key]["rsarchive"]
     footerKeys.appendChild(keyParagraph)
     footerValues.appendChild(valueParagraph)
     preview.addEventListener("click", () => {
