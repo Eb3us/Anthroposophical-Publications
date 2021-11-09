@@ -10,8 +10,7 @@ export function rotateHeaderImages() {
   const preview = document.querySelector("#painting-preview")
   const title = document.querySelector("#painting-title")
   const artist = document.querySelector("#painting-artist")
-  const footerKeys = document.querySelector("#footer-painting-keys")
-  const footerValues = document.querySelector("#footer-painting-values")
+
   const keys = Object.keys(paintings[randomPainting])
   //filter keys not to print from paintings.js in footer
   const filteredKeys = keys.filter(
@@ -44,8 +43,7 @@ export function rotateHeaderImages() {
     keyParagraph.innerText = `${capitalizedKey}:`
     valueParagraph.innerText = paintings[randomPainting][key]
     // footer.footer-painting-link = paintings[randomPainting][key]["rsarchive"]
-    footerKeys.appendChild(keyParagraph)
-    footerValues.appendChild(valueParagraph)
+
     preview.addEventListener("click", () => {
       parent.open(paintings[randomPainting]["rsarchive"])
     })
