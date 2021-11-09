@@ -98,12 +98,12 @@
 
     @media only screen and (min-width:800px) {
         #footer {
-            grid-template: 1fr / 1fr 1fr 50%;
+            grid-template: 1fr / 1fr 200px 1fr 1fr;
             gap: 1.5em;
         }
-        .footer-divs {
-            min-height: 80%;
-            
-        }
+        .footer-divs, .footer-divsc, .footer-divsl, .footer-divsr {
+            min-height: 100%;
+        
     }
     
+    }
