@@ -221,6 +221,9 @@ export function gridFunction() {
       categoriesDiv.appendChild(paragraph)
     })
     title.innerText = element.title
+    if (title.innerText.length > 50) {
+      title.style.fontSize = "0.7em"
+    }
     author.innerText = element["global"]["Author"]
     textDiv.appendChild(title)
     textDiv.appendChild(author)

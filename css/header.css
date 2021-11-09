@@ -13,9 +13,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    
+    position: relative;
 }
 
 #first-text-div {
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        padding:0.5em 1em;
 }
 
 #titles-div {
@@ -36,6 +36,7 @@
     max-width: 90%;
     margin-bottom: 3em;
     margin-top: 3em;
+
 }
     #header h1 {
         font-family: novabr;
@@ -51,13 +52,25 @@
         margin:0;
         
     }
+    #header p {
+        font-size: 105%;
+        font-weight: 400;
+        text-shadow: 0px 0px 0px transparent;
+        width: max-content;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 99%;
+        color: #FFFEDB;
+        text-shadow: 0px 0px 5px black, 1px 1px 2px black, -1px -1px 2px black;
+        text-align: right;
+    }
 
 #header-description-div {
-    max-width: 80%;
     margin-top: 0;
-    
+    width: 100%
     
 }
+
 
 .light-header-text {
     color:#FFFEDB;
@@ -69,19 +82,8 @@
 }
 
 
-#header p {
-    font-size: 105%;
-    font-weight: 400;
-    color: black;
-    background-color: rgba(255,254,219,0.7);
-    text-shadow: 0px 0px 0px transparent;
-    width: max-content;
-    margin: 0 auto;
-    padding: 0.3em;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 99%;
-}
+
+
 #arrow-wrapper {
     width: 100vw;
     margin: 0;
@@ -192,16 +194,27 @@
         width: 100%;
     }
     #first-text-div {
-        margin-top: 0.5rem;
+        margin-top: 0.9rem;
+        max-width: 100%;
+        display: none;
+        
+    }
+    #first-text-div p{
+        max-width: 100%;
+        
+        
     }
     #titles-div{
-        margin-top: 5%;
+        margin-top: 4%;
         margin-bottom: 5%;
     }
     #header-description-div {
-        top: 55%;
-        max-width: 40%;
-        display: block;
+        width: 40%;
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        height: min-content;
+        overflow: hidden;
         
     }
     #header h1 {
@@ -227,10 +240,10 @@
     }
   
     @keyframes point {
-        0%{transform: rotate(90deg) translateX(20px)}
-        50% {transform: rotate(90deg) translateX(20px)}
-        75% {transform: rotate(90deg) translateX(35px);color:#FFFEA6}
-        100% {transform: rotate(90deg) translateX(20px) ;}
+        0%{transform: rotate(90deg) translateX(30px)}
+        50% {transform: rotate(90deg) translateX(30px)}
+        75% {transform: rotate(90deg) translateX(55px);color:#FFFEA6}
+        100% {transform: rotate(90deg) translateX(30px) ;}
        
     }
     @keyframes point-inverse {

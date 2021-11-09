@@ -23,6 +23,13 @@ export const carouselFunction = () => {
       dotsDiv.innerHTML = dotsDiv.innerHTML + '<span class="dots">.</span>'
       img.src = `./img/${book.img}`
       title.innerText = book.title
+      if (title.innerText.length > 30) {
+        title.style.fontSize = "2em"
+      }
+      if (title.innerText.length > 50) {
+        title.style.fontSize = "1.8em"
+      }
+      console.log(title.innerText.length)
       author.innerText = book.global.Author
       innerCarousel.appendChild(bookDiv)
       if (descriptions[book.id - 1]) {
