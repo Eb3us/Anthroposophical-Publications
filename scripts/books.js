@@ -19,7 +19,7 @@ export const books = [
       "ISBN-10": "1-948302-16-6",
       "ISBN-13": "978-1-948302-16-6",
     },
-    "paperback": {
+    "hardcover": {
       "type": "Hardcover",
       "pages": "176",
       "publication date": "September 10, 2021",
@@ -41,10 +41,14 @@ export const books = [
       "ISBN-10": "1-948302-17-3",
       "ISBN-13": "978-1-948302-17-3",
     },
-    "categories": ["Social Science","Spiritual Science","Modern Translations"],
+    "categories": [
+      "Social Science",
+      "Spiritual Science",
+      "Modern Translations",
+    ],
     "url": "https://amzn.to/2P4pMnx",
     "img": "towthreesociety_covs.jpg",
-    "online": "no"
+    "online": "no",
   },
   {
     "id": "2",
@@ -81,8 +85,9 @@ export const books = [
     },
     "url": "https://amzn.to/36rj94r",
     "img": "hermangrimm01_covs.jpg",
-    "categories": ["Spiritual Science","Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html"
+    "categories": ["Spiritual Science", "Modern Translations"],
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html",
   },
   {
     "id": "3",
@@ -120,14 +125,15 @@ export const books = [
     },
     "url": "https://amzn.to/2Qcs1ba",
     "img": "AnthroFantasies_covs.jpg",
-    "categories": ["Fantasy","Fiction"],
-    "online": "no"
+    "categories": ["Fantasy", "Fiction"],
+    "online": "no",
   },
   {
     "id": "4",
     "title": "Fairy Tales",
     "tsort": "Fairy Tales",
-    "sub-title": "in the Light of Spiritual Investigation and A Mongolian Legend:",
+    "sub-title":
+      "in the Light of Spiritual Investigation and A Mongolian Legend:",
     "global": {
       "Author": "Rudolf Steiner",
       "Translator": "Peter Stebbing",
@@ -158,8 +164,9 @@ export const books = [
     },
     "url": "https://amzn.to/3lHrKZ2",
     "img": "FairyTales1_covs.jpg",
-    "categories": ["Spiritual Science","Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html"
+    "categories": ["Spiritual Science", "Modern Translations"],
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html",
   },
   {
     "id": "5",
@@ -197,8 +204,9 @@ export const books = [
     },
     "url": "https://amzn.to/2Odm4rV",
     "img": "leonardostature_covs.jpg",
-    "categories": ["Spiritual Science","Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html"
+    "categories": ["Spiritual Science", "Modern Translations"],
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html",
   },
   {
     "id": "6",
@@ -220,8 +228,13 @@ export const books = [
     },
     "url": "https://amzn.to/2U5g30b",
     "img": "impulse4renewal_covs.jpg",
-    "categories": ["Social Science","Spiritual Science","Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html"
+    "categories": [
+      "Social Science",
+      "Spiritual Science",
+      "Modern Translations",
+    ],
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
   },
   {
     "id": "7",
@@ -244,7 +257,8 @@ export const books = [
     "url": "https://amzn.to/2tAYXvO",
     "img": "raphaelsmission_covs.jpg",
     "categories": ["Spiritual Science", "Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA062/English/eLib2018/RapMis_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA062/English/eLib2018/RapMis_index.html",
   },
   {
     "id": "8",
@@ -281,8 +295,13 @@ export const books = [
     },
     "url": "https://amzn.to/2XkGvFp",
     "img": "thesocialquestion2_covs.jpg",
-    "categories": ["Social Science","Spiritual Science","Modern Translations"],
-    "online": "https://wn.rsarchive.org/Lectures/GA328/English/eLib2017/SoQues_index.html"
+    "categories": [
+      "Social Science",
+      "Spiritual Science",
+      "Modern Translations",
+    ],
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA328/English/eLib2017/SoQues_index.html",
   },
   {
     "id": "9",
@@ -320,8 +339,8 @@ export const books = [
     },
     "url": "",
     "img": "favelachildren_covs.png",
-    "categories": ["Social Science","Coming Soon"],
-    "online": "no"
+    "categories": ["Social Science", "Coming Soon"],
+    "online": "no",
   },
   {
     "id": "10",
@@ -357,8 +376,8 @@ export const books = [
     },
     "url": "",
     "img": "magicmound_covs.png",
-    "categories": ["Fiction","Children's Books","Coming Soon"],
-    "online": "no"
+    "categories": ["Fiction", "Children's Books", "Coming Soon"],
+    "online": "no",
   },
   {
     "id": "11",
@@ -393,15 +412,22 @@ export const books = [
       "ISBN-10": "1-948302-20-0",
       "ISBN-13": "978-1-948302-20-0",
     },
-    "categories": ["Social Science","Spiritual Science","Modern Translations"],
+    "categories": [
+      "Social Science",
+      "Spiritual Science",
+      "Modern Translations",
+    ],
     "url": "https://amzn.to/3jPhtLQ",
     "img": "the-history-and-actuality-of-imperialism.jpg",
-    "online": "https://wn.rsarchive.org/Lectures/GA196/English/SCR2011/HisImp_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA196/English/SCR2011/HisImp_index.html",
   },
   {
     "id": "12",
-    "title": "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume One)",
-    "tsort": "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 1",
+    "title":
+      "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume One)",
+    "tsort":
+      "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 1",
     "global": {
       "Author": "Rudolf Steiner",
       "Translator": "Frank Thomas Smith",
@@ -418,7 +444,7 @@ export const books = [
       "ISBN-10": "1-948302-28-9",
       "ISBN-13": "978-1-948302-28-9",
     },
-    "paperback": {
+    "hardcover": {
       "type": "Hardcover",
       "pages": "118",
       "publication date": "September 15, 2021",
@@ -440,15 +466,18 @@ export const books = [
       "ISBN-10": "1-948302-27-2",
       "ISBN-13": "978-1-948302-27-2",
     },
-    "categories": ["Philosophy","Spiritual Science","Modern Translations"],
+    "categories": ["Philosophy", "Spiritual Science", "Modern Translations"],
     "url": "https://amzn.to/2WXah7R",
     "img": "FirstClass09b_cov.jpg",
-    "online": "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018a/FstCs1_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018a/FstCs1_index.html",
   },
   {
     "id": "13",
-    "title": "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume Two)",
-    "tsort": "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 2",
+    "title":
+      "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume Two)",
+    "tsort":
+      "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 2",
     "global": {
       "Author": "Rudolf Steiner",
       "Translator": "Frank Thomas Smith",
@@ -465,7 +494,7 @@ export const books = [
       "ISBN-10": "1-948302-30-2",
       "ISBN-13": "978-1-948302-30-2",
     },
-    "paperback": {
+    "hardcover": {
       "type": "Hardcover",
       "pages": "121",
       "publication date": "November 15, 2021",
@@ -487,15 +516,23 @@ export const books = [
       "ISBN-10": "1-948302-29-6",
       "ISBN-13": "978-1-948302-29-6",
     },
-    "categories": ["Philosophy","Spiritual Science","Modern Translations","Coming Soon"],
+    "categories": [
+      "Philosophy",
+      "Spiritual Science",
+      "Modern Translations",
+      "Coming Soon",
+    ],
     "url": "https://amzn.to/2WXah7R",
     "img": "FirstClassV2-01a_cov.jpg",
-    "online": "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018b/FstCs2_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018b/FstCs2_index.html",
   },
   {
     "id": "14",
-    "title": "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume Three)",
-    "tsort": "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 3",
+    "title":
+      "Esoteric Lessons for the First Class of the Free School for Spiritual Science at the Goetheanum (Volume Three)",
+    "tsort":
+      "Esoteric Lessons First Class Free School Spiritual Science Goetheanum Volume 3",
     "global": {
       "Author": "Rudolf Steiner",
       "Translator": "Frank Thomas Smith",
@@ -512,7 +549,7 @@ export const books = [
       "ISBN-10": "n/a",
       "ISBN-13": "n/a",
     },
-    "paperback": {
+    "hardcover": {
       "type": "Hardcover",
       "pages": "116",
       "publication date": "December 15, 2021",
@@ -534,10 +571,16 @@ export const books = [
       "ISBN-10": "n/a",
       "ISBN-13": "n/a",
     },
-    "categories": ["Philosophy","Spiritual Science","Modern Translations","Coming Soon"],
+    "categories": [
+      "Philosophy",
+      "Spiritual Science",
+      "Modern Translations",
+      "Coming Soon",
+    ],
     "url": "https://amzn.to/2WXah7R",
     "img": "FirstClassV3-01b_cov.jpg",
-    "online": "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018c/FstCs3_index.html"
+    "online":
+      "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018c/FstCs3_index.html",
   },
   {
     "id": "15",
@@ -560,8 +603,8 @@ export const books = [
     },
     "url": "n/a",
     "img": "ArtemisionCoverFront01.jpg",
-    "categories": ["Social Science","Coming Soon"],
-    "online": "n/a"
+    "categories": ["Social Science", "Coming Soon"],
+    "online": "n/a",
   },
   {
     "id": "16",
@@ -584,7 +627,7 @@ export const books = [
     },
     "url": "n/a",
     "img": "journey-cov.jpg",
-    "categories": ["Fiction","Children's Books","Coming Soon"],
-    "online": "n/a"
+    "categories": ["Fiction", "Children's Books", "Coming Soon"],
+    "online": "n/a",
   },
 ]

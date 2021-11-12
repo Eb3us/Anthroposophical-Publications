@@ -58,6 +58,12 @@ export const openFullDescription = () => {
         const paperbackColTwo = modalInner.querySelector(
           "[data-paperback-specs] .col-2"
         )
+        const hardcoverColOne = modalInner.querySelector(
+          "[data-hardcover-specs] .col-1"
+        )
+        const hardcoverColTwo = modalInner.querySelector(
+          "[data-hardcover-specs] .col-2"
+        )
         const kindleColOne = modalInner.querySelector(
           "[data-kindle-specs] .col-1"
         )
@@ -67,6 +73,7 @@ export const openFullDescription = () => {
         let globalArr
         let globalArr2 = 0
         let paperbackArr
+        let hardcoverArr
         let kindleArr
 
         const asignArraysAndCreateColumns = () => {
@@ -80,6 +87,11 @@ export const openFullDescription = () => {
             paperbackArr = Object.keys(book.paperback)
             paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
             paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
+          }
+          if (book.hardcover) {
+            hardcoverArr = Object.keys(book.hardcover)
+            hardcoverColOne.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`
+            hardcoverColTwo.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`
           }
           globalArr = Object.keys(book.global)
           if (globalArr.length > 4) {
@@ -112,9 +124,11 @@ export const openFullDescription = () => {
         addToColOne(globalArr, globalColOne)
         addToColOne(paperbackArr, paperbackColOne)
         addToColOne(kindleArr, kindleColOne)
+        addToColOne(hardcoverArr, hardcoverColOne)
         addToColTwo(globalArr, globalColTwo, book.global)
         addToColTwo(paperbackArr, paperbackColTwo, book.paperback)
         addToColTwo(kindleArr, kindleColTwo, book.kindle)
+        addToColTwo(hardcoverArr, hardcoverColTwo, book.hardcover)
         if (globalArr2.length > 0) {
           addToColOne(globalArr2, globalColThree)
           addToColTwo(globalArr2, globalColFour, book.global)
