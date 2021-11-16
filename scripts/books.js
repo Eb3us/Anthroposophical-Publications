@@ -50,7 +50,7 @@ export const books = [
       "Modern Translations",
     ],
     "img": "towthreesociety_covs.jpg",
-    "online": "no",
+    "online": "",
   },
   {
     "id": "2",
@@ -130,7 +130,7 @@ export const books = [
     },
     "img": "AnthroFantasies_covs.jpg",
     "categories": ["Fantasy", "Fiction"],
-    "online": "no",
+    "online": "",
   },
   {
     "id": "4",
@@ -348,7 +348,7 @@ export const books = [
     },
     "img": "favelachildren_covs.png",
     "categories": ["Social Science", "Coming Soon"],
-    "online": "no",
+    "online": "",
   },
   {
     "id": "10",
@@ -386,7 +386,7 @@ export const books = [
     },
     "img": "magicmound_covs.png",
     "categories": ["Fiction", "Children's Books", "Coming Soon"],
-    "online": "no",
+    "online": "",
   },
   {
     "id": "11",
@@ -620,7 +620,7 @@ export const books = [
     },
     "img": "ArtemisionCoverFront01.jpg",
     "categories": ["Social Science", "Coming Soon"],
-    "online": "no",
+    "online": "",
   },
   {
     "id": "16",
@@ -644,6 +644,6 @@ export const books = [
     },
     "img": "journey-cov.jpg",
     "categories": ["Fiction", "Children's Books", "Coming Soon"],
-    "online": "no",
+    "online": "",
   },
 ]

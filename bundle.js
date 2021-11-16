@@ -21,6 +21,7 @@
         "shipping weight": "11.6 ounces",
         "ISBN-10": "1-948302-16-6",
         "ISBN-13": "978-1-948302-16-6",
+        "url": "https://amzn.to/2P4pMnx",
       },
       "hardcover": {
         "type": "Hardcover",
@@ -30,6 +31,7 @@
         "shipping weight": "11.6 ounces",
         "ISBN-10": "1-948302-19-7",
         "ISBN-13": "978-1-948302-19-7",
+        "url": "https://amzn.to/3kEOA52",
       },
       "kindle": {
         "type": "Kindle",
@@ -43,13 +45,13 @@
         "enhanced typesetting": "enabled",
         "ISBN-10": "1-948302-17-3",
         "ISBN-13": "978-1-948302-17-3",
+        "url": "https://amzn.to/3ChR92P",
       },
       "categories": [
         "Social Science",
         "Spiritual Science",
         "Modern Translations",
       ],
-      "url": "https://amzn.to/2P4pMnx",
       "img": "towthreesociety_covs.jpg",
       "online": "no",
     },
@@ -72,6 +74,7 @@
         "dimensions": "5.5 x 0.13 x 8.5 inches",
         "ISBN-10": "1-948302-12-8",
         "ISBN-13": "978-1-948302-12-8",
+        "url": "https://amzn.to/36rj94r",
       },
       "kindle": {
         "type": "Kindle",
@@ -85,8 +88,8 @@
         "Enhanced Typesetting": "Not Enabled",
         "ISBN-10": "1-948302-13-6",
         "ISBN-13": "978-1-948302-13-5",
+        "url": "",
       },
-      "url": "https://amzn.to/36rj94r",
       "img": "hermangrimm01_covs.jpg",
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
@@ -112,6 +115,7 @@
         "Shipping Weight": "12.8 ounces",
         "ISBN-10": "1948302101",
         "ISBN-13": "978-1948302104",
+        "url": "https://amzn.to/2Qcs1ba",
       },
       "kindle": {
         "type": "Kindle",
@@ -125,8 +129,8 @@
         "Enhanced Typesetting": "enabled",
         "ISBN-10": "1948302111",
         "ISBN-13": "978-194830211X",
+        "url": "https://amzn.to/3HpHlHR",
       },
-      "url": "https://amzn.to/2Qcs1ba",
       "img": "AnthroFantasies_covs.jpg",
       "categories": ["Fantasy", "Fiction"],
       "online": "no",
@@ -151,6 +155,7 @@
         "Product Dimensions": "5.5 x 0.1 x 8.5 inches",
         "ISBN-10": "1948302128",
         "ISBN-13": "978-1948302128",
+        "url": "https://amzn.to/3kI6xQ3",
       },
       "kindle": {
         "type": "Kindle",
@@ -164,8 +169,8 @@
         "Enhanced Typesetting": "Enabled",
         "ISBN-10": "1948302128",
         "ISBN-13": "978-1948302128",
+        "url": "https://amzn.to/3lHrKZ2",
       },
-      "url": "https://amzn.to/3lHrKZ2",
       "img": "FairyTales1_covs.jpg",
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
@@ -191,6 +196,7 @@
         "Product Dimensions": "5.5 x 0.1 x 8.5 inches",
         "ISBN-10": "1948302098",
         "ISBN-13": "978-1948302098",
+        "url": "https://amzn.to/2Odm4rV",
       },
       "kindle": {
         "type": "Kindle",
@@ -204,8 +210,8 @@
         "Enhanced Typesetting": "Not Enabled ",
         "ISBN-10": "1948302098",
         "ISBN-13": "978-1948302098",
+        "url": "https://amzn.to/2YQ5E05",
       },
-      "url": "https://amzn.to/2Odm4rV",
       "img": "leonardostature_covs.jpg",
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
@@ -228,8 +234,8 @@
         "Product Dimensions": "5.5 x 0.4 x 8.5 inches",
         "ISBN-10": "1948302047",
         "ISBN-13": "978-1948302043",
+        "url": "https://amzn.to/2U5g30b",
       },
-      "url": "https://amzn.to/2U5g30b",
       "img": "impulse4renewal_covs.jpg",
       "categories": [
         "Social Science",
@@ -256,8 +262,8 @@
         "Product Dimensions": "5.5 x 0.1 x 8.5 inches",
         "ISBN-10": "1948302020",
         "ISBN-13": "978-1948302029",
+        "url": "https://amzn.to/2tAYXvO",
       },
-      "url": "https://amzn.to/2tAYXvO",
       "img": "raphaelsmission_covs.jpg",
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
@@ -282,6 +288,7 @@
         "Product Dimensions": "5.5 x 0.4 x 8.5 inches",
         "ISBN-10": "1791660533",
         "ISBN-13": "978-1791660536",
+        "url": "https://amzn.to/2XkGvFp",
       },
       "kindle": {
         "type": "Kindle",
@@ -295,8 +302,8 @@
         "Enhanced Typesetting": "Not Enabled",
         "ISBN-10": "1948302012",
         "ISBN-13": "978-1948302012",
+        "url": "https://amzn.to/326hcxC",
       },
-      "url": "https://amzn.to/2XkGvFp",
       "img": "thesocialquestion2_covs.jpg",
       "categories": [
         "Social Science",
@@ -326,6 +333,7 @@
         "Shipping Weight": "",
         "ISBN-10": "",
         "ISBN-13": "",
+        "url": "",
       },
       "kindle": {
         "type": "Kindle",
@@ -339,8 +347,8 @@
         "Enhanced Typesetting": "",
         "ISBN-10": "",
         "ISBN-13": "",
+        "url": "",
       },
-      "url": "",
       "img": "favelachildren_covs.png",
       "categories": ["Social Science", "Coming Soon"],
       "online": "no",
@@ -363,6 +371,7 @@
         "Shipping Weight": "",
         "ISBN-10": "",
         "ISBN-13": "",
+        "url": "",
       },
       "kindle": {
         "type": "Kindle",
@@ -376,8 +385,8 @@
         "Enhanced Typesetting": "",
         "ISBN-10": "",
         "ISBN-13": "",
+        "url": "",
       },
-      "url": "",
       "img": "magicmound_covs.png",
       "categories": ["Fiction", "Children's Books", "Coming Soon"],
       "online": "no",
@@ -401,6 +410,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "1-948302-20-3",
         "ISBN-13": "978-1-948302-20-3",
+        "url": "",
       },
       "kindle": {
         "type": "eBook",
@@ -414,13 +424,13 @@
         "enhanced typesetting": "enabled",
         "ISBN-10": "1-948302-20-0",
         "ISBN-13": "978-1-948302-20-0",
+        "url": "https://amzn.to/3jPhtLQ",
       },
       "categories": [
         "Social Science",
         "Spiritual Science",
         "Modern Translations",
       ],
-      "url": "https://amzn.to/3jPhtLQ",
       "img": "the-history-and-actuality-of-imperialism.jpg",
       "online":
         "https://wn.rsarchive.org/Lectures/GA196/English/SCR2011/HisImp_index.html",
@@ -446,6 +456,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "1-948302-28-9",
         "ISBN-13": "978-1-948302-28-9",
+        "url": "",
       },
       "hardcover": {
         "type": "Hardcover",
@@ -455,6 +466,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "1-948302-45-6",
         "ISBN-13": "978-1-948302-45-6",
+        "url": "",
       },
       "kindle": {
         "type": "eBook",
@@ -468,9 +480,9 @@
         "enhanced typesetting": "enabled",
         "ISBN-10": "1-948302-27-2",
         "ISBN-13": "978-1-948302-27-2",
+        "url": "https://amzn.to/2WXah7R",
       },
       "categories": ["Philosophy", "Spiritual Science", "Modern Translations"],
-      "url": "https://amzn.to/2WXah7R",
       "img": "FirstClass09b_cov.jpg",
       "online":
         "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018a/FstCs1_index.html",
@@ -496,6 +508,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "1-948302-30-2",
         "ISBN-13": "978-1-948302-30-2",
+        "url": "",
       },
       "hardcover": {
         "type": "Hardcover",
@@ -505,6 +518,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "1-948302-31-9",
         "ISBN-13": "978-1-948302-31-9",
+        "url": "",
       },
       "kindle": {
         "type": "eBook",
@@ -518,6 +532,7 @@
         "enhanced typesetting": "enabled",
         "ISBN-10": "1-948302-29-6",
         "ISBN-13": "978-1-948302-29-6",
+        "url": "https://amzn.to/2WXah7R",
       },
       "categories": [
         "Philosophy",
@@ -525,7 +540,6 @@
         "Modern Translations",
         "Coming Soon",
       ],
-      "url": "https://amzn.to/2WXah7R",
       "img": "FirstClassV2-01a_cov.jpg",
       "online":
         "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018b/FstCs2_index.html",
@@ -551,6 +565,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "n/a",
         "ISBN-13": "n/a",
+        "url": "",
       },
       "hardcover": {
         "type": "Hardcover",
@@ -560,6 +575,7 @@
         "shipping weight": "8.6 ounces",
         "ISBN-10": "n/a",
         "ISBN-13": "n/a",
+        "url": "",
       },
       "kindle": {
         "type": "eBook",
@@ -573,6 +589,7 @@
         "enhanced typesetting": "enabled",
         "ISBN-10": "n/a",
         "ISBN-13": "n/a",
+        "url": "https://amzn.to/2WXah7R",
       },
       "categories": [
         "Philosophy",
@@ -580,7 +597,6 @@
         "Modern Translations",
         "Coming Soon",
       ],
-      "url": "https://amzn.to/2WXah7R",
       "img": "FirstClassV3-01b_cov.jpg",
       "online":
         "https://wn.rsarchive.org/Lectures/GA270/English/eLib2018c/FstCs3_index.html",
@@ -603,11 +619,11 @@
         "dimensions": "8.5 x 0.13 x 11.0 inches",
         "ISBN-10": "1-948302-18-0",
         "ISBN-13": "978-1-948302-18-0",
+        "url": "",
       },
-      "url": "n/a",
       "img": "ArtemisionCoverFront01.jpg",
       "categories": ["Social Science", "Coming Soon"],
-      "online": "n/a",
+      "online": "no",
     },
     {
       "id": "16",
@@ -627,11 +643,11 @@
         "dimensions": "5.5 x 0.13 x 8.5 inches",
         "ISBN-10": "n/a",
         "ISBN-13": "n/a",
+        "url": "",
       },
-      "url": "n/a",
       "img": "journey-cov.jpg",
       "categories": ["Fiction", "Children's Books", "Coming Soon"],
-      "online": "n/a",
+      "online": "no",
     },
   ];
 
@@ -1141,8 +1157,8 @@
           const description = modalInner.querySelector("[data-description]");
           description.innerHTML = descriptions[book.id - 1].long;
 
-          const btn = modalInner.querySelector("[data-buy-btn]");
-          btn.href = book.url;
+          // const btn = modalInner.querySelector("[data-buy-btn]")
+          // btn.href = book.url
 
           const globalDiv = document.querySelector("[data-global-specs]");
 
@@ -1177,17 +1193,40 @@
 
           const asignArraysAndCreateColumns = () => {
             if (book.kindle) {
+              const buyBtn = document.querySelector("[data-kindle-buy]");
+              if (book.kindle.url.length > 0) {
+                buyBtn.innerText = "Buy The Book!";
+                buyBtn.href = book.kindle.url;
+              } else {
+                buyBtn.innerText = "Coming Soon!";
+                buyBtn.href = "javascript:void(0)";
+              }
               kindleArr = Object.keys(book.kindle);
               kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`;
               kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`;
-              console.log(kindleArr.length);
             }
             if (book.paperback) {
+              const buyBtn = document.querySelector("[data-paperback-buy]");
+              if (book.paperback.url.length > 0) {
+                buyBtn.innerText = "Buy The Book!";
+                buyBtn.href = book.paperback.url;
+              } else {
+                buyBtn.innerText = "Coming Soon!";
+                buyBtn.href = "javascript:void(0)";
+              }
               paperbackArr = Object.keys(book.paperback);
               paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`;
               paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`;
             }
             if (book.hardcover) {
+              const buyBtn = document.querySelector("[data-hardcover-buy]");
+              if (book.hardcover.url.length > 0) {
+                buyBtn.innerText = "Buy The Book!";
+                buyBtn.href = book.hardcover.url;
+              } else {
+                buyBtn.innerText = "Coming Soon!";
+                buyBtn.href = "javascript:void(0)";
+              }
               hardcoverArr = Object.keys(book.hardcover);
               hardcoverColOne.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`;
               hardcoverColTwo.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`;
