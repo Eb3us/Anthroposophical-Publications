@@ -42,8 +42,8 @@ export const openFullDescription = () => {
         const description = modalInner.querySelector("[data-description]")
         description.innerHTML = descriptions[book.id - 1].long
 
-        const btn = modalInner.querySelector("[data-buy-btn]")
-        btn.href = book.url
+        // const btn = modalInner.querySelector("[data-buy-btn]")
+        // btn.href = book.url
 
         const globalDiv = document.querySelector("[data-global-specs]")
 
@@ -78,17 +78,40 @@ export const openFullDescription = () => {
 
         const asignArraysAndCreateColumns = () => {
           if (book.kindle) {
+            const buyBtn = document.querySelector("[data-kindle-buy]")
+            if (book.kindle.url.length > 0) {
+              buyBtn.innerText = "Buy The Book!"
+              buyBtn.href = book.kindle.url
+            } else {
+              buyBtn.innerText = "Coming Soon!"
+              buyBtn.href = "javascript:void(0)"
+            }
             kindleArr = Object.keys(book.kindle)
             kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`
             kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`
-            console.log(kindleArr.length)
           }
           if (book.paperback) {
+            const buyBtn = document.querySelector("[data-paperback-buy]")
+            if (book.paperback.url.length > 0) {
+              buyBtn.innerText = "Buy The Book!"
+              buyBtn.href = book.paperback.url
+            } else {
+              buyBtn.innerText = "Coming Soon!"
+              buyBtn.href = "javascript:void(0)"
+            }
             paperbackArr = Object.keys(book.paperback)
             paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
             paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`
           }
           if (book.hardcover) {
+            const buyBtn = document.querySelector("[data-hardcover-buy]")
+            if (book.hardcover.url.length > 0) {
+              buyBtn.innerText = "Buy The Book!"
+              buyBtn.href = book.hardcover.url
+            } else {
+              buyBtn.innerText = "Coming Soon!"
+              buyBtn.href = "javascript:void(0)"
+            }
             hardcoverArr = Object.keys(book.hardcover)
             hardcoverColOne.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`
             hardcoverColTwo.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`
