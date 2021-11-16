@@ -53,7 +53,7 @@
         "Modern Translations",
       ],
       "img": "towthreesociety_covs.jpg",
-      "online": "no",
+      "online": "",
     },
     {
       "id": "2",
@@ -133,7 +133,7 @@
       },
       "img": "AnthroFantasies_covs.jpg",
       "categories": ["Fantasy", "Fiction"],
-      "online": "no",
+      "online": "",
     },
     {
       "id": "4",
@@ -351,7 +351,7 @@
       },
       "img": "favelachildren_covs.png",
       "categories": ["Social Science", "Coming Soon"],
-      "online": "no",
+      "online": "",
     },
     {
       "id": "10",
@@ -389,7 +389,7 @@
       },
       "img": "magicmound_covs.png",
       "categories": ["Fiction", "Children's Books", "Coming Soon"],
-      "online": "no",
+      "online": "",
     },
     {
       "id": "11",
@@ -623,7 +623,7 @@
       },
       "img": "ArtemisionCoverFront01.jpg",
       "categories": ["Social Science", "Coming Soon"],
-      "online": "no",
+      "online": "",
     },
     {
       "id": "16",
@@ -647,7 +647,7 @@
       },
       "img": "journey-cov.jpg",
       "categories": ["Fiction", "Children's Books", "Coming Soon"],
-      "online": "no",
+      "online": "",
     },
   ];
 
@@ -1148,10 +1148,14 @@
             subTitle.innerText = book["sub-title"];
           }
 
-          if (book.online !== "no") {
-            const onlineButton = modalInner.querySelector("[data-online-btn]");
-            onlineButton.classList.remove("hidden");
+          if (book.online.length > 0) {
+            const onlineBtnDiv = modalInner.querySelector("#online-btn-div");
+            const onlineButton = document.createElement("a");
+            onlineButton.className = "online-button";
             onlineButton.href = book.online;
+            onlineButton.target = "_blank";
+            onlineButton.innerText = "Read Online";
+            onlineBtnDiv.appendChild(onlineButton);
           }
 
           const description = modalInner.querySelector("[data-description]");
@@ -1193,40 +1197,56 @@
 
           const asignArraysAndCreateColumns = () => {
             if (book.kindle) {
-              const buyBtn = document.querySelector("[data-kindle-buy]");
+              const btnDiv = modalInner.querySelector("#kindle .specs-center-div");
+              const buyBtn = document.createElement("a");
+              buyBtn.className = "online-button";
               if (book.kindle.url.length > 0) {
                 buyBtn.innerText = "Buy The Book!";
+                buyBtn.target = "_blank";
                 buyBtn.href = book.kindle.url;
               } else {
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
+              btnDiv.appendChild(buyBtn);
               kindleArr = Object.keys(book.kindle);
               kindleColOne.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`;
               kindleColTwo.style.gridTemplateRows = `repeat(${kindleArr.length}, 40px)`;
             }
             if (book.paperback) {
-              const buyBtn = document.querySelector("[data-paperback-buy]");
+              const btnDiv = modalInner.querySelector(
+                "#paperback .specs-center-div"
+              );
+              const buyBtn = document.createElement("a");
+              buyBtn.className = "online-button";
               if (book.paperback.url.length > 0) {
                 buyBtn.innerText = "Buy The Book!";
+                buyBtn.target = "_blank";
                 buyBtn.href = book.paperback.url;
               } else {
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
+              btnDiv.appendChild(buyBtn);
               paperbackArr = Object.keys(book.paperback);
               paperbackColOne.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`;
               paperbackColTwo.style.gridTemplateRows = `repeat(${paperbackArr.length}, 40px)`;
             }
             if (book.hardcover) {
-              const buyBtn = document.querySelector("[data-hardcover-buy]");
+              const btnDiv = modalInner.querySelector(
+                "#hardcover .specs-center-div"
+              );
+              const buyBtn = document.createElement("a");
+              buyBtn.className = "online-button";
               if (book.hardcover.url.length > 0) {
                 buyBtn.innerText = "Buy The Book!";
+                buyBtn.target = "_blank";
                 buyBtn.href = book.hardcover.url;
               } else {
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
+              btnDiv.appendChild(buyBtn);
               hardcoverArr = Object.keys(book.hardcover);
               hardcoverColOne.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`;
               hardcoverColTwo.style.gridTemplateRows = `repeat(${hardcoverArr.length}, 40px)`;

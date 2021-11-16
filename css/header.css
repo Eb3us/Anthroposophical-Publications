@@ -232,7 +232,14 @@
         font-size: 125%;
         padding: 0.5em;
     }
-    
+    #header-description-div {
+        bottom: 40px;
+        right: 20px;
+        height: min-content;
+        overflow: hidden;
+        text-align: right;
+        font-size: 1em;
+    }
     #sub-title-line-break {
         display: none;
     }
@@ -243,7 +250,8 @@
         font-size: 7vw;
         
     }
-  
+    
+
     @keyframes point {
         0%{transform: rotate(90deg) translateX(30px)}
         50% {transform: rotate(90deg) translateX(30px)}
