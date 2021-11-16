@@ -72,6 +72,9 @@
         .footer-divs, .footer-divsc, .footer-divsl, .footer-divsr {
             min-height: 100%;
         }
+        #steiner-quote {
+            grid-area: 1 / 3 / 2 / 4;
+        }
     }
 
     
