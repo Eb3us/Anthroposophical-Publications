@@ -7,8 +7,10 @@
 <!-- Name: Steiner/Quotes/index.php                 Copyright (c) 1990-$cr -->
 <!-- Desc: Steiner Quotes Page Document                     The e.Lib, Inc. -->
 <!-- ...................................................................... -->
- <p align="justify" style="margin: 32px 32px 32px 16px">
-  <em><font size="+1">$quot</font></em><br><font size="-1">&#8212; <b>$auth</b> [$frm]</font>
+ <p align="justify" style="margin: 16px 16px 16px 16px">
+  <em><font size="+1">$quot</font></em><br>
+  <div align="right" style="margin: 0px 16px 0px 0px"><font size="-1">&#8212; <b>$auth</b><br>
+  [$frm]</font></div>
  </p>
 
 EOF;
