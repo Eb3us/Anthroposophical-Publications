@@ -1426,6 +1426,7 @@
     footer.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     middle.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     preview.style.backgroundImage = `url(${paintings[randomPainting].url})`;
+    preview.href = paintings[randomPainting].rsarchive;
     title.innerText = paintings[randomPainting].title;
     artist.innerText = `by ${paintings[randomPainting].artist}`;
     if (paintings[randomPainting].tone === "light") {
@@ -1445,10 +1446,6 @@
       keyParagraph.innerText = `${capitalizedKey}:`;
       valueParagraph.innerText = paintings[randomPainting][key];
       // footer.footer-painting-link = paintings[randomPainting][key]["rsarchive"]
-
-      preview.addEventListener("click", () => {
-        parent.open(paintings[randomPainting]["rsarchive"]);
-      });
     });
   }
 
