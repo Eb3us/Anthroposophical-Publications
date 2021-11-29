@@ -39,7 +39,7 @@ export const openFullDescription = () => {
           onlineButton.className = "online-button"
           onlineButton.href = book.online
           onlineButton.target = "_blank"
-          onlineButton.innerText = "Read Online"
+          onlineButton.innerText = "Research On-line"
           onlineBtnDiv.appendChild(onlineButton)
         }
 
