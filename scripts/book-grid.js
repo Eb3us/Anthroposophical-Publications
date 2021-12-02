@@ -205,8 +205,6 @@ export function gridFunction() {
     textDiv.classList.add("grid-book-text")
     const title = document.createElement("h5")
     const author = document.createElement("p")
-    title.classList.add("hidden-desktop")
-    author.classList.add("hidden-desktop")
     const categoriesDiv = document.createElement("div")
     element["categories"].forEach(category => {
       const paragraph = document.createElement("p")
@@ -225,6 +223,8 @@ export function gridFunction() {
       title.style.fontSize = "0.7em"
     }
     author.innerText = element["global"]["Author"]
+    title.classList.add("only-list")
+    author.classList.add("only-list")
     textDiv.appendChild(title)
     textDiv.appendChild(author)
     textDiv.appendChild(categoriesDiv)

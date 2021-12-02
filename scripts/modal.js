@@ -7,6 +7,7 @@ export const openFullDescription = () => {
   const modalInner = document.querySelector("#modal-inner")
   const modalCloseBtn = document.querySelector("#close-modal-btn")
   const floatingArrow = document.querySelector("#floating-btn-top")
+  const topButtonRow = document.querySelector("#top-button-row")
 
   document.addEventListener("click", e => {
     if (!e.target.closest("[data-book-link]")) return
@@ -17,6 +18,7 @@ export const openFullDescription = () => {
     fillModalTemplate(parent)
     floatingArrow.classList.add("hidden")
     floatingArrow.classList.remove("floating-btn-display-class")
+    topButtonRow.style.display = "none"
   })
 
   function fillModalTemplate(eventTargetParent) {
@@ -182,18 +184,19 @@ export const openFullDescription = () => {
       }
     })
   }
-
-  modalCloseBtn.addEventListener("click", () => {
+  const closeModal = () => {
     modal.classList.add("hidden")
+    topButtonRow.style.display = "flex"
     documentBody.classList.remove("no-overflow")
     modalInner.textContent = ""
+  }
+  modalCloseBtn.addEventListener("click", () => {
+    closeModal()
   })
 
   document.body.addEventListener("keydown", e => {
     if (e.key != "Escape") return
-    modal.classList.add("hidden")
-    documentBody.classList.remove("no-overflow")
-    modalInner.textContent = ""
+    closeModal()
   })
 
   const addToColOne = (array, div) => {

@@ -9,10 +9,12 @@ export function scrollFunction() {
   const main = document.querySelector("#main")
   const mainTop = main.offsetTop
   const carouselTop = document.querySelector("#carousel-outer").offsetTop
+  const topButtonRow = document.querySelector("#top-button-row")
+  const topButtonRowOffsetTop = topButtonRow.offsetTop
 
   headerArrow.addEventListener("click", () => {
     if (screen.width > 860) {
-      arrowScroll(headerArrow, carouselTop - 15)
+      arrowScroll(headerArrow, carouselTop - 65)
     } else if (screen.width > 560 && screen.width < 800) {
       arrowScroll(headerArrow, mainTop - 15)
     } else {
@@ -21,7 +23,7 @@ export function scrollFunction() {
   })
 
   midPageArrow.addEventListener("click", () => {
-    arrowScroll(midPageArrow, bookGridTop, 0)
+    arrowScroll(midPageArrow, bookGridTop - 60, 0)
   })
 
   floatingArrow.addEventListener("click", () => {
@@ -32,12 +34,20 @@ export function scrollFunction() {
   })
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= pointOfInversionMidPageArrow) {
+    if (window.scrollY >= pointOfInversionMidPageArrow - 60) {
       floatingArrow.classList.remove("hidden")
       floatingArrow.classList.add("floating-btn-display-class")
     } else {
       floatingArrow.classList.add("hidden")
       floatingArrow.classList.remove("floating-btn-display-class")
+    }
+  })
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= topButtonRowOffsetTop) {
+      topButtonRow.classList.add("top-button-row-fixed")
+    } else {
+      topButtonRow.classList.remove("top-button-row-fixed")
     }
   })
 

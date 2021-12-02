@@ -10,10 +10,11 @@ export const carouselFunction = () => {
   const dotsDiv = document.querySelector("#dots")
 
   innerCarousel.scrollLeft = 0
-
+  let carouselBooks = []
   function createBookDivs() {
-    innerCarousel.style.gridTemplate = `auto 30px / repeat(${books.length}, 100%) 18px`
     books.forEach(book => {
+      if (!book.carousel) return
+      carouselBooks.push(book)
       const bookDiv = bookTemplate.content.cloneNode(true)
       const img = bookDiv.querySelector("[data-book-img]")
       const title = bookDiv.querySelector("[data-book-title]")
@@ -29,7 +30,6 @@ export const carouselFunction = () => {
       if (title.innerText.length > 50) {
         title.style.fontSize = "1.8em"
       }
-      console.log(title.innerText.length)
       author.innerText = book.global.Author
       innerCarousel.appendChild(bookDiv)
       if (descriptions[book.id - 1]) {
@@ -37,7 +37,9 @@ export const carouselFunction = () => {
       }
     })
   }
+
   createBookDivs()
+  innerCarousel.style.gridTemplate = `auto 30px / repeat(${carouselBooks.length}, 100%) 18px`
 
   let intervalBooks = []
   let isSet = false
@@ -57,13 +59,13 @@ export const carouselFunction = () => {
         innerCarousel.querySelector("div:nth-child(1)").clientWidth
       visibleDiv--
     }
-    if (visibleDiv > books.length - 1) {
+    if (visibleDiv > carouselBooks.length - 1) {
       initialValue = 0
       visibleDiv = 0
     }
     if (visibleDiv < 0) {
       initialValue = innerCarousel.scrollWidth - 900
-      visibleDiv = books.length - 1
+      visibleDiv = carouselBooks.length - 1
     }
 
     innerCarousel.scroll({

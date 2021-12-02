@@ -8,7 +8,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -51,6 +51,7 @@ export const books = [
     ],
     "img": "towthreesociety_covs.jpg",
     "online": "",
+    "carousel": true,
   },
   {
     "id": "2",
@@ -62,7 +63,7 @@ export const books = [
       "Translator": "Peter Stebbing",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -91,6 +92,7 @@ export const books = [
     "categories": ["Spiritual Science", "Modern Translations"],
     "online":
       "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html",
+    "carousel": true,
   },
   {
     "id": "3",
@@ -102,7 +104,7 @@ export const books = [
       "Editor": "James D. Stewart",
       "Language": "English",
       "Ilustrator": "Celina MacKern",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -131,6 +133,7 @@ export const books = [
     "img": "AnthroFantasies_covs.jpg",
     "categories": ["Fantasy", "Fiction"],
     "online": "",
+    "carousel": true,
   },
   {
     "id": "4",
@@ -143,7 +146,7 @@ export const books = [
       "Translator": "Peter Stebbing",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -172,6 +175,7 @@ export const books = [
     "categories": ["Spiritual Science", "Modern Translations"],
     "online":
       "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html",
+    "carousel": true,
   },
   {
     "id": "5",
@@ -184,7 +188,7 @@ export const books = [
       "Editor": "James D. Stewart",
       "Language": "English",
       "Ilustrator": "Leonardo da Vinci",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -213,6 +217,7 @@ export const books = [
     "categories": ["Spiritual Science", "Modern Translations"],
     "online":
       "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html",
+    "carousel": true,
   },
   {
     "id": "6",
@@ -223,7 +228,7 @@ export const books = [
       "Translator": "Hanna von Maltitz",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -240,7 +245,8 @@ export const books = [
       "Modern Translations",
     ],
     "online":
-      "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
+      "https://wn.rsachive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
+    "carousel": true,
   },
   {
     "id": "7",
@@ -276,7 +282,7 @@ export const books = [
       "Editor": "James D. Stewart",
       "Language": "English",
       "Ilustrator": "Hanna von Maltitz",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -320,7 +326,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -358,7 +364,7 @@ export const books = [
       "Author": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Anthroposophical Publications",
+      "Publisher": "Anthroposophical Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -397,7 +403,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -443,7 +449,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Anthroposophical Publications",
+      "Publisher": "Anthroposophical Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -495,7 +501,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Anthroposophical Publications",
+      "Publisher": "Anthroposophical Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -552,7 +558,7 @@ export const books = [
       "Translator": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Anthroposophical Publications",
+      "Publisher": "Anthroposophical Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -607,7 +613,7 @@ export const books = [
       "Author": "Peter Stebbing",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Rudolf Steiner Publications",
+      "Publisher": "Rudolf Steiner Publications",
     },
     "paperback": {
       "type": "Paperback",
@@ -631,7 +637,7 @@ export const books = [
       "Author": "Frank Thomas Smith",
       "Editor": "James D. Stewart",
       "Language": "English",
-      "publisher": "Anthroposophical Publications",
+      "Publisher": "Anthroposophical Publications",
     },
     "paperback": {
       "type": "Paperback",

@@ -53,12 +53,22 @@
     padding: 0%;
 }
 
-#a-z, #z-a {
+#aZzA div {
     border: 0.5px solid  #eb6;
     border-radius: 10px;
     margin-left:0.5em;
 }
+#list, #mosaic {
+    display: none;
+}
 
+#list {
+    background-image: url("../img/list.png");
+    
+}
+#mosaic {
+    background-image: url("../img/mosaic.png");
+}
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -152,7 +162,38 @@
     font-size: 0.9em
 }
 
+.book-div-list-version #books-grid-inner{ 
+    grid-area: 1 / 1 / span 1 / span 6;
+    grid-template-columns:1fr;
+}
+.book-div-cover-version-mobile-landscape #books-grid-inner {
+    grid-area: -1 / 1 / span 1 / span 6;
+    grid-template-columns:repeat(4, 1fr);
+}.book-div-cover-version-mobile-landscape .only-list{
+    display: none;
+}
+.book-div-cover-version-tablet #books-grid-inner{
+    grid-template-columns:repeat(5, 1fr);
+}
+.book-div-cover-version-tablet .only-list{
+    display: none;
+}
+.book-div-cover-version-desktop #books-grid-inner{
+    grid-template-columns:repeat(6, 1fr);
+}
+.book-div-cover-version-desktop .only-list{
+    display: none;
+}
+.book-div-cover-version-desktop .book-img-div:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.book-div-cover-version-desktop .book-img-div:nth-child(5) img{
+    width: 95%;
+    height: 90%;
+    object-fit:contain;
 
+}
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/ 
 /*++++++++++        size: min-width: 650px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -211,7 +252,6 @@
 }
 
 
-
 @media only screen and (min-width:651px) {
     #books-grid-inner {
     grid-area: -1 / 1 / span 1 / span 6;
@@ -243,6 +283,15 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media only screen and (min-width:850px)  {
+
+    #list, #mosaic {
+        display: block;
+        height: 125%;
+        width: 2.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     #books-grid-inner {
         grid-template-columns:repeat(5, 1fr);
     }
@@ -254,18 +303,9 @@
 /*++++++++++        size: min-width: 1024px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media only screen and (min-width:1024px) {
-    #books-grid-inner {
-        grid-template-columns:repeat(6, 1fr);
-    }
-    .book-img-div:nth-child(5) {
-        grid-column: span 2;
-        grid-row: span 2;
     
-    }
     .book-img-div:nth-child(5) img {
-        width: 80%;
-        height: 65%;
-        object-fit:fill;
+       
     }
     .dropbtn:focus + .dropdown-content {
         display: block;
