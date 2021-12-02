@@ -17,7 +17,10 @@
     
     <script src="script.js" type="module"></script>
     <!-- <script src="bundle.js" defer></script> -->
-    <?php include("flipcause.inc");?>
+<?php include("flipcause.inc");
+// set current date variables
+$zdm=intval(date("m"));$zdd=intval(date("d"));$zdy=intval(date("Y"));
+?>
 </head>
 <body>
     <div id="modal" class="hidden">
@@ -44,6 +47,11 @@
             <a href="javascript:void(0)"  class="top-button-row-button">Other Link</a>
         </div>
         <div id="header-description-div">
+<?if($zdy==2021 && $zdm==12 && $zdd<=15) echo <<<EOF
+	<iframe align="right" style="height:373px; width:300px; border:medium none; " src="https://www.flipcause.com/embed/html_widget/MTM3Nzcy" scrolling="no"></iframe>
+
+EOF;
+?>
             <p>Anthroposophical Publications and Rudolf Steiner Publications are imprints of The e.Lib, Inc.<br> Our books are offered at reasonable prices made possible by print-on-demand technology.</p>
         </div>
         <div id="arrow-wrapper">

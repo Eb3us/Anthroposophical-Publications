@@ -34,10 +34,12 @@
     display: block;
 }
 #modal-inner h1 {
+    font-family: novabr;
     margin-top: 0;
     font-size: 2.2em;
 }
 #modal-inner h1, #modal-inner h3 {
+    font-family: novabr;
     text-align: center;
 }
 #modal-inner h3 {
@@ -57,7 +59,7 @@
 }
 .buy-button {
     display: block;
-    background-image: url("../img/buy-btn-logo.jpg");
+    background-image: url("/img/buy-btn-logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -1208,13 +1208,17 @@
           const asignArraysAndCreateColumns = () => {
             if (book.kindle) {
               const btnDiv = modalInner.querySelector("#kindle .specs-center-div");
-              const buyBtn = document.createElement("a");
-              buyBtn.className = "online-button";
+              //const buyBtn = document.createElement("a")
+              //buyBtn.className = "online-button"
               if (book.kindle.url.length > 0) {
-                buyBtn.innerText = "Buy The Book!";
+                //buyBtn.innerText = "Buy The Book!"
+                const buyBtn = modalInner.querySelector("[data-img]");
+                buyBtn.src = `./img/${book.img}`;
                 buyBtn.target = "_blank";
                 buyBtn.href = book.kindle.url;
               } else {
+                const buyBtn = document.createElement("a");
+                buyBtn.className = "online-button";
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
