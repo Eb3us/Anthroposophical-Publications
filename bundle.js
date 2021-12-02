@@ -1154,7 +1154,7 @@
             onlineButton.className = "online-button";
             onlineButton.href = book.online;
             onlineButton.target = "_blank";
-            onlineButton.innerText = "Read Online";
+            onlineButton.innerText = "Research On-line";
             onlineBtnDiv.appendChild(onlineButton);
           }
 
@@ -1198,13 +1198,17 @@
           const asignArraysAndCreateColumns = () => {
             if (book.kindle) {
               const btnDiv = modalInner.querySelector("#kindle .specs-center-div");
-              const buyBtn = document.createElement("a");
-              buyBtn.className = "online-button";
+              //const buyBtn = document.createElement("a")
+              //buyBtn.className = "online-button"
               if (book.kindle.url.length > 0) {
-                buyBtn.innerText = "Buy The Book!";
+                //buyBtn.innerText = "Buy The Book!"
+                const buyBtn = modalInner.querySelector("[data-img]");
+                buyBtn.src = `./img/${book.img}`;
                 buyBtn.target = "_blank";
                 buyBtn.href = book.kindle.url;
               } else {
+                const buyBtn = document.createElement("a");
+                buyBtn.className = "online-button";
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
@@ -1426,6 +1430,7 @@
     footer.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     middle.style.backgroundImage = `url(${paintings[randomPainting].url})`;
     preview.style.backgroundImage = `url(${paintings[randomPainting].url})`;
+    preview.href = paintings[randomPainting].rsarchive;
     title.innerText = paintings[randomPainting].title;
     artist.innerText = `by ${paintings[randomPainting].artist}`;
     if (paintings[randomPainting].tone === "light") {
@@ -1445,10 +1450,6 @@
       keyParagraph.innerText = `${capitalizedKey}:`;
       valueParagraph.innerText = paintings[randomPainting][key];
       // footer.footer-painting-link = paintings[randomPainting][key]["rsarchive"]
-
-      preview.addEventListener("click", () => {
-        parent.open(paintings[randomPainting]["rsarchive"]);
-      });
     });
   }
 
