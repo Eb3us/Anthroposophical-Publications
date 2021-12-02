@@ -11,7 +11,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -54,6 +54,7 @@
       ],
       "img": "towthreesociety_covs.jpg",
       "online": "",
+      "carousel": true,
     },
     {
       "id": "2",
@@ -65,7 +66,7 @@
         "Translator": "Peter Stebbing",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -94,6 +95,7 @@
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
         "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019b/GrimmH_index.html",
+      "carousel": true,
     },
     {
       "id": "3",
@@ -105,7 +107,7 @@
         "Editor": "James D. Stewart",
         "Language": "English",
         "Ilustrator": "Celina MacKern",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -134,6 +136,7 @@
       "img": "AnthroFantasies_covs.jpg",
       "categories": ["Fantasy", "Fiction"],
       "online": "",
+      "carousel": true,
     },
     {
       "id": "4",
@@ -146,7 +149,7 @@
         "Translator": "Peter Stebbing",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -175,6 +178,7 @@
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
         "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019a/FairTl_index.html",
+      "carousel": true,
     },
     {
       "id": "5",
@@ -187,7 +191,7 @@
         "Editor": "James D. Stewart",
         "Language": "English",
         "Ilustrator": "Leonardo da Vinci",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -216,6 +220,7 @@
       "categories": ["Spiritual Science", "Modern Translations"],
       "online":
         "https://wn.rsarchive.org/Lectures/GA062/English/eLib2019/Leondo_index.html",
+      "carousel": true,
     },
     {
       "id": "6",
@@ -226,7 +231,7 @@
         "Translator": "Hanna von Maltitz",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -243,7 +248,8 @@
         "Modern Translations",
       ],
       "online":
-        "https://wn.rsarchive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
+        "https://wn.rsachive.org/Lectures/GA081/English/eLib2018/ImpRen_index.html",
+      "carousel": true,
     },
     {
       "id": "7",
@@ -279,7 +285,7 @@
         "Editor": "James D. Stewart",
         "Language": "English",
         "Ilustrator": "Hanna von Maltitz",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -323,7 +329,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -361,7 +367,7 @@
         "Author": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Anthroposophical Publications",
+        "Publisher": "Anthroposophical Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -400,7 +406,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -446,7 +452,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Anthroposophical Publications",
+        "Publisher": "Anthroposophical Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -498,7 +504,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Anthroposophical Publications",
+        "Publisher": "Anthroposophical Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -555,7 +561,7 @@
         "Translator": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Anthroposophical Publications",
+        "Publisher": "Anthroposophical Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -610,7 +616,7 @@
         "Author": "Peter Stebbing",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Rudolf Steiner Publications",
+        "Publisher": "Rudolf Steiner Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -634,7 +640,7 @@
         "Author": "Frank Thomas Smith",
         "Editor": "James D. Stewart",
         "Language": "English",
-        "publisher": "Anthroposophical Publications",
+        "Publisher": "Anthroposophical Publications",
       },
       "paperback": {
         "type": "Paperback",
@@ -775,10 +781,11 @@
     const dotsDiv = document.querySelector("#dots");
 
     innerCarousel.scrollLeft = 0;
-
+    let carouselBooks = [];
     function createBookDivs() {
-      innerCarousel.style.gridTemplate = `auto 30px / repeat(${books.length}, 100%) 18px`;
       books.forEach(book => {
+        if (!book.carousel) return
+        carouselBooks.push(book);
         const bookDiv = bookTemplate.content.cloneNode(true);
         const img = bookDiv.querySelector("[data-book-img]");
         const title = bookDiv.querySelector("[data-book-title]");
@@ -794,7 +801,6 @@
         if (title.innerText.length > 50) {
           title.style.fontSize = "1.8em";
         }
-        console.log(title.innerText.length);
         author.innerText = book.global.Author;
         innerCarousel.appendChild(bookDiv);
         if (descriptions[book.id - 1]) {
@@ -802,7 +808,9 @@
         }
       });
     }
+
     createBookDivs();
+    innerCarousel.style.gridTemplate = `auto 30px / repeat(${carouselBooks.length}, 100%) 18px`;
 
     let intervalBooks = [];
     let isSet = false;
@@ -822,13 +830,13 @@
           innerCarousel.querySelector("div:nth-child(1)").clientWidth;
         visibleDiv--;
       }
-      if (visibleDiv > books.length - 1) {
+      if (visibleDiv > carouselBooks.length - 1) {
         initialValue = 0;
         visibleDiv = 0;
       }
       if (visibleDiv < 0) {
         initialValue = innerCarousel.scrollWidth - 900;
-        visibleDiv = books.length - 1;
+        visibleDiv = carouselBooks.length - 1;
       }
 
       innerCarousel.scroll({
@@ -1086,8 +1094,6 @@
       textDiv.classList.add("grid-book-text");
       const title = document.createElement("h5");
       const author = document.createElement("p");
-      title.classList.add("hidden-desktop");
-      author.classList.add("hidden-desktop");
       const categoriesDiv = document.createElement("div");
       element["categories"].forEach(category => {
         const paragraph = document.createElement("p");
@@ -1106,6 +1112,8 @@
         title.style.fontSize = "0.7em";
       }
       author.innerText = element["global"]["Author"];
+      title.classList.add("only-list");
+      author.classList.add("only-list");
       textDiv.appendChild(title);
       textDiv.appendChild(author);
       textDiv.appendChild(categoriesDiv);
@@ -1122,6 +1130,7 @@
     const modalInner = document.querySelector("#modal-inner");
     const modalCloseBtn = document.querySelector("#close-modal-btn");
     const floatingArrow = document.querySelector("#floating-btn-top");
+    const topButtonRow = document.querySelector("#top-button-row");
 
     document.addEventListener("click", e => {
       if (!e.target.closest("[data-book-link]")) return
@@ -1132,6 +1141,7 @@
       fillModalTemplate(parent);
       floatingArrow.classList.add("hidden");
       floatingArrow.classList.remove("floating-btn-display-class");
+      topButtonRow.style.display = "none";
     });
 
     function fillModalTemplate(eventTargetParent) {
@@ -1154,7 +1164,7 @@
             onlineButton.className = "online-button";
             onlineButton.href = book.online;
             onlineButton.target = "_blank";
-            onlineButton.innerText = "Read Online";
+            onlineButton.innerText = "Research On-line";
             onlineBtnDiv.appendChild(onlineButton);
           }
 
@@ -1297,18 +1307,19 @@
         }
       });
     }
-
-    modalCloseBtn.addEventListener("click", () => {
+    const closeModal = () => {
       modal.classList.add("hidden");
+      topButtonRow.style.display = "flex";
       documentBody.classList.remove("no-overflow");
       modalInner.textContent = "";
+    };
+    modalCloseBtn.addEventListener("click", () => {
+      closeModal();
     });
 
     document.body.addEventListener("keydown", e => {
       if (e.key != "Escape") return
-      modal.classList.add("hidden");
-      documentBody.classList.remove("no-overflow");
-      modalInner.textContent = "";
+      closeModal();
     });
 
     const addToColOne = (array, div) => {
@@ -1460,10 +1471,12 @@
     const main = document.querySelector("#main");
     const mainTop = main.offsetTop;
     const carouselTop = document.querySelector("#carousel-outer").offsetTop;
+    const topButtonRow = document.querySelector("#top-button-row");
+    const topButtonRowOffsetTop = topButtonRow.offsetTop;
 
     headerArrow.addEventListener("click", () => {
       if (screen.width > 860) {
-        arrowScroll(headerArrow, carouselTop - 15);
+        arrowScroll(headerArrow, carouselTop - 65);
       } else if (screen.width > 560 && screen.width < 800) {
         arrowScroll(headerArrow, mainTop - 15);
       } else {
@@ -1472,7 +1485,7 @@
     });
 
     midPageArrow.addEventListener("click", () => {
-      arrowScroll(midPageArrow, bookGridTop);
+      arrowScroll(midPageArrow, bookGridTop - 60);
     });
 
     floatingArrow.addEventListener("click", () => {
@@ -1483,12 +1496,20 @@
     });
 
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= pointOfInversionMidPageArrow) {
+      if (window.scrollY >= pointOfInversionMidPageArrow - 60) {
         floatingArrow.classList.remove("hidden");
         floatingArrow.classList.add("floating-btn-display-class");
       } else {
         floatingArrow.classList.add("hidden");
         floatingArrow.classList.remove("floating-btn-display-class");
+      }
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= topButtonRowOffsetTop) {
+        topButtonRow.classList.add("top-button-row-fixed");
+      } else {
+        topButtonRow.classList.remove("top-button-row-fixed");
       }
     });
 
@@ -1502,16 +1523,27 @@
 
   function adaptToDevices() {
     function resetHeight() {
+      const booksGridOuter = document.querySelector("#books-grid-outer");
       let isMobile = window.matchMedia("(max-width:650px)").matches;
       let isMobilePortrait = window.matchMedia(
         "(max-width:800px) and (orientation:landscape)"
       ).matches;
+      let isTablet = window.matchMedia(
+        "(min-width:850px) and (max-width:1023.9px)"
+      ).matches;
+      let isDesktop = window.matchMedia("(min-width:1024px)").matches;
       if (isMobile) {
         document.body.style.gridTemplateRows = `92vh auto auto`;
+        booksGridOuter.className = "book-div-list-version";
       } else if (isMobilePortrait) {
         document.body.style.gridTemplateRows = `84vh auto auto`;
-      } else {
+        booksGridOuter.className = "book-div-cover-version-mobile-landscape";
+      } else if (isTablet) {
         document.body.style.gridTemplateRows = `100vh auto auto`;
+        booksGridOuter.className = "book-div-cover-version-tablet";
+      } else if (isDesktop) {
+        document.body.style.gridTemplateRows = `100vh auto auto`;
+        booksGridOuter.className = "book-div-cover-version-desktop";
       }
     }
 
