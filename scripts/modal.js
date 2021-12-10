@@ -184,12 +184,14 @@ export const openFullDescription = () => {
       }
     })
   }
+
   const closeModal = () => {
     modal.classList.add("hidden")
     topButtonRow.style.display = "flex"
     documentBody.classList.remove("no-overflow")
     modalInner.textContent = ""
   }
+
   modalCloseBtn.addEventListener("click", () => {
     closeModal()
   })
