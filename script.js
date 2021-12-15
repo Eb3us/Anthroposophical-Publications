@@ -4,6 +4,7 @@ import { openFullDescription } from "./scripts/modal.js"
 import { rotateHeaderImages } from "./scripts/paintingselect.js"
 import { scrollFunction } from "./scripts/scroll.js"
 import { adaptToDevices } from "./scripts/size.js"
+import { topBarLinksFunction } from "./scripts/topbarLinks.js"
 
 carouselFunction()
 gridFunction()
@@ -11,3 +12,4 @@ openFullDescription()
 rotateHeaderImages()
 adaptToDevices()
 scrollFunction()
+topBarLinksFunction()
