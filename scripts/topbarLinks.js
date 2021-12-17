@@ -26,7 +26,7 @@ export const topBarLinksFunction = () => {
       }
       element.paragraphs.forEach(paragraph => {
         const para = document.createElement("p")
-        para.innerText = paragraph
+        para.innerHTML = paragraph
         modalInner.appendChild(para)
       })
     })

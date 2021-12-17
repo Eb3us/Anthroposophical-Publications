@@ -18,7 +18,7 @@ export const openFullDescription = () => {
     fillModalTemplate(parent)
     floatingArrow.classList.add("hidden")
     floatingArrow.classList.remove("floating-btn-display-class")
-    topButtonRow.style.display = "none"
+    topButtonRow.classList.add("hidden")
   })
 
   function fillModalTemplate(eventTargetParent) {
@@ -187,7 +187,7 @@ export const openFullDescription = () => {
 
   const closeModal = () => {
     modal.classList.add("hidden")
-    topButtonRow.style.display = "flex"
+    topButtonRow.classList.remove("hidden")
     documentBody.classList.remove("no-overflow")
     modalInner.textContent = ""
   }
