@@ -1,6 +1,7 @@
 import { books } from "./books.js"
 
 export function gridFunction() {
+  const booksGridOuter = document.querySelector("#books-grid-outer")
   const bookGrid = document.querySelector("#books-grid-inner")
   const allBooksLink = document.querySelector("#all-books")
   //generate authors/categories links
@@ -93,7 +94,10 @@ export function gridFunction() {
         .classList.remove("submenu-active")
     }
   })
-
+  document.addEventListener("click", e => {
+    if (!e.target.matches("#list")) return
+    booksGridOuter.className = "book-div-list-version"
+  })
   //order alphabetically or inverse alphabetically
   const sortAZZA = (array, AZZA) => {
     const tempArray = [...array]

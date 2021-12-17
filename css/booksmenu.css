@@ -1,3 +1,4 @@
+/*global*/
 #books-grid-outer {
     grid-area: 1 / 1 / span 1 / span 10;
 }
@@ -161,23 +162,37 @@
     font-style: italic;   
     font-size: 0.9em
 }
-
+/*mobile list*/
 .book-div-list-version #books-grid-inner{ 
     grid-area: 1 / 1 / span 1 / span 6;
     grid-template-columns:1fr;
 }
+/*mobile landscape*/
 .book-div-cover-version-mobile-landscape #books-grid-inner {
     grid-area: -1 / 1 / span 1 / span 6;
     grid-template-columns:repeat(4, 1fr);
 }.book-div-cover-version-mobile-landscape .only-list{
     display: none;
 }
+/*tablet*/
 .book-div-cover-version-tablet #books-grid-inner{
     grid-template-columns:repeat(5, 1fr);
 }
 .book-div-cover-version-tablet .only-list{
     display: none;
 }
+.book-div-cover-version-tablet #list,.book-div-cover-version-tablet #mosaic {
+    display: block;
+    height: 125%;
+    width: 2.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.book-div-cover-version-tablet #books-grid-inner {
+    grid-template-columns:repeat(5, 1fr);
+}
+/*desktop*/
 .book-div-cover-version-desktop #books-grid-inner{
     grid-template-columns:repeat(6, 1fr);
 }
@@ -193,6 +208,12 @@
     height: 90%;
     object-fit:contain;
 
+}
+.book-div-cover-version-desktop .dropbtn:focus + .dropdown-content {
+    display: block;
+}
+.book-div-cover-version-desktop .grid-book-text {
+    font-size: 1.3em;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/ 
 /*++++++++++        size: min-width: 650px     +++++++++++++++*/
@@ -284,17 +305,7 @@
 
 @media only screen and (min-width:850px)  {
 
-    #list, #mosaic {
-        display: block;
-        height: 125%;
-        width: 2.5em;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #books-grid-inner {
-        grid-template-columns:repeat(5, 1fr);
-    }
+    
 }
 .dropbtn {
     text-align: left;
@@ -305,10 +316,5 @@
 @media only screen and (min-width:1024px) {
     
    
-    .dropbtn:focus + .dropdown-content {
-        display: block;
-    }
-    .grid-book-text {
-        font-size: 1.3em;
-    }
+    
 }

@@ -187,9 +187,9 @@ export const openFullDescription = () => {
 
   const closeModal = () => {
     modal.classList.add("hidden")
-    topButtonRow.classList.remove("hidden")
     documentBody.classList.remove("no-overflow")
     modalInner.textContent = ""
+    topButtonRow.classList.remove("hidden")
   }
 
   modalCloseBtn.addEventListener("click", () => {
