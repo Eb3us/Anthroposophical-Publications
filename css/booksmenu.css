@@ -181,7 +181,7 @@
 .book-div-cover-version-tablet .only-list{
     display: none;
 }
-.book-div-cover-version-tablet #list,.book-div-cover-version-tablet #mosaic {
+.book-div-cover-version-desktop #mosaic,.book-div-cover-version-desktop #list, .book-div-cover-version-tablet #list,.book-div-cover-version-tablet #mosaic {
     display: block;
     height: 125%;
     width: 2.5em;
@@ -215,6 +215,7 @@
 .book-div-cover-version-desktop .grid-book-text {
     font-size: 1.3em;
 }
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/ 
 /*++++++++++        size: min-width: 650px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -274,15 +275,7 @@
 
 
 @media only screen and (min-width:651px) {
-    #books-grid-inner {
-    grid-area: -1 / 1 / span 1 / span 6;
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap: 1rem; 
-    }
-    .book-img {
-        width:100%;
-     }
+    
 }
 /*MAX*/
 @media only screen and (max-width:650px) {
@@ -299,22 +292,7 @@
     }
 }
 /**/
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*++++++++++        size: min-width: 850px     +++++++++++++++*/
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media only screen and (min-width:850px)  {
-
-    
-}
 .dropbtn {
     text-align: left;
-}
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*++++++++++        size: min-width: 1024px     +++++++++++++++*/
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-@media only screen and (min-width:1024px) {
-    
-   
-    
 }

@@ -890,6 +890,7 @@
   };
 
   function gridFunction() {
+    const booksGridOuter = document.querySelector("#books-grid-outer");
     const bookGrid = document.querySelector("#books-grid-inner");
     const allBooksLink = document.querySelector("#all-books");
     //generate authors/categories links
@@ -982,7 +983,10 @@
           .classList.remove("submenu-active");
       }
     });
-
+    document.addEventListener("click", e => {
+      if (!e.target.matches("#list")) return
+      booksGridOuter.className = "book-div-list-version";
+    });
     //order alphabetically or inverse alphabetically
     const sortAZZA = (array, AZZA) => {
       const tempArray = [...array];
@@ -1141,7 +1145,7 @@
       fillModalTemplate(parent);
       floatingArrow.classList.add("hidden");
       floatingArrow.classList.remove("floating-btn-display-class");
-      topButtonRow.style.display = "none";
+      topButtonRow.classList.add("hidden");
     });
 
     function fillModalTemplate(eventTargetParent) {
@@ -1208,17 +1212,13 @@
           const asignArraysAndCreateColumns = () => {
             if (book.kindle) {
               const btnDiv = modalInner.querySelector("#kindle .specs-center-div");
-              //const buyBtn = document.createElement("a")
-              //buyBtn.className = "online-button"
+              const buyBtn = document.createElement("a");
+              buyBtn.className = "online-button";
               if (book.kindle.url.length > 0) {
-                //buyBtn.innerText = "Buy The Book!"
-                const buyBtn = modalInner.querySelector("[data-img]");
-                buyBtn.src = `./img/${book.img}`;
+                buyBtn.innerText = "Buy The Book!";
                 buyBtn.target = "_blank";
                 buyBtn.href = book.kindle.url;
               } else {
-                const buyBtn = document.createElement("a");
-                buyBtn.className = "online-button";
                 buyBtn.innerText = "Coming Soon!";
                 buyBtn.href = "javascript:void(0)";
               }
@@ -1311,12 +1311,14 @@
         }
       });
     }
+
     const closeModal = () => {
       modal.classList.add("hidden");
-      topButtonRow.style.display = "flex";
       documentBody.classList.remove("no-overflow");
       modalInner.textContent = "";
+      topButtonRow.classList.remove("hidden");
     };
+
     modalCloseBtn.addEventListener("click", () => {
       closeModal();
     });
@@ -1558,11 +1560,67 @@
     resetHeight();
   }
 
+  const content = [
+    {
+      id: "about",
+      title: "About Anthroposophical Publications",
+      subtitle: "",
+      paragraphs: [
+        "Anthroposophical Publications is pioneering a new publishing model: presenting documents online at the same time as hard copies are available for purchase: We are primarily (but not exclusively) concentrating on works with an Anthroposophical focus, including English translations of more than 2,500 Rudolf Steiner lectures that have never yet been translated. &#8220;Research Rudolf Steiner's works online ... buy the book to study at home.&#8221;",
+        "Rudolf Steiner, The Kingdom of Childhood, 20th August, 1924: &#8220;As to whether French and German should be taught from the beginning in an English School, I should first like to say that I think this must be settled entirely on grounds of expediency. If you simply find that life is making it necessary to teach these languages, you must teach them. We have introduced French and English into the Waldorf School, because with French there is much to be learnt from the inner quality of the language, not found elsewhere, namely, a certain feeling for rhetoric which it is very good to acquire: and English is taught because it is a universal world language, and will become so more and more.&#8221;",
+        "A number of translators from all over the world are volunteering their efforts, including Peter Stebbing, Frank Thomas Smith, Hanna von Maltitz, Luise M. Boeddinghaus, and Nesta Carsten.",
+        "This is also a venue for Anthroposophically-oriented authors to publish original works without paying to self-publish or by entering into disadvantageous arrangements with publishers.",
+        "Some volumes are currently available for purchase on Amazon and elsewhere, and we always have a number of works in process.",
+        "<i>Anthroposophical Publications</i> and <i>Rudolf Steiner Publications</i> are imprints of <b>The e.Lib, Inc.</b> Our books are offered at reasonable prices made possible by print-on-demand technology.",
+      ],
+    },
+  ];
+
+  const topBarLinksFunction = () => {
+    const floatingArrow = document.querySelector("#floating-btn-top");
+    const topButtonRow = document.querySelector("#top-button-row");
+    const modal = document.querySelector("#modal");
+    const modalInner = document.querySelector("#modal-inner");
+
+    document.addEventListener("click", e => {
+      const link = e.target;
+      if (!link.matches(".top-button-row-button")) return
+      if (!link.dataset.template) return
+      floatingArrow.classList.add("hidden");
+      floatingArrow.classList.remove("floating-btn-display-class");
+      topButtonRow.classList.add("hidden");
+      const contentWrapper = document.createElement("div");
+      contentWrapper.className = "modal-content-wrapper";
+      content.forEach(element => {
+        if (element.id === link.dataset.template) {
+          const title = document.createElement("h1");
+          title.innerText = element.title;
+          contentWrapper.appendChild(title);
+
+          if (element.subtitle && element.subtitle.lenght > 0) {
+            const subTitle = document.createElement("h2");
+            subTitle.innerText = element.subtitle;
+            contentWrapper.appendChild(subTitle);
+          }
+          element.paragraphs.forEach(paragraph => {
+            const para = document.createElement("p");
+            para.innerHTML = paragraph;
+            contentWrapper.appendChild(para);
+          });
+          modalInner.appendChild(contentWrapper);
+        }
+      });
+
+      modal.classList.remove("hidden");
+    });
+  };
+
   carouselFunction();
   gridFunction();
   openFullDescription();
   rotateHeaderImages();
   adaptToDevices();
   scrollFunction();
+  topBarLinksFunction();
 
 }());
