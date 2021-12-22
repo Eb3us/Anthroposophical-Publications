@@ -1,0 +1,113 @@
+<?//include("head.inc");
+$cr=date("Y"); echo <<<EOF
+<!-- .............. https://AntroposophicalPublications.org/Publishers.html -->
+<!-- Anthro Publishers page: a page devoted to the different publishers of  -->
+<!-- Steiner or Anthroposophical books.                                     -->
+<!-- Copyright (c) 1990-$cr .............................. The e.Lib, Inc. -->
+
+EOF;
+$titl="$lnam: Publishers"; $hed=0;
+$key="Steiner Archive:Publishers";
+$mdes="Publishers page: a page devoted to the different publishers -- foreign and domestic -- of Steiner or Anthroposophical books.";
+$mkey="publisher,book,documents,foreign,domestic,rudolf steiner,anthroposophical,publishing";
+include("metadata.inc");
+
+echo <<<EOF
+<center>
+ <h2>Publishers of Anthroposophical Books</h2>
+</center>
+
+<center>
+ <hr width="50%" noshade>
+ <!-- <img src="/AIcons/images/ThreadLines/forest.gif"
+    width=560 height=29 alt="A Line of Forest Trees" align="center"> -->
+</center>
+
+EOF;
+
+//if($annc==1) include("Publishers/announce.inc");
+
+echo <<<EOF
+<div style="border: 0px #000033 solid; padding: 12px">
+ <p align="justify" style="font-size: 13pt">The Rudolf Steiner Archive is
+  a great place to be if you want to do
+  research on the writings of Rudolf Steiner! But, there is still nothing
+  like curling up in an easy chair with the book! And here is a list of the
+  folks that publish those books: a list of the current Anthroposophical
+  Publishers with links so you can find the books at their web sites.<br><br>
+  And please remember that while the older books you find at the Rudolf
+  Steiner Archive may not be available anymore, you can probably find a
+  newer edition or translation of your favorite book at one of these
+  publisher's sites.
+ </p>
+
+ <!-- <table border="0" align="center" width="100%" cellpadding="10"
+         cellspacing="1" bgcolor="#000033">
+  <tr valign="top" bgcolor="#FFFFF8"><td> -->
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/rspress.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/apress.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/mpress.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/completion.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/waldpubs.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/verlag.inc");
+
+echo <<<EOF
+  <!-- </td></tr></table> -->
+ </div><br>
+</div><br>
+
+EOF;
+
+// include("footing.inc");
+?>
+
