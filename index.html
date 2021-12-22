@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthroposophical Publications</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/booksmenu.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    
+    
+    
+    <!-- <script src="script.js" type="module"></script> -->
+    <script src="bundle.js" defer></script>
+<?php include("flipcause.inc");
+// set current date variables
+$zdm=intval(date("m"));$zdd=intval(date("d"));$zdy=intval(date("Y"));
+?>
+</head>
+<body>
+    <div id="modal" class="hidden">
+        <div id="close-modal-btn" title="close">x</div>
+        <div id="modal-inner">
+            
+        </div>
+    </div>
+
+    <div id="floating-btn-top" title="Back to the top" class="hidden">&#10145;</div>   
+
+    
+    <div id="header">
+        
+        
+        <div id="titles-div">
+            <h1>Anthroposophical Publications</h1>
+            <h2>Spirit Working<span id="sub-title-line-break"><br></span> in the World</h2>
+        </div>
+        <div id="top-button-row" class="top-button-row">
+            <a href="https://www.flipcause.com/secure/cause_pdetails/MTMxNDAw" target="_blank" class="top-button-row-button">Donations</a>
+            <a href="javascript:void(0)"  data-template="about" class="top-button-row-button">About Us</a>
+            <a href="javascript:void(0)"  class="top-button-row-button">Other Link</a>
+            <a href="javascript:void(0)"  class="top-button-row-button">Other Link</a>
+        </div>
+        <div id="header-description-div">
+<?if($zdy==2021 && $zdm==12 && $zdd<=15) echo <<<EOF
+	<iframe align="right" style="height:373px; width:300px; border:medium none; " src="https://www.flipcause.com/embed/html_widget/MTM3Nzcy" scrolling="no"></iframe>
+
+EOF;
+?>
+            <p>Anthroposophical Publications and Rudolf Steiner Publications are imprints of The e.Lib, Inc.<br> Our books are offered at reasonable prices made possible by print-on-demand technology.</p>
+        </div>
+        <div id="arrow-wrapper">
+            <div id="header-arrow" class="rotate-arrow-down arrow header-arrow-animation" data-position="down">&#10144;</div>
+        </div>  
+    </div>
+
+
+    <div id="main">
+
+
+        <div id="arrow-left-container" class="hidden-mobile">
+            <div data-arrow id="arrow-left" tabindex="1" class="hidden-mobile">&#10151;</div>
+        </div>
+        <div  id="arrow-right-container" class="hidden-mobile">
+            <div data-arrow id="arrow-right" tabindex="2" class="hidden-mobile">&#10151;</div>
+        </div>
+        <div id="carousel-outer" class="hidden-mobile">
+            <div id="carousel-inner">   
+           <!--javascript generated objects here-->     
+           
+            </div>
+            <div id="dots"></div> 
+        </div>
+
+        <div id="painting-title-author-div" class="hidden-tablet">
+            <p id="painting-div-title" class="hidden-tablet">Background Image</p>
+            <div id="painting-title"></div>
+            <div id="painting-artist"></div>
+        </div>
+        <a id="painting-preview" target="_blank" class="hidden-tablet"></a>
+        <div id="painting-bottom">
+            <p>Click on the image to see full painting in Fine Art Presentation's e.Gallery!</p>
+        </div>
+
+
+        <div id="background-div" class="hidden-tablet hidden-mobile">
+            <div id="mid-page-text-1" class="mid-page-text hidden-mobile">
+                <p>&#8220;Research Rudolf Steiner's works on-line ... buy the Book to study at home!&#8221;<br>&#8211; the Emeritus e.Librarian</p>
+            </div>
+            <div id="mid-page-text-2" class="mid-page-text hidden-mobile">
+                <p>Browse all books!</p>
+            </div>
+            <div id="mid-page-arrow" class="rotate-arrow-down arrow mid-arrow-animation" data-position="down">&#10144;</div>
+                </div>
+
+
+        <div id="books-grid-outer">
+            <div id="grid-selector">
+                
+                <div id="all-books" class="highlight" tabindex="3">All books</div>
+                
+                <div id="author-menu" class="dropdown">
+                  <div class="dropbtn highlight" tabindex="4">by Author: &#8595;</div>
+                  <ul class="dropdown-content" id="authors-div">     </ul>
+                </div>
+                <div id="category-menu" class="dropdown">
+                    <div class="dropbtn highlight" tabindex="6">by Category: &#8595;</div>
+                    <ul class="dropdown-content" id="categories-div">    </ul>
+                </div>
+            
+                <div id="aZzA">
+                    <div id="list"></div>
+                    <div id="mosaic"></div>
+                    <div id="a-z" class="azzaBtn highlight" tabindex="8">A-Z</div>
+                    <div id="z-a" class="azzaBtn highlight" tabindex="9">Z-A</div>
+                </div>
+                
+            </div>
+            
+            <div id="books-grid-inner">
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-divsl footer-divs" id="contact-info">
+          <h2>Contact:</h2>
+          <ul>
+          <li><a href="mailto:eelibrarian@elib.com?subject=From%20the%20Anthroposophical%20Publications%20site:">The Emeritus e.Librarian</a><br></li>
+          <li><a href="mailto:info@elib.com/?subject=AP%20Information%20Please">Information</a><br></li>
+          <li><a href="mailto:jds@elib.com/?subject=AP%20A%20message%20for%20James%20Stewart">James Stewart</a></li>
+          </ul>
+		  
+        </div>
+        <div class="footer-divsc footer-divs" id="links-info">
+          <h2 style="text-align:center">e.Lib Family</h2>
+          <h4 style="text-align:center; margin-top:-16px">of Anthroposophical Information Sites</h4>
+          <table border="0" align="center" cellspacing="0" cellpadding="0" style="margin-top:-8px">
+            <tr valign="top">
+              <td align="right"><b>Book publishing:&#160;</b></td>
+              <td align="left"><a href="https://anthroposophicalpublications.org/" target="_blank">Anthroposophical Publications</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Research Sharing:&#160;</b></td>
+              <td align="left"><a href="https://studygroups.online/" target="_blank">Study Groups On-line</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Fine Art Gallery:&#160;</b></td>
+              <td align="left"><a href="https://fineart.elib.com/" target="_blank">Fine Art Presentations</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Anthro News Wire:&#160;</b></td>
+              <td align="left"><a href="https://knownews.net/" target="_blank">KnowNews dot Net</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Book Reviews:&#160;</b></td>
+              <td align="left"><a href="https://reviews.rsarchive.net/" target="_blank">Now I See ...</a><br></td>
+            </tr><tr valign="top">
+              <td align="right"><b>Parent Initiative:&#160;</b></td>
+              <td align="left"><a href="https://www,elib.com/" target="_blank">The e.Lib, Inc.</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-divsr footer-divs" id="steiner-quote">
+          <h2 style="text-align:center">Steiner Quote</h2>
+          <?php include("randquot.inc");?>
+        </div>
+        
+    </div>
+    
+    <template data-book-template>
+        <div class="book-rectangle" data-book-link title="Click to see full description">
+            <img data-book-img src="" class="book-cover">
+            <div class="text-div">
+                <h1 data-book-title class="book-title"></h1>
+                <h2 data-book-author class="book-author"></h2>
+                <div class="book-description-div">
+                    <p data-book-description class="book-description"></p>
+                    <p class="click-alert">Click for more info on this book!</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    
+
+    <template data-full-desc-template>
+        <div id="img-and-description">    
+            <img data-img class="modal-img" src="">
+            <h1 data-title></h1>
+            <h3 data-sub-title></h3>
+            <p data-description></p>
+        </div>
+
+        <div data-global-specs id="global"></div>
+
+        <div id="online-btn-div" class="buttons-div"></div>
+
+        <div id="specs">
+            <div data-paperback-specs id="paperback">
+                
+                <div class="specs-center-div">
+                    <p class="col-title">Paperback:</p>
+                    
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+                
+            </div>
+            <div data-hardcover-specs id="hardcover" >
+                <div class="specs-center-div">
+                    <p class="col-title">Hardcover:</p>
+                    
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+            </div>
+            <div data-kindle-specs id="kindle">
+                <div class="specs-center-div">
+                    <p class="col-title">e.Book:</p>
+                    
+                </div>
+                
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+            </div>
+        </div>
+    </template>
+    <div class="floating_button" style="background:#0f5385; border-radius:10px 10px 0px 0px; font-weight:normal; font-family:Helvetica; bottom:-2px; right: 150px; padding:4px 10px 4px 10px; font-size:18px; color:#fffff8;text-align:center; cursor:pointer;border:2px solid #fffff8;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999" onclick="open_window('MTMxNDAw','www.flipcause.com')">Please Donate</div>
+</body>
+</html>
