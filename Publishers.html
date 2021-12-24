@@ -10,11 +10,17 @@ $titl="$lnam: Publishers"; $hed=0;
 $key="Steiner Archive:Publishers";
 $mdes="Publishers page: a page devoted to the different publishers -- foreign and domestic -- of Steiner or Anthroposophical books.";
 $mkey="publisher,book,documents,foreign,domestic,rudolf steiner,anthroposophical,publishing";
+$css="/home/RSP/css/main.css";
 include("metadata.inc");
 
 echo <<<EOF
+</head>
+<body>
+<center><br>
+<div style="border: 1px #AAAAA8 solid; border-radius: 8px; width: 86%;
+           padding: 12px; background-color: #FFFFF8" align="center">
 <center>
- <h2>Publishers of Anthroposophical Books</h2>
+ <h2 style="font-family: novam">Publishers of Anthroposophical Books</h2>
 </center>
 
 <center>
@@ -44,6 +50,16 @@ echo <<<EOF
  <!-- <table border="0" align="center" width="100%" cellpadding="10"
          cellspacing="1" bgcolor="#000033">
   <tr valign="top" bgcolor="#FFFFF8"><td> -->
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/apubs.inc");
+
+echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br>
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -103,8 +119,10 @@ EOF;
 
 echo <<<EOF
   <!-- </td></tr></table> -->
- </div><br>
+ </div>
+</div>
 </div><br>
+</center>
 
 EOF;
 
