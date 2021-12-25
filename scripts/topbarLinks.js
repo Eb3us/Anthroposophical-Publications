@@ -34,7 +34,7 @@ export const topBarLinksFunction = () => {
         modalInner.appendChild(contentWrapper)
       }
     })
-
+    document.getElementByID("modal-inner").style.textAlign = "justify";
     modal.classList.remove("hidden")
   })
 }
