@@ -34,7 +34,7 @@ export const topBarLinksFunction = () => {
         modalInner.appendChild(contentWrapper)
       }
     })
-    document.getElementByID("modal-inner")
+
     modal.classList.remove("hidden")
   })
 }
