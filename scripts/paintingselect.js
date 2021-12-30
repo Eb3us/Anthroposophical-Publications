@@ -5,11 +5,13 @@ export function rotateHeaderImages() {
   const header = document.querySelector("#header")
   const headerTitle = header.querySelector("h1")
   const headerSubtitle = header.querySelector("h2")
+  const headerText1 = header.querySelector("#header-text-1")
   const footer = document.querySelector("#footer")
   const middle = document.querySelector("#background-div")
   const preview = document.querySelector("#painting-preview")
   const title = document.querySelector("#painting-title")
   const artist = document.querySelector("#painting-artist")
+  const midPageText = document.querySelectorAll(".mid-page-texts")
 
   const keys = Object.keys(paintings[randomPainting])
   //filter keys not to print from paintings.js in footer
@@ -30,10 +32,18 @@ export function rotateHeaderImages() {
   if (paintings[randomPainting].tone === "light") {
     headerTitle.classList.add("dark-header-text")
     headerSubtitle.classList.add("dark-header-text")
+    headerText1.classList.add("dark-header-text")
+    midPageText.forEach(text => {
+      text.classList.add("dark-header-text")
+    })
   }
   if (paintings[randomPainting].tone === "dark") {
     headerTitle.classList.add("light-header-text")
     headerSubtitle.classList.add("light-header-text")
+    headerText1.classList.add("light-header-text")
+    midPageText.forEach(text => {
+      text.classList.add("light-header-text")
+    })
   }
 
   filteredKeys.forEach(key => {
