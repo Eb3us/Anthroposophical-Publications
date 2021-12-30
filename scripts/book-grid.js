@@ -7,6 +7,7 @@ export function gridFunction() {
   //generate authors/categories links
   const authorsDiv = document.querySelector("#authors-div")
   const categoriesDiv = document.querySelector("#categories-div")
+  const listOrCover = document.querySelector("#aZzA")
   let authorsArray = []
   let categoriesArray = []
   const addAuthorToArray = () => {
@@ -96,7 +97,21 @@ export function gridFunction() {
   })
   document.addEventListener("click", e => {
     if (!e.target.matches("#list")) return
+    listOrCover.dataset.version = "list"
     booksGridOuter.className = "book-div-list-version"
+  })
+  document.addEventListener("click", e => {
+    if (!e.target.matches("#mosaic")) return
+    listOrCover.dataset.version = "cover"
+    if (booksGridOuter.dataset.size === "mobile-landscape") {
+      booksGridOuter.className = "book-div-cover-version-mobile-landscape"
+    }
+    if (booksGridOuter.dataset.size === "tablet") {
+      booksGridOuter.className = "book-div-cover-version-tablet"
+    }
+    if (booksGridOuter.dataset.size === "desktop") {
+      booksGridOuter.className = "book-div-cover-version-desktop"
+    }
   })
   //order alphabetically or inverse alphabetically
   const sortAZZA = (array, AZZA) => {
@@ -224,7 +239,7 @@ export function gridFunction() {
     })
     title.innerText = element.title
     if (title.innerText.length > 50) {
-      title.style.fontSize = "0.7em"
+      title.style.fontSize = "max(1.4vw, 0.7em)"
     }
     author.innerText = element["global"]["Author"]
     title.classList.add("only-list")

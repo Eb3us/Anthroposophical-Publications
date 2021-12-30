@@ -142,7 +142,7 @@
 .grid-book-text h5 {
     font-family: novabr;
     text-align: center;
-    font-size: 0.9em;
+    font-size: max(1.5vw, 0.9em);
     margin:0;
     
 }
