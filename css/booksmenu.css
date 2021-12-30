@@ -59,9 +59,7 @@
     border-radius: 10px;
     margin-left:0.5em;
 }
-#list, #mosaic {
-    display: none;
-}
+
 
 #list {
     background-image: url("../img/list.png");
@@ -126,7 +124,6 @@
     box-shadow: 0px 0px 10px 3px burlywood;
 }
 .book-img {
-    
     height: 100%;
     object-fit: cover;
 }
@@ -167,6 +164,14 @@
     grid-area: 1 / 1 / span 1 / span 6;
     grid-template-columns:1fr;
 }
+.book-div-list-version .book-img-div {
+    height: 120px;
+    width: 100%;
+    border: 0.5px solid  #fa7;
+    border-radius: 10px;
+    grid-column: span 2;
+    justify-content: space-between;
+}
 /*mobile landscape*/
 .book-div-cover-version-mobile-landscape #books-grid-inner {
     grid-area: -1 / 1 / span 1 / span 6;
@@ -181,7 +186,7 @@
 .book-div-cover-version-tablet .only-list{
     display: none;
 }
-.book-div-cover-version-desktop #mosaic,.book-div-cover-version-desktop #list, .book-div-cover-version-tablet #list,.book-div-cover-version-tablet #mosaic {
+#list, #mosaic {
     display: block;
     height: 125%;
     width: 2.5em;
@@ -189,15 +194,20 @@
     background-position: center;
 }
 
-.book-div-cover-version-tablet #books-grid-inner {
-    grid-template-columns:repeat(5, 1fr);
-}
+
 /*desktop*/
 .book-div-cover-version-desktop #books-grid-inner{
     grid-template-columns:repeat(6, 1fr);
 }
 .book-div-cover-version-desktop .only-list{
     display: none;
+}
+.book-div-cover-version-desktop .book-img-div, .book-div-cover-version-tablet .book-img-div, .book-div-cover-version-mobile-landscape .book-img-div {
+    justify-content: center;
+    flex-direction: column;
+}
+.book-div-cover-version-desktop .book-img, .book-div-cover-version-tablet .book-img, .book-div-cover-version-mobile-landscape .book-img {
+    width: 100%;
 }
 .book-div-cover-version-desktop .book-img-div:nth-child(5) {
     grid-column: span 2;
@@ -267,36 +277,18 @@
         left: 0px;
         padding-top: 20px;
     }
-    .book-img-div {
-        justify-content: center;
-        flex-direction: column;
-    }
+    
 }
 
 
-@media only screen and (min-width:651px) {
-    #books-grid-inner {
-    grid-area: -1 / 1 / span 1 / span 6;
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap: 1rem; 
-    }
-    .book-img {
-        width:100%;
-     }
-}
+
 /*MAX*/
 @media only screen and (max-width:650px) {
     #categories-div {
         left: -108%
     }
-    .book-img-div {
-        height: 120px;
-        width: 100%;
-        border: 0.5px solid  #fa7;
-        border-radius: 10px;
-        grid-column: span 2;
-        justify-content: space-between;
+    #list, #mosaic {
+        display: none;
     }
 }
 /**/

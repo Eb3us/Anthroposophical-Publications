@@ -12,22 +12,11 @@
     <link rel="stylesheet" type="text/css" href="./css/carousel.css">
     <link rel="stylesheet" type="text/css" href="./css/booksmenu.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!--
-    -->
-    <script src="//d2wy8f7a9ursnm.cloudfront.net/v7/bugsnag.min.js"></script>
-    <script>Bugsnag.start({ apiKey: '45d1162754fce8f84d943bf4a4a4dbbb' })</script>
     
     
     
-    <!-- <script src="script.js" type="module"></script> -->
-    <script src="bundle.js" defer></script>
+    <script src="script.js" type="module"></script>
+    <!-- <script src="bundle.js" defer></script> -->
 <?php include("flipcause.inc");
 // set current date variables
 $zdm=intval(date("m"));$zdd=intval(date("d"));$zdy=intval(date("Y"));
@@ -54,16 +43,16 @@ $zdm=intval(date("m"));$zdd=intval(date("d"));$zdy=intval(date("Y"));
         <div id="top-button-row" class="top-button-row">
             <a href="https://www.flipcause.com/secure/cause_pdetails/MTMxNDAw" target="_blank" class="top-button-row-button">Donations</a>
             <a href="javascript:void(0)"  data-template="about" class="top-button-row-button">About Us</a>
-            <a href="/Publishers.html" target="_blank" class="top-button-row-button">Publishers</a>
-            <!-- <a href="javascript:void(0)"  data-template="conduct" class="top-button-row-button">Code of Conduct</a> -->
+            <a href="javascript:void(0)"  data-template="publishers" class="top-button-row-button">Publishers</a>
+            <a href="javascript:void(0)"  data-template="conduct" class="top-button-row-button">Code of Conduct</a>
         </div>
         <div id="header-description-div">
 <?if($zdy==2021 && $zdm==12 && $zdd<=15) echo <<<EOF
-	<iframe align="right" style="height:373px; width:300px; border:medium none; " src="https://www.flipcause.com/embed/html_widget/MTM3Nzcy" scrolling="no"></iframe>
+	<!-- <iframe align="right" style="height:373px; width:300px; border:medium none; " src="https://www.flipcause.com/embed/html_widget/MTM3Nzcy" scrolling="no"></iframe> -->
 
 EOF;
 ?>
-            <p>Anthroposophical&#160;Publications and Rudolf&#160;Steiner&#160;Publications are imprints of The&#160;e.Lib,&#160;Inc. Our books are offered at reasonable prices made possible by print-on-demand technology.</p>
+            <p>Anthroposophical Publications and Rudolf Steiner Publications are imprints of The e.Lib, Inc. Our books are offered at reasonable prices made possible by print-on-demand technology.</p>
         </div>
         <div id="arrow-wrapper">
             <div id="header-arrow" class="rotate-arrow-down arrow header-arrow-animation" data-position="down">&#10144;</div>
