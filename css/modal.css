@@ -151,14 +151,19 @@
 
 @media only screen and (min-width: 1200px) {
     #modal-inner {
-        width: 92%;
+        width: 80%;
     }
     .modal-content-wrapper {
         padding: 3em;
+        border: 1px #AAAAA8 solid;
+	border-radius: 8px;
+	width: 76%;
+        background-color: #FFFFF8;
+	align: center;
     }
     .modal-content-wrapper h1 {
         margin-bottom: 2em;
-                
+        
     }
     .modal-img {
         margin-right: 20px;
