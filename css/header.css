@@ -50,7 +50,7 @@
         font-family: novabr;
         font-size: 1.6em;
         margin:0;
-        color: #EECA86;
+        
         
     }
     #header p {
@@ -74,15 +74,22 @@
 }
 
 
-.light-header-text {
+h1[class="light-header-text"], p[class*="light-header-text"] {
     color:#FFFEDB;
     text-shadow: 0px 0px 8px black, 0px 0px 2px black;
 }
-.dark-header-text {
+h1[class="dark-header-text"], p[class*="dark-header-text"] {
     color: #200306;
     text-shadow: 0px 0px 8px #FFFEDB, 0px 0px 2px #FFFEDB;
 }
-
+h2[class="light-header-text"] {
+    color: #EECA86;
+    text-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+h2[class="dark-header-text"] {
+    color: #600146;
+    text-shadow: 0px 0px 8px #FFFEDB, 0px 0px 2px #FFFEDB;
+}
 
 
 
