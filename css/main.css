@@ -193,7 +193,10 @@ body {
         display: none;
     }
     #mid-page-text-1, #mid-page-text-2 {
-        display:none;
+        font-size: 0.9em
+    }
+    #mid-page-text-1 {
+        bottom: 10%
     }
     
 }

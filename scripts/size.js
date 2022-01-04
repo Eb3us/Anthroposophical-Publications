@@ -3,12 +3,12 @@ export function adaptToDevices() {
   function resetHeight() {
     const booksGridOuter = document.querySelector("#books-grid-outer")
     const listOrCover = document.querySelector("#aZzA")
-    let isMobile = window.matchMedia("(max-width:650px)").matches
+    let isMobile = window.matchMedia("(max-width:550px)").matches
     let isMobilePortrait = window.matchMedia(
-      "(max-width:800px) and (orientation:landscape)"
+      "(min-width:550.1px) and (max-width:750px)"
     ).matches
     let isTablet = window.matchMedia(
-      "(min-width:850px) and (max-width:1023.9px)"
+      "(min-width:750.1px) and (max-width:1023.9px)"
     ).matches
     let isDesktop = window.matchMedia("(min-width:1024px)").matches
     if (isMobile) {
