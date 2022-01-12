@@ -146,24 +146,27 @@
     }
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*++++++++++       Second size: min-width: 1200px     +++++++++++++++*/
+/*++++++++++++      Second size: min-width: 1200px      ++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media only screen and (min-width: 1200px) {
     #modal-inner {
-        width: 80%;
+        width: 90%;
+	align: center;
     }
     .modal-content-wrapper {
         padding: 3em;
         border: 1px #AAAAA8 solid;
 	border-radius: 8px;
-	width: 76%;
-        background-color: #FFFFF8;
-	align: center;
+	width: 80%;
+        background-color: #FFFFF0;
+	margin-left: auto;
+        margin-right: auto;
+	/*align: center;
+        float: left;*/
     }
     .modal-content-wrapper h1 {
         margin-bottom: 2em;
-        
     }
     .modal-img {
         margin-right: 20px;
@@ -178,7 +181,6 @@
     #specs {
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows: auto;
-    
     }
     #global {
         margin: 0 auto;
@@ -194,5 +196,4 @@
     .col-1, .col-2, .col-3, .col-4  {
         display: block;
     }
-    
 }
