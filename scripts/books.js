@@ -369,8 +369,8 @@ export const books = [
     "paperback": {
       "type": "Paperback",
       "Pages": "180",
-      "Publication Date": "December 23, 2021
-      "Product Dimensions": "5.5 x 0.38 x 8.5 in.";
+      "Publication Date": "December 23, 2021",
+      "Product Dimensions": "5.5 x 0.38 x 8.5 in.",
       "Shipping Weight": "7.5 ounces",
       "ISBN-10": "194830225X",
       "ISBN-13": "978-1948302258",

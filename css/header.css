@@ -19,7 +19,7 @@
 }
 
 #first-text-div {
-        max-width: 99%;
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -36,14 +36,14 @@
     max-width: 90%;
     margin-bottom: 3em;
     margin-top: 3em;
+    overflow: hidden;
 
 }
     #header h1 {
         font-family: novabr;
         margin: 0;
-        font-size: 2.4em;
+        font-size: 11vw;
         margin-bottom: 0.9rem;
-    
     }
     
     #header h2 {
@@ -51,17 +51,17 @@
         font-size: 1.6em;
         margin:0;
         
+        
     }
     #header p {
-        font-size: 105%;
+        font-size: 150%;
         font-weight: 400;
-        text-shadow: 0px 0px 0px transparent;
         width: max-content;
         margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
         max-width: 99%;
-        color: #FFFEDB;
-        text-shadow: 0px 0px 5px black, 1px 1px 2px black, -1px -1px 2px black;
+        
+        
         
     }
 
@@ -70,18 +70,26 @@
     width: 100%;
     text-align: center;
     font-size: 0.7em;
+    max-width: 95%;
 }
 
 
-.light-header-text {
+h1[class="light-header-text"], p[class*="light-header-text"] {
     color:#FFFEDB;
     text-shadow: 0px 0px 8px black, 0px 0px 2px black;
 }
-.dark-header-text {
+h1[class="dark-header-text"], p[class*="dark-header-text"] {
     color: #200306;
     text-shadow: 0px 0px 8px #FFFEDB, 0px 0px 2px #FFFEDB;
 }
-
+h2[class="light-header-text"] {
+    color: #EECA86;
+    text-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+h2[class="dark-header-text"] {
+    color: #600146;
+    text-shadow: 0px 0px 8px #FFFEDB, 0px 0px 2px #FFFEDB;
+}
 
 
 
@@ -100,7 +108,7 @@
     font-family: monospace;
     font-weight: bold;
     padding: 0;
-    font-size: 7vw;
+    font-size: max(10vw);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -134,7 +142,7 @@
 /*++++++++++       Second size: min-width: 650px     +++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media only screen and (min-width:500px) and (orientation: portrait) {
+@media only screen and (min-width:550px) and (orientation: portrait) {
     #header {padding:0} 
     #first-text-div, #titles-div{margin:0; padding: 0; max-width: 80%;}
     #first-text-div p {margin: 0; font-size: 80%}
@@ -143,25 +151,30 @@
         font-size: 4em;
         margin: 0;
         margin-bottom: 0.5rem;
+        margin-top: 8%; 
     }
     #header h2 {
         font-size: 2.8em;
         margin-bottom: 0;
     }
     #header-description-div{
-        max-width: 60%;
+        max-width: 80%;
     }
     #header p {
-        font-size: 1.3em;
+        font-size: 2em;
     }
     #header-arrow {
-        font-size: 14vw;
+        font-size: 12vw;
     }
     
 }
 @media only screen and (min-width:500px) and (orientation: landscape) {
     #header h1 {
-        font-size: em;
+        font-size: max(4.3em, 5vw);
+        
+    }
+    #header h2 {
+        font-size: 2.5em;
     }
     #header-description-div {
         width: 40%;
@@ -171,19 +184,34 @@
         height: min-content;
         overflow: hidden;
         text-align: right;
+        font-size: 0.8em;
     }
     @keyframes point {
-        0%{transform: rotate(90deg) translateX(-20px)}
-        50% {transform: rotate(90deg) translateX(-8px)}
-        75% {transform: rotate(90deg) translateX(-20px);color:#FFFA86}
-        100% {transform: rotate(90deg) translateX(-20px) ;}
+        0%{transform: rotate(90deg) translateX(10px)}
+        50% {transform: rotate(90deg) translateX(10px)}
+        75% {transform: rotate(90deg) translateX(20px);color:#FFFA86}
+        100% {transform: rotate(90deg) translateX(10px) ;}
        
     }
+    #header-arrow {
+        font-size: 5em;
+    }
 }
-@media only screen and (max-width:800px) and (orientation: landscape) {
+@media only screen and (max-width:770px) and (orientation: landscape) {
     #header {
         justify-content: center;
         align-items: center;
+    }
+    #titles-div {
+        height:500%;
+        overflow:visible
+    }
+    #header h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    #header h2 {
+        font-size: 1.5em;
     }
     #first-text-div{
         display: none;
@@ -191,9 +219,14 @@
     #header-description-div{
         display: none;
     }
+    #arrow-wrapper {
+        height: 100%;
+        overflow:visible
+    }
     #header-arrow {
         font-size: 10vh;
-        transform-origin: 80% -30%;
+        transform-origin: -370% -980%;
+        
     }
    
 }
@@ -224,6 +257,7 @@
    
     #header h1 {
         font-size: 4.5em ;
+        margin-top: 0;
     }
     #header h2 {
         font-size: 2.5em ;

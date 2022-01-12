@@ -151,7 +151,8 @@
 
 @media only screen and (min-width: 1200px) {
     #modal-inner {
-        width: 90%;
+/*
+        width: 92%;
 	align: center;
     }
     .modal-content-wrapper {
@@ -164,6 +165,14 @@
         margin-right: auto;
 	/*align: center;
         float: left;*/
+    }
+    .modal-content-wrapper h1 {
+        margin-bottom: 2em;
+*/
+        width: 92%;
+    }
+    .modal-content-wrapper {
+        padding: 3em;
     }
     .modal-content-wrapper h1 {
         margin-bottom: 2em;
