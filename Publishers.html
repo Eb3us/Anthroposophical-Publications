@@ -16,8 +16,8 @@ include("metadata.inc");
 echo <<<EOF
 </head>
 <body>
-<center><br>
-<div style="border: 1px #AAAAA8 solid; border-radius: 8px; width: 86%;
+<center>
+<div style="border: 1px #AAAAA8 solid; border-radius: 8px; width: 100%;
            padding: 12px; background-color: #FFFFF8" align="center">
 <center>
  <h2 style="font-family: novam">Publishers of Anthroposophical Books</h2>
@@ -40,7 +40,7 @@ echo <<<EOF
   research on the writings of Rudolf Steiner! But, there is still nothing
   like curling up in an easy chair with the book! And here is a list of the
   folks that publish those books: a list of the current Anthroposophical
-  Publishers with links so you can find the books at their web sites.<br><br>
+  Publishers with links so you can find the books at their web sites.<br /><br />
   And please remember that while the older books you find at the Rudolf
   Steiner Archive may not be available anymore, you can probably find a
   newer edition or translation of your favorite book at one of these
@@ -55,21 +55,11 @@ echo <<<EOF
 
 EOF;
 
-  include("Publishers/include/apubs.inc");
-
-echo <<<EOF
-  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
- <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
-            padding: 12px; background-color: #FFFFFF">
-
-EOF;
-
   include("Publishers/include/rspress.inc");
 
 echo <<<EOF
   <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
+ </div><br />
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -79,7 +69,7 @@ EOF;
 
 echo <<<EOF
   <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
+ </div><br />
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -89,7 +79,7 @@ EOF;
 
 echo <<<EOF
   <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
+ </div><br />
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -99,7 +89,7 @@ EOF;
 
 echo <<<EOF
   <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
+ </div><br />
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -109,7 +99,7 @@ EOF;
 
 echo <<<EOF
   <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
- </div><br>
+ </div><br />
  <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
             padding: 12px; background-color: #FFFFFF">
 
@@ -118,10 +108,25 @@ EOF;
   include("Publishers/include/verlag.inc");
 
 echo <<<EOF
+  <!-- </tr><tr valign="top" bgcolor="#FFFFF8"><td> -->
+ </div><br />
+ <br />
+ <center>
+ <h4 align="center">And Finally ...</h4>
+ <center>
+ <br />
+ <div style="border: 1px #AAAAA8 solid; border-radius: 8px;
+            padding: 12px; background-color: #FFFFFF">
+
+EOF;
+
+  include("Publishers/include/apubs.inc");
+
+echo <<<EOF
   <!-- </td></tr></table> -->
  </div>
 </div>
-</div><br>
+</div><br />
 </center>
 
 EOF;

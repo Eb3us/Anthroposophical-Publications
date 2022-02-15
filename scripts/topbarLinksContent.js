@@ -13,6 +13,20 @@ export const content = [
     ],
   },
   {
+    id: "pubs",
+    title: "Other Anthroposophical Publishers",
+    subtitle: "From All Over the World",
+    paragraphs: [
+      "<center><iframe align='center' style='background: #FFFFF8; height: 800px; width:95%;' src='https://anthroposophicalpublications.org/Publishers.html' scrolling='yes'></iframe></center>",
+    ],
+  },
+  {
+    id: "donat",
+    title: "Donations for Anthroposophical Publishing",
+    subtitle: "",
+    paragraphs: [
+      "<center><iframe align='center' style='background: #FFFFF8; height: 630px; width:98%;' src='https://www.flipcause.com/widget/MTMxNDAw' scrolling='yes'></iframe></center>",
+    ],
     id: "publishers",
     title: "Current Anthroposophical Publishers",
     subtitle: "The Publishing Wing of the Anthroposophical Movement",
