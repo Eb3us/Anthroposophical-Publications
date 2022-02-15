@@ -1439,11 +1439,13 @@
     const header = document.querySelector("#header");
     const headerTitle = header.querySelector("h1");
     const headerSubtitle = header.querySelector("h2");
+    const headerText1 = header.querySelector("#header-text-1");
     const footer = document.querySelector("#footer");
     const middle = document.querySelector("#background-div");
     const preview = document.querySelector("#painting-preview");
     const title = document.querySelector("#painting-title");
     const artist = document.querySelector("#painting-artist");
+    const midPageText = document.querySelectorAll(".mid-page-texts");
 
     const keys = Object.keys(paintings[randomPainting]);
     //filter keys not to print from paintings.js in footer
@@ -1464,10 +1466,18 @@
     if (paintings[randomPainting].tone === "light") {
       headerTitle.classList.add("dark-header-text");
       headerSubtitle.classList.add("dark-header-text");
+      headerText1.classList.add("dark-header-text");
+      midPageText.forEach(text => {
+        text.classList.add("dark-header-text");
+      });
     }
     if (paintings[randomPainting].tone === "dark") {
       headerTitle.classList.add("light-header-text");
       headerSubtitle.classList.add("light-header-text");
+      headerText1.classList.add("light-header-text");
+      midPageText.forEach(text => {
+        text.classList.add("light-header-text");
+      });
     }
 
     filteredKeys.forEach(key => {
@@ -1546,12 +1556,12 @@
     function resetHeight() {
       const booksGridOuter = document.querySelector("#books-grid-outer");
       const listOrCover = document.querySelector("#aZzA");
-      let isMobile = window.matchMedia("(max-width:650px)").matches;
+      let isMobile = window.matchMedia("(max-width:550px)").matches;
       let isMobilePortrait = window.matchMedia(
-        "(max-width:800px) and (orientation:landscape)"
+        "(min-width:550.1px) and (max-width:750px)"
       ).matches;
       let isTablet = window.matchMedia(
-        "(min-width:850px) and (max-width:1023.9px)"
+        "(min-width:750.1px) and (max-width:1023.9px)"
       ).matches;
       let isDesktop = window.matchMedia("(min-width:1024px)").matches;
       if (isMobile) {
@@ -1608,13 +1618,13 @@
       title: "Current Anthroposophical Publishers",
       subtitle: "The Publishing Wing of the Anthroposophical Movement",
       paragraphs: [
-        '<a href="https://amzn.to/2Qcs1ba" target="_blank"><img border="1" align="left" src="https://rudolfsteinerarchive.org/Covers/AnthroFantasies_covs.jpg"></a><br /><a href="https://amzn.to/2Qcs1ba" style="font-size: 125%" target="_blank">Anthroposophical Fantasies</a>:<br><br>Anthroposophy, also known as Spiritual Science, is not known for fantastic literature, or fiction at all. So how can stories with titles like &#8220;Life on Mars,&#8221; or &#8220;The Girl in the Floppy Hat,&#8221; or &#8220;To Hunt a Nazi&#8221; qualify as anthroposophical. They do not &#8212; until now. Therefore, this book is groundbreaking. You may smile at times, even laugh; other stories may cause a lump in your throat, perhaps even a tear or two. Oh, and by the way, fundamentalists are advised not to partake of this fantastical frosting on their anthroposophical cake.Here, then, are thirteen provocative, groundbreaking fictional tales for anthroposophists, and really anyone, to enjoy. By Roberto Fox, as told to Frank Thomas Smith.<br><br>Click on the cover image to buy this book at Amazon.com, to read and enjoy at home.<br clear="all">',
+        '<a href="https://amzn.to/2Qcs1ba" target="_blank"><img border="1" style="float:left;margin-right:1em" src="/img/AnthroFantasies_covs.jpg"></a><br /><a href="https://amzn.to/2Qcs1ba" style="font-size: 125%" target="_blank">Anthroposophical Fantasies</a>:<br><br>Anthroposophy, also known as Spiritual Science, is not known for fantastic literature, or fiction at all. So how can stories with titles like &#8220;Life on Mars,&#8221; or &#8220;The Girl in the Floppy Hat,&#8221; or &#8220;To Hunt a Nazi&#8221; qualify as anthroposophical. They do not &#8212; until now. Therefore, this book is groundbreaking. You may smile at times, even laugh; other stories may cause a lump in your throat, perhaps even a tear or two. Oh, and by the way, fundamentalists are advised not to partake of this fantastical frosting on their anthroposophical cake.Here, then, are thirteen provocative, groundbreaking fictional tales for anthroposophists, and really anyone, to enjoy. By Roberto Fox, as told to Frank Thomas Smith.<br><br>Click on the cover image to buy this book at Amazon.com, to read and enjoy at home.<br clear="all">',
         '<div> \
 <p align="justify" style=\'text-align:justify\'> \
 <table border="0" align="left" cellpadding="4" cellspacing="0"> \
  <tr valign="top"><td><a href="https://amzn.to/36rj94r" \
-  target="_blank"><img border="1" align="left" \
-  src="https://rudolfsteinerarchive.org/Covers/hermangrimm01_covs.jpg"></a> \
+  target="_blank"><img border="1" style="float:left;margin-right:1em" \
+  src="/img/hermangrimm01_covs.jpg"></a> \
  </td><td>&#160;</td></tr> \
  <tr valign="top"><td align="center"> \
   <font size="1">Click to buy this book. \
